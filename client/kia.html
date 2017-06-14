@@ -1,0 +1,551 @@
+<template name="kia">
+  <div class="container">
+  <div class='display-2 text-center pb-5'>Kotaku in Action</div>
+
+  <div class="row">
+    <div class="col">
+
+      <h3 class=text-center>Background</h3>
+      <p class="blurb">
+        In 2015 on "This American Life", comedian Lindy West interviewed her harasser, a stranger who had played
+        tricks on her, like writing her a hurtful letter, as her father, who had recently died.  In the interview,
+        the man expressed profound regret for everything he had done to West, and she found empathy for him in
+        his circumstances.  Because empathy is a tenet of human-centered design, but difficult to
+        extend to people seen as cruel, we chose to study Kotaku in Action, an online community whose
+        reputation includes extreme harassment.
+        <br>
+        <br>
+        In 2014 the gamer community became suspicious of video game journalists, some of whom had accused
+        gamers of mysogeny and even announced the end of the gamer community as an important demographic.
+        In response, a social movement called GamerGate formed.  Gamergaters opposed both prominent journalists and
+        feminists in the video game industry.  Zoe Quinn and other women received death threats and had their
+        private information broadcast publicly (a practice known as Doxxing).  Kotaku In Action calls itself
+        the official subreddit of GamerGate, and its members are suspected of very nasty behavior.  We spoke
+        with 13 people from this community.
+      </p>
+
+    </div><!--col-->
+    <div class="col">
+      <h3 class=text-center>Research Plan</h3>
+      <p class="blurb">
+        Purpose: To study a community associated with harassment and build an empirical understanding
+        of the view from within
+        <br>
+        Research team: Larry Chan, Shagun Jhaver, Ian Stewart, and Amy Bruckman (Principal Investigator)
+        <br>
+        <br>
+        Research Questions:
+      </p>
+        <ul>
+          <li>What are the apparent values in the community?</li>
+          <li>Is the community primarily organized for hate and harassment?</li>
+          <li>If not, is there a set of needs that can be constructively addressed by design?</li>
+        </ul>
+      <p class="blurb">
+        <br>
+        My role: background research, interviews, qualitative analysis and report
+        <br>
+        Mixed methodology:
+        <br>
+        Time required:
+      </p>
+
+    </div><!-- col -->
+  </div><!-- row -->
+</div><!-- container -->
+
+  <section id="research" class="bg-info pt-5">
+    {{> participants}}
+  </section>
+
+  <section class="bg-faded py-5">
+    {{> memberInterest}}
+  </section>
+
+  <section class="bg-info pt-5">
+    {{> harassment}}
+  </section>
+
+  <section class="bg-faded pt-5">
+    {{> norms}}
+  </section>
+
+  <section class="bg-info pt-5">
+    {{> responsesToDesign}}
+  </section>
+
+  <section class="bg-faded pt-5">
+    {{> goals}}
+  </section>
+
+</template>
+
+<template name="participants">
+  <div class="container-fluid">
+    <h1 class="text-center">Participants</h1>
+    <div class="row">
+      <div class="col">
+        <p class="blurb">
+          We recruited through private message on Reddit. Our presence was <span
+          data-toggle="tooltip" data-placement="right" title="Beware for u/Gatech2.
+          It's a trap. They're against everything this sub stands for!">met
+          with suspicion</span>. Our principal investigator responded by offering to do
+          an “AMA” (“Ask Me Anything”) session.  After this, we drew our
+          participants from those who volunteered.
+        </p>
+      </div><!--col-->
+      <div class="col">
+        <p class="blurb">
+          Target characteristics:
+          we wanted to include both members, moderators, and multiple genders.
+          We expected members and moderators to have distinct views on how the
+          community should operate.  Because core questions about the community
+          are related to gender, we wanted to include more than one gender.
+          Some participants did not wish to report age or other demographic data,
+          so some information is missing from the table.
+        </p>
+      </div><!--col-->
+    </div><!--row-->
+    <table class="table table-sm table-bordered table-hover">
+      <thead>
+        <tr>
+          <th class="text-center">ID</th>
+          <th class="text-center">AGE</th>
+          <th class="text-center">COUNTRY</th>
+          <th class="text-center">OCCUPATION</th>
+          <th class="text-center">INTERVIEW MEDIUM</th>
+          <th class="text-center">GENDER</th>
+          <th class="text-center">ACCOUNT CREATED</th>
+          <th class="text-center">IS MODERATOR?</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>P1</td>
+          <td>unknown</td>
+          <td>USA</td>
+          <td>Graphic designer</td>
+          <td>chat</td>
+          <td>Male</td>
+          <td>Jun, 2015</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td>P2</td>
+          <td>26</td>
+          <td>USA</td>
+          <td>Tech content manager</td>
+          <td>Skype</td>
+          <td>Male</td>
+          <td>May, 2015</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td>P3</td>
+          <td>27</td>
+          <td>Norway</td>
+          <td>unknown</td>
+          <td>Skype</td>
+          <td>Male</td>
+          <td>Jan, 2015</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td>P4</td>
+          <td>20's</td>
+          <td>USA</td>
+          <td>unknown</td>
+          <td>Skype</td>
+          <td>Male</td>
+          <td>Oct, 2009</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td>P5</td>
+          <td>24</td>
+          <td>USA</td>
+          <td>unknown</td>
+          <td>Skype</td>
+          <td>Male</td>
+          <td>Mar, 2010</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td>P6</td>
+          <td>24</td>
+          <td>USA</td>
+          <td>Grocery-store manager</td>
+          <td>Skype</td>
+          <td>Male</td>
+          <td>Oct, 2014</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td>P7</td>
+          <td>25</td>
+          <td>USA</td>
+          <td>Chemist</td>
+          <td>Skype</td>
+          <td>Male</td>
+          <td>Nov, 2014</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td>P8</td>
+          <td>28</td>
+          <td>Norway</td>
+          <td>Computer Science student</td>
+          <td>Chat</td>
+          <td>Male</td>
+          <td>Oct, 2013</td>
+          <td class="bg-warning">Current moderator</td>
+        </tr>
+        <tr>
+          <td>P9</td>
+          <td>34</td>
+          <td>USA</td>
+          <td>Computer programmer</td>
+          <td>Chat</td>
+          <td>Male</td>
+          <td>Feb, 2013</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td>P10</td>
+          <td>37</td>
+          <td>USA</td>
+          <td>Computer technician</td>
+          <td>Phone</td>
+          <td>Male</td>
+          <td>May, 2014</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td>P11</td>
+          <td>25</td>
+          <td>USA</td>
+          <td>Instructional aid</td>
+          <td>Chat</td>
+          <td class="bg-warning">Female</td>
+          <td>Feb, 2015</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td>P12</td>
+          <td>24</td>
+          <td>USA</td>
+          <td>Student</td>
+          <td>Chat</td>
+          <td>Male</td>
+          <td>May, 2012</td>
+          <td class="bg-warning">Past moderator</td>
+        </tr>
+        <tr>
+          <td>P13</td>
+          <td>26</td>
+          <td>USA</td>
+          <td>Medical professional</td>
+          <td>Skype</td>
+          <td>Male</td>
+          <td>Mar, 2011</td>
+          <td>No</td>
+        </tr>
+      </tbody>
+    </table>
+  </div><!-- row -->
+</template>
+
+<template name="memberInterest">
+  <div class="container-fluid">
+    <div class="row d-flex align-items-center justify-content-around">
+      <div class="col-6">
+        <h3 class="text-center">What Are Members Interested In?</h3>
+        <hr>
+        <h5>Description of Interests by Informants</h5>
+        <p>
+          When we asked participants, they told us that interests centered around
+          game culture, free speech, ethics in journalism, and the overreach of
+          PC culture.
+        </p>
+        <h5>Behavioral Evidence</h5>
+        <div>
+          Using the Reddit API, we sampled 1000 comments and then looked at what
+          other subreddits those commenters posted on.  The table on the right
+          shows the top 10 subreddits we found, and this give us some insight
+          into what topics have popular appeal in the KiA community.
+          <br>
+          <br>
+          Current events, gender, and games all figured prominently in the top
+          ten subreddits.  Posting in r/MensRights suggests explicit opposition
+           to feminism, which has no intrinsic connection with ethics in games
+          journalism.  So any aggressive online tactics are liable to reflect
+          antipathy towards feminists.
+        </div>
+      </div>
+      <div class="col-4">
+        <table class="table table-bordered table-hover">
+          <thead>
+            <tr>
+              <th>Subreddit</th>
+              <th>Number of Posts</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>AskReddit</td>
+              <td class="text-center">6072</td>
+            </tr>
+            <tr class="bg-warning">
+              <td>MensRights</td>
+              <td class="text-center">6047</td>
+            </tr>
+            <tr>
+              <td>pcmasterrace</td>
+              <td class="text-center">5843</td>
+            </tr>
+            <tr>
+              <td>TumblrInAction</td>
+              <td class="text-center">5126</td>
+            </tr>
+            <tr>
+              <td>The Donald</td>
+              <td class="text-center">4021</td>
+            </tr>
+            <tr>
+              <td>worldnews</td>
+              <td class="text-center">3535</td>
+            </tr>
+            <tr>
+              <td>politics</td>
+              <td class="text-center">3415</td>
+            </tr>
+            <tr>
+              <td>news</td>
+              <td class="text-center">3223</td>
+            </tr>
+            <tr>
+              <td>GGFreeForAll</td>
+              <td class="text-center">3064</td>
+            </tr>
+            <tr>
+              <td>Games</td>
+              <td class="text-center">2943</td>
+            </tr>
+          </tbody>
+        </table>
+      </div> <!-- col -->
+    </div><!-- row -->
+  </div><!-- container -->
+</template>
+
+<template name="harassment">
+  <div class="row">
+    <div class="col">
+      <h3 class="text-center">Is Harassment a Common Goal?</h3>
+      <div class="row">
+        <div class="col-6">
+          <p class="blurb">
+            Prevalence of harassers in the community cannot be quantified.  A
+            common problem identifying hate groups is the presence
+            of factions who are not bigoted [Gerstenfeld 2013].  People on both
+             sides of the debate have been harassed.
+            <br>
+            It seems likely that perpetrators are present, but harassment doesn't
+            appear to be a community goal.  Our conclusion:
+            KiA is not a viper’s nest, though there are probably vipers in the nest.
+          </p>
+        </div><!--col-->
+        <div class="col-6">
+          <div class="container">
+          <div class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                There was a doxxing patrol.
+                <br>
+                <br>
+                Members were doxxed and threatened themselves.
+              </div><!-- carousel item -->
+              <div class="carousel-item">
+                Doxxing and dogpiling are expressly forbidden (see rules in the
+                  next section).
+              </div><!-- carousel item -->
+              <div class="carousel-item">
+                Definition of harassment is casual.
+                <br>
+                <br>
+                There was a higher threshold for qualifying.
+                <br>
+                <br>
+                Repetition and threats may be required elements.  (we have a quote here)
+              </div><!-- carousel item -->
+              <div class="carousel-item">
+                Some of our informants reported speaking with members who espoused
+                harassing: (we have a quote here)
+              </div><!-- carousel item -->
+            </div><!-- carousel inner -->
+          </div><!-- carousel slide -->
+        </div><!-- container -->
+        </div><!--col-->
+      </div><!--row-->
+    </div>
+  </div>
+</template>
+
+<template name="norms">
+  <div class="row">
+    <div class="col">
+      <h3 class=text-center>Community Rule and Norms</h3>
+      <div class="row">
+        <div class="col">
+          <p class="blurb">
+            Four of the community norms we identified have significant design implications.
+            <br>
+            Laissez-fair moderation: no limits on expression (no off-limits terminology or ideas)
+            <br>
+            Don't be a dickwolf: you can still run afoul of conversational and interpersonal ideals
+            <br>
+            No doxxing
+            <br>
+            Archive?
+          </p>
+        </div><!--col-->
+        <div class="col-6">
+          <div class="container">
+          <div class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                No personal information
+              </div><!-- carousel item -->
+              <div class="carousel-item">
+                We are not your personal army
+              </div><!-- carousel item -->
+              <div class="carousel-item">
+                Archive everything
+                <br>
+                There was a higher threshold for qualifying.
+                <br>
+                Repetition and threats may be required elements.  (we have a quote here)
+              </div><!-- carousel item -->
+              <div class="carousel-item">
+                Don't be a dickwolf
+              </div><!-- carousel item -->
+            </div><!-- carousel inner -->
+          </div><!-- carousel slide -->
+        </div><!-- container -->
+        </div><!--col-->
+      </div><!--row-->
+    </div>
+  </div>
+</template>
+
+<template name="goals">
+  <div class="row">
+    <div class="col">
+      <h3 class=text-center>Goals of the Community</h3>
+      <div class="row">
+        <div class="col">
+          <p class="blurb">
+            <br>
+            Laissez-fair moderation: no limits on expression (no off-limits terminology or ideas)
+            <br>
+            Don't be a dickwolf: you can still run afoul of conversational and interpersonal ideals
+            <br>
+            No doxxing
+            <br>
+            Archive?
+          </p>
+        </div><!--col-->
+        <div class="col-6">
+          <div class="container">
+          <div class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                Homophily without banishment
+              </div><!-- carousel item -->
+              <div class="carousel-item">
+                Contrast with harassers and trolls
+                <br>
+                <br>
+                Distinction between harassers and other activists within KiA.  A few KiA users called for separation from #GamerGAte and rebranding under a new tag to distance the movement from its association with harassment in the popular zeitgeist.  Such calls were rejected on the grounds that rebranding would divide the community and trolls would simplyu follow the movement and smear it under the new tag.
+              </div><!-- carousel item -->
+              <div class="carousel-item">
+                Diversity of thought
+                <br>
+                <br>
+              </div><!-- carousel item -->
+              <div class="carousel-item">
+                Documentation for good
+              </div><!-- carousel item -->
+            </div><!-- carousel inner -->
+          </div><!-- carousel slide -->
+        </div><!-- container -->
+        </div><!--col-->
+      </div><!--row-->
+    </div>
+  </div>
+</template>
+
+<template name="responsesToDesign">
+  <div class="row">
+    <div class="col">
+      <h3 class=text-center>Tools Adopted by KiA</h3>
+      <div class="row">
+        <div class="col">
+          <p class="blurb">
+            <br>
+            Laissez-fair moderation: no limits on expression (no off-limits terminology or ideas)
+            <br>
+            Don't be a dickwolf: you can still run afoul of conversational and interpersonal ideals
+            <br>
+            No doxxing
+            <br>
+            Archive?
+          </p>
+        </div><!--col-->
+        <div class="col-6">
+          <div class="container">
+          <div class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+
+              </div><!-- carousel item -->
+              <div class="carousel-item">
+                archiving
+                <br>
+                <br>
+                <p>deepfreeze</p>
+                <br>
+                <br>
+                mnemosyne is a bot that automatically archives every post on KiA
+                <br>
+                <br>
+                modlog.github.io an external feed of collected Reddit moderation action
+              </div><!-- carousel item -->
+              <div class="carousel-item">
+                Thunderclap
+                <br>
+                <br>
+              </div><!-- carousel item -->
+              <div class="carousel-item">
+                Blacklist of websites
+                <br>
+                <br>
+                Intended to avoid contributing click revenue to opposition web sites.
+                <br>
+                <br>
+                Can be bypassed by using archive
+              </div><!-- carousel item -->
+            </div><!-- carousel inner -->
+          </div><!-- carousel slide -->
+        </div><!-- container -->
+        </div><!--col-->
+      </div><!--row-->
+    </div>
+  </div>
+</template>
+
+<template name="updates">
+</template>
+
+<template name="applications">
+</template>

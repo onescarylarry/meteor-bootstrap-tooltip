@@ -1,0 +1,552 @@
+<template name="ema">
+
+    <section class="bg-abra-gray">
+      <div class='display-2 text-center pb-5'>Ambulatory Assessment of College Student Emotional Well-being</div>
+
+      <div class="container">
+
+
+      </div><!-- container -->
+
+    </section>
+    <section>
+
+      {{> backgroundInfo}}
+
+    </section>
+    <section class="bg-abra-gray pb-5">
+
+        {{> designTask}}
+
+    </section>
+
+    <section class="bg-faded">
+
+      {{> researchPlan}}
+      {{> assessment}}
+
+    </section>
+
+    <section>
+
+
+    </section>
+
+
+
+</template>
+
+<template name="backgroundInfo">
+  <div class="container-fluid pt-5">
+    <div class="container">
+
+    <h1>
+      How to relieve the hassle of being asked ten times per day about your
+      life and emotions
+    </h1>
+    <hr>
+    <div class="row">
+      <div class="col">
+        <h5>Wait&mdash;why ask that many times?</h5>
+        <p>
+          Even though researchers are starting to use facial expressions, heart rate,
+          and typing velocity to measure emotion, there's no better way to get the subjective
+          quality of someone's emotion than asking them.  There's a good reason to ask
+          very frequently too.  Time patterns in emotion are a key indicator of instability
+          and disordered mood (think bipolar disorder and borderline personality disorder).
+          Because  <span data-toggle="tooltip" data-placement="bottom" title="More than half
+          of college students felt 'overwhelming anxiety' in 2012.  That year, half reported
+          greater than average or extreme levels of stress.">college students face enhanced
+          risk for emotional problems</span>, we focused on measuring the time course
+          of their emotions.  Doing this well is crucial from a clinical and public health
+          pespective.
+        <p>
+        <h5>The EMA burden</h5>
+        </p>
+          Ecological Momentary Assessment (EMA) is one name for the technique of answering
+          a question repeatedly over time.  It's easy to see how that experience
+          can become a burden.  For this project, we broke burden down into three components:
+          <ul>
+            <li>interruption: is focus being disrupted?</li>
+            <li>effort: how many steps required to respond? how much cognitive work is needed?</li>
+            <li>time: how long does it take to complete a response and resume original activity?</li>
+          </ul>
+          These components form the key design principles for our approach to relieving burden.
+          We hypothesized that a study design that reduced each component would result in
+          imroved burden.  This is exactly how our task was defined.
+        </p>
+      </div><!--col-->
+      <div class="col">
+
+      </div><!--col-->
+    </div><!--row-->
+  </div><!-- container -->
+  </div><!-- container-fluid -->
+</template>
+
+<template name="designTask">
+  <div class="container-fluid">
+
+  <div class="container">
+    <h1 class="text-center">The Design Task</h1>
+    <hr>
+    <div class="row">
+      <div class="col">
+        <h3>Design an EMA study system of student
+          emotion that reduces the burden of interruption, effort, and time.</h3>
+        <hr>
+        <h5>Conventional notification-based EMA vs. Lock-screen</h5>
+        <p>
+          How do you know when it's time to answer a question?  Conventional
+          notification-based EMA systems message you on channels like email or SMS, telling
+          you that it's time to go to the tool you use for answering questions.  That
+          could entail opening a web-page or an app.
+        </p>
+        <p>
+          A notification like this could come at a bad time.  You could be absorbed
+          in a time-sensitive puzzle or a critical conversation, in which case the
+          messages could become a nuisance.  Instead, a question could wait on the
+          lock-screen of your phone, only getting noticed when you activate it.
+          This is how lock-screen systems can<span data-toggle="tooltip"
+          data-placement="bottom" title="our context-and-signal contingent design
+          also avoided interrupting participants at a specific level of activity,
+          an accomplishment that is best described in terms of activity theory.
+          While participants were interrupted at the 'action' level
+          (checking the weather on the phone or looking up the definition of a
+          word), we avoided interrupting them at the 'operations' level
+          (well-defined, routine actions like tapping \enquote{send} on an email).
+          We attribute their tolerance for frequent prompts to brevity of
+          interactions and uninterrupted operations.">
+          <strong>avoid interrupting</strong>.</span>  Because the
+          interface for the question acts as the notification, there is no need to
+          navigate to a questionnaire interface.  This is how a lock-screen system can
+          <strong>reduce effort</strong>.  Responding in this system requires only
+          enough <strong>time</strong> to answer a single question.
+          <br>
+          <br>
+          I recommended that we take the lock-screen approach, and we worked with
+          a commercial company called Quedget to implement the EMA
+          system described above.  Our system is difficult to categorize using the
+          most popular taxonomy of EMA systems.
+          Here is my suggestion on an
+          <span data-toggle="tooltip" data-placement="bottom" title="Signal-contingent,
+          interval-contingent, and event-contingent are not orthogonal."><strong>alternative
+          taxonomy
+          </strong>.</span>
+        </p>
+        <hr>
+        <h5>Image-based questions to assess mood and stress</h5>
+        <p>
+          Traditional mood and stress questions have been well established in experimental
+          and clinical literature.  The Positive and Negative Affect Schedule (PANAS)
+          measures both emotional valence (feeling good vs feeling bad) and activation
+          (high vs low energy), but it asks 20 questions to do so.  Attempting to
+          accomplish the same thing with a single question, researchers at Cornell developed
+          the Photographic Affect Meter (PAM).  To use it, you just choose
+          the picture that best matches your mood from a 4 x 4 grid.  Similar to PAM is
+          the Mobile Stress Meter (MSM), which asks you to choose from a 4 x 4 grid to
+          express how much stress you are feeling.
+        </p>
+        <p>
+          There were many emotion question alternatives to choose from.  I recommended
+          that we use PAM and MSM for three reasons.
+          <ol>
+            <li>They are brief</li>
+            <li>They have not yet been fully assessed qualitatively in a pilot study</li>
+            <li>
+              We would be matching the data collection of three other sites in a
+              <span data-toggle="tooltip" data-placement="bottom" title="We did this pilot
+              as part of a multi-site consortium of universities, including CMU, Cornell,
+              and Dartmouth.  Each of these three used PAM."><strong>consortium
+              </strong></span>
+            </li>
+          </ol>
+        </p>
+        <hr>
+        <h5>Adapting image-based questions for lock-screen system</h5>
+        <p>
+          Putting interfaces on a lock-screen increases the risk of error through
+          inadvertent action.  If the emotion question becomes active on the display
+          while the phone is in your pocket, you could easily tap one of the response
+          choices without knowing it.  One solution is to accept only drag and drop
+          gestures, which far less likely to happen accidentally.
+        </p>
+        <p>
+          While adapting PAM and PSM, I used guerilla validation to test some of
+          my assumptions.  For example, I assumed that
+          dragging the selected image to a target area would be preferable to
+          dragging a target object to a selected image.  When colleagues tried both
+          interactions on a
+          low fidelity prototype, they touched the target object only after
+          choosing the image.
+          This requires a glance to locate the image, a glance to locate the object and
+          a glance to locate the image a second time.  Dragging the target image
+          obviates the final glance.
+        </p>
+        <p>
+          There were many emotion question alternatives to choose from.  I recommended
+          that we use PAM and MSM for three reasons.
+          <ol>
+            <li>They are brief</li>
+            <li>They have not yet been fully assessed qualitatively in a pilot study</li>
+            <li>
+              We would be matching the data collection of three other sites in a
+              <span data-toggle="tooltip" data-placement="bottom" title="We did this pilot
+              as part of a multi-site consortium of universities, including CMU, Cornell,
+              and Dartmouth.  Each of these three used PAM."><strong>consortium
+              </strong></span>
+            </li>
+          </ol>
+        </p>
+      </div><!--col-->
+      <div class="col">
+      </div><!--col-->
+    </div><!--row-->
+  </div><!-- container -->
+</div>
+</template>
+
+<template name="researchPlan">
+  <div class="container">
+    <h1 class=text-center>Assessing the EMA system</h1>
+    <hr>
+    <div class="row">
+      <div class="col">
+
+      <h3 class=text-center>Study Context</h3>
+      <p class="blurb">
+        We had an opportunity to assess the EMA system in the context of a larger
+        mobile-sensing study.  In addition to EMA data collection, the larger study used the sensors
+        on board each participants phone to monitor app use, sleep, physical activity,
+        and other variables related to well-being.  (A detailed description of
+        the larger study is here.)
+      </p>
+      <h3 class=text-center>Participants</h3>
+      <p class="blurb">
+        To evaluate the design of an EMA system for student emotions, we wanted
+        to sample participants at the graduate and undergraduate level.  We only
+        recruited those with phones running the Android platform because these allowed
+        developers to build interactions that appear after the activation of the
+        phone and before the lock-screen appears. Of those who participated in
+        the larger study, 32 graduate and
+        undergraduate students (44% Female) participated in the focus groups.
+      </p>
+
+    </div><!--col-->
+      <div class="col">
+      <h3 class=text-center>Research Plan</h3>
+      <p class="blurb">
+        Purpose: To assess the lock-screen EMA system from the perspective of
+        participants.
+        <br>
+        Research team: Larry Chan, Christina Kelly, Vedant Swain, Gregory Abowd
+        (Principal Investigator), and Lauren Wilcox (Principal Investigator)
+        <br>
+        <br>
+        <strong>
+        Research Questions:
+        </strong>
+      </p>
+      <ul>
+        <li>Does the lock-screen EMA reduce burden?</li>
+        <li>Do PAM and MSM reduce burden?</li>
+        <li>What influence did lock-screen EMA have on the behavior of users?</li>
+        <li>What influence did PAM and MSM have on the behavior of users?</li>
+      </ul>
+      <p class="blurb">
+        <strong>Methodology</strong> was mixed: quantitative analysis of response data (such as response
+        variety and response time), qualitative assessment through focus groups.
+        <br>
+        <br>
+        <strong>Time required</strong>
+        <br>
+        focus groups recruiting and scheduling: 3 hours
+        <br>
+        protocol development and running 8 one-hour focus groups: 12 hours
+        <br>
+        analysis of focus group data: 10 hours
+        <br>
+        analysis of response data (using R): 8 hours
+        <br>
+        <br>
+        <br>
+        <strong>My role:</strong> design image-based interface;
+        select all items in questionnaire battery;
+        adapt language on all items;
+        define schedule for EMA questions;
+        design focus-group protocol;
+        recruit for, schedule, and conduct focus groups;
+        lead analysis of focus-group data;
+        first author on manuscript (in submission).
+        <br>
+      </p>
+
+    </div><!-- col -->
+  </div><!-- row -->
+  </div><!-- container -->
+</template>
+
+<template name="assessment">
+  <div class="container-fluid pt-5">
+    <div class="container">
+
+    <h1 class="text-center">Assessment Findings</h1>
+    <div class="row">
+      <div class="col">
+        <p class="blurb">
+          We recruited through private message on Reddit. Our presence was met
+          with suspicion. Our principal investigator responded by offering to do
+          an “AMA” (“Ask Me Anything”) session. After this, we drew our
+          participants from those who volunteered.
+        </p>
+      </div><!--col-->
+      <div class="col">
+        <p class="blurb">
+          Target characteristics:
+          we wanted to include both members, moderators, and multiple genders.
+          We expected members and moderators to have distinct views on how the
+          community should operate.  Because core questions about the community
+          are related to gender, we wanted to include more than one gender.
+          Some participants did not wish to report age or other demographic data,
+          so some information is missing from the table.
+        </p>
+      </div><!--col-->
+    </div><!--row-->
+    <div class="row">
+      <div class="container">
+        <h2 class="abra-section-title">
+          key findings
+        </h2>
+        <div class="abra-accordion">
+
+          <a href="#promptBurden" data-toggle="collapse">
+            <!-- <h4 class="pt-2">Burden of responding to prompts was low</h4> -->
+            <span class="abra-accordion-title abra-anchor-on-gray">
+              RQ1. The lock-screen platform did reduce the burden of responding to scheduled questions
+            </span>
+          </a>
+          <div id="promptBurden" class="collapse">
+
+                <div class="container">
+                  <div class="row">
+                    <div class="col-6">
+                      <p>
+                        Response times were fast.  The average response time (from
+                        presentation of the question to completing an answer) was 5.68
+                        seconds.  In fact, this response time did not differ significantly
+                        from the average time it took users to unlock their phones.
+                      </p>
+                      <p>
+                        People responded to a high volume of questions, and no one
+                        in the focus groups suggested that the volume was too high.
+                        In fact, some suggested that it would be better to ask even
+                        more frequently:  "Yeah, the how do you feel right now and
+                        what are you doing right now, that could be asked a bit more
+                        frequently." &mdash;p18
+                      </p>
+                    </div><!-- col-6 -->
+                    <div class="col-6">
+
+                        <img src="/RT_Unlock_BoxPlot.png" class="img-fluid">
+
+                    </div><!-- col-6 -->
+                  </div><!-- row -->
+                </div><!-- container -->
+          </div><!-- #promptBurden -->
+        </div><!-- abra-accordion -->
+        <div class="abra-accordion">
+
+          <a href="#promptBurden1" data-toggle="collapse">
+            <!-- <h4 class="pt-2">Burden of responding to prompts was low</h4> -->
+            <span class="abra-accordion-title abra-anchor-on-gray">RQ2. PAM and PSM did not reduce burden</span>
+          </a>
+          <div id="promptBurden1" class="collapse">
+            <div class="container">
+              <div class="row">
+                <div class="col-6">
+                  <p>
+                    While some participants enjoyed these image-based questions and
+                    used them successfully, others expressed <strong>problems mapping</strong> their
+                    emotions onto the images.
+                  </p>
+                  <p>
+                    Other people complained that there were too many images.  This
+                    sentiment revealed problems with the <strong>mental
+                    models</strong> of how the question works. (continuous vs discontinuous)
+                  </p>
+                  <p>
+                    A 4 x 4 grid of discrete representations of valence and arousal
+                    presents users with a 16-item search task, which carries a significant
+                    <strong>cognitive load</strong>.  Randomization of these images
+                    compromises the <strong>memorability</strong>
+                    of the interface.
+                  </p>
+                </div><!-- col-6 -->
+                <div class="col-6">
+                  <div class="container">
+                  <div class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+
+                      </div><!-- carousel item -->
+                      <div class="carousel-item">
+                        archiving
+                        <br>
+                        <br>
+                        <p>deepfreeze</p>
+                        <br>
+                        <br>
+                        mnemosyne is a bot that automatically archives every post on KiA
+                        <br>
+                        <br>
+                        modlog.github.io an external feed of collected Reddit moderation action
+                      </div><!-- carousel item -->
+                      <div class="carousel-item">
+                        Thunderclap
+                        <br>
+                        <br>
+                      </div><!-- carousel item -->
+                      <div class="carousel-item">
+                        Blacklist of websites
+                        <br>
+                        <br>
+                        Intended to avoid contributing click revenue to opposition web sites.
+                        <br>
+                        <br>
+                        Can be bypassed by using archive
+                      </div><!-- carousel item -->
+                    </div><!-- carousel inner -->
+                  </div><!-- carousel slide -->
+                </div><!-- container -->
+                </div><!-- col-6 -->
+              </div><!-- row -->
+            </div><!-- container -->
+          </div><!-- #promptBurden .collapse -->
+        </div><!-- abra-accordion -->
+        <div class="abra-accordion">
+
+          <a href="#promptBurden2" data-toggle="collapse">
+            <!-- <h4 class="pt-2">Burden of responding to prompts was low</h4> -->
+            <span class="abra-accordion-title abra-anchor-on-gray">
+              RQ3. The lock-screen platform had positive and negative effects on user behavior
+            </span>
+          </a>
+          <div id="promptBurden2" class="collapse">
+            <div class="row">
+              <div class="col-8">
+                <p>
+                  On average the users responded to the majority of question prompts,
+                  in spite of the volume.  However, there were contexts in which the
+                  users gave random answers.  If the question appeared while the user
+                  was doing other tasks, for example, the quality of the response
+                  was more likely to suffer.
+                  <br>
+                  <br>
+                  'I was driving, and I was trying to change the song on my phone,
+                  and then the question popped up, but then it was really awkward
+                  trying not to get into an accident, but skip the question...' &mdash;P16
+                </p>
+
+                <p>
+                  In terms of enabling fast responses, were we victims of our own success?
+                  We speculate that the tendency users to spend the same average amount
+                  of time on questions of different complexity can be attributed to
+                  the speed afforded by the lock-screen system.  The mere ability
+                  to respond very quickly may have created a norm of quick responses.
+                </p>
+              </div><!-- col-8 -->
+            </div><!-- row -->
+
+          </div><!-- #promptBurden -->
+        </div><!-- abra-accordion -->
+        <div class="abra-accordion">
+
+          <a href="#pamMsmBehavior" data-toggle="collapse">
+            <!-- <h4 class="pt-2">Burden of responding to prompts was low</h4> -->
+            <span class="abra-accordion-title abra-anchor-on-gray">
+              RQ4. PAM and MSM had generally bad effects on user behavior
+            </span>
+          </a>
+          <div id="pamMsmBehavior" class="collapse">
+            <div class="row">
+              <div class="col-6">
+                <p>
+                  The increased burden caused some users to adapt their behaviors in various
+                  ways.  Others unwittingly gave inappropriate answers because of a mental
+                  model mismatch.
+                </p>
+              </div><!-- col-6 -->
+              <div class="col-6">
+                <div class="container">
+                <div class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+
+                    </div><!-- carousel item -->
+                    <div class="carousel-item">
+
+                      <div class="container">
+                        <h5 class="text-center">mapping problem</h5>
+                        <div class="row">
+                          <p class="blurb">
+                            “I never picked or very, very rarely picked the ones
+                            with actual faces. Like other people's faces, when
+                            I'm trying to give my own emotions, it was like these
+                            were the people's faces. I always like choose the,
+                            either the landscapes or the dog or something.”
+                          </p>
+                        </div><!-- row -->
+                      </div><!-- container -->
+
+                    </div><!-- carousel item -->
+                    <div class="carousel-item">
+
+                      <div class="container">
+                        <h5 class="text-center">reduced response set</h5>
+                        <div class="row">
+                          <p class="blurb">
+                            “After a couple of times, I just associated few of the pictures with few of my moods. If I was feeling this way I can
+                            just pick this picture. I really didn't bother about all of those pictures.”
+                          </p>
+                        </div><!-- row -->
+                      </div><!-- container -->
+
+                    </div><!-- carousel item -->
+                    <div class="carousel-item">
+
+                      <div class="container">
+                        <h5 class="text-center">simply repeating answers</h5>
+                        <div class="row">
+                          <p class="blurb">
+                            “After a couple of times, I just associated few of the pictures with few of my moods. If I was feeling this way I 
+                            can just pick this picture. I really didn't bother about all of those pictures.”
+                          </p>
+                        </div><!-- row -->
+                      </div><!-- container -->
+
+                    </div><!-- carousel item -->
+                    <div class="carousel-item">
+
+                      <div class="container">
+                        <h5 class="text-center">circumstances instead of stress magnitude</h5>
+                        <div class="row">
+                          <p class="blurb">
+                            “It's usually what I was doing at the time, so if I was studying for finals then I would pick the one with the sack of papers
+                             and the pen, but if I were so stressed (I just want to take a nap when I'm tired) then I would put the dog going to sleep.”
+                          </p>
+                        </div><!-- row -->
+                      </div><!-- container -->
+
+                    </div><!-- carousel item -->
+                  </div><!-- carousel inner -->
+                </div><!-- carousel slide -->
+              </div><!-- container -->
+            </div><!-- col-6 -->
+            </div><!-- row -->
+          </div><!-- #promptBurden -->
+        </div><!-- abra-accordion -->
+      </div><!-- container -->
+    </div><!-- row -->
+  </div><!-- container -->
+  </div><!-- container-fluid -->
+</template>
