@@ -1,0 +1,12 @@
+<template name='layout'>
+
+
+    {{> yield}}
+
+
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
+</template>

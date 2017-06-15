@@ -1,71 +1,640 @@
 <template name="postScholar">
-<div class="container">
-  <div class='display-2 text-center'>PostScholar</div>
 
-  <div class="row">
-    <div class="col">
+      <!-- <div class="row"
+           style="background:transparent url('/spinach-leaves.jpg') no-repeat center center /cover">
+        <div class="col-lg-12">
+          <div class="intro-text">
 
-      <h3 class=text-center>Background</h3>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- <section
+           style="background:transparent url('/spinach-leaves.jpg') no-repeat center center /cover">
+           <div class='display-1 text-center py-5'><strong>PostScholar</strong></div>
+
+      </section> -->
+
+      <section class="bg-abra-gray">
+        <div class='display-1 text-center py-5'><strong>PostScholar</strong></div>
+      </section>
+
+
+  <div class="container">
+    <h1 class="py-4">When searching for academic articles, how can you tell which ones caused a stir
+    beyond the research community?</h1>
+  <div class="row pb-4"><!-- intro -->
+    <div class="col-12 col-sm-6">
+
+
+
       <p class="blurb">
-        When browsing research articles, is it easy to tell which ones made a splash outside of the research community?  Was there widespread social commentary, policy change, or controversy in response to the research?  Current discovery tools reveal little about the full range of social responses.  PostScholar poses a solution that helps researchers survey the broader response to research reports when deciding what to explore more deeply.
+        Problem: Sometimes an academic article can lead an exciting public life, but it might be hard
+        to tell when it shows up in your search results.
       </p>
+      <p class="blurb">
+        To illustrate the problem, let's take a scandal about <strong>whether spinach really is an
+        outstanding source of iron</strong>. TJ Hamblin debunked this myth by reporting this
+        realization, made by German chemists in the 1930s: a misplaced decimal had caused a "tenfold
+        overestimate" of iron levels in spinach!
+      <p class="blurb">
+        Hablin's warning about the lasting public damage done by this kind of carelessness was
+        cited for decades until Hamblin's account was itself <strong>debunked</strong>.  There
+        was no misplaced decimal, only a chain of scandalously poor citation checking.
+      </p>
+
+      </p>
+
 
     </div><!--col-->
-    <div class="col">
-      <h3 class=text-center>My Role</h3>
-
-        <ul class="list-unstyled blurb">
-        <li>background research</li>
-        <li>front-end design</li>
-        <li>browser plugin implementation</li>
-      </ul>
-
-    </div>
-  </div>
-  <section id="research" class="bg-faded">
-  <div class="row">
-    <div class="col">
-      <h3 class=text-center>The Shortcomings of Citations</h3>
-      <div class="row">
-        <div class="col">
-          <p class="blurb">
-            The traditional dialog carried out through research publications is sluggish.  The process of publication alone can add a year or more between one article and a response in a subsequent article.  This makes citation chains a lagging indicator of reactions.  Yet they are still a prevailing tool for finding dialog within a research domain.
-            <br>
-            Research can rapidly gain attention in the popular press.  It can activate people in social media.  The collection of these responses has been referred to as altmetrics.
-          </p>
-        </div><!--col-->
-        <div class="col">
-          <p class="blurb">
-      ooontie oontie oontie
-          </p><!--p-->
-        </div><!--col-->
-      </div><!--row-->
-    </div>
-  </div>
-  <div class="row">
-    <div class="col">
-      <h3 class=text-center>Cross purposes in altmetrics?</h3>
+    <div class="col-12 col-sm-6">
       <p class="blurb">
-        Companies aggregate and organize this data so that they can audit researchers and institutions in terms of social impact.  It’s a prominent aspect of grantsmanship and funding in general.  So, when counting how many times an article has been shared on Facebook or mentioned on Twitter, they are answering a different question:  what is the magnitude of this article’s social impact?
-        <br>
-        Compare this question to what researchers want to know while exploring what scholars have learned (Schneiderman?).  How can I relate this to my own work?  What do others think it’s important to focus on?  Should I expand my perspective?  The content of social media posts are more useful than a count of those posts.  I used secondary research to find principles that could guide our ideation.
+        <a class="link" data-toggle="collapse"
+        href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        Here's an example of how hard it is to notice the social repurcussions of articles in a search result.</a>
       </p>
-    </div>
+
+      <div class="collapse" id="collapseExample">
+        <div class="card">
+          <div class="card-block">
+            <h4 class="card-title">No apparent social activity</h4>
+            <p class="card-text">Looking at the top record in the search results, how could you tell that
+            OB Rekdal's 2014 article about this phenomenon has been mentioned in Slate Magazine,
+            four news outlets, various blogs, reddit, and more than 1000 tweets?</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+          <img class="card-img-bottom" src="/rekdal1.png" alt="Card image cap">
+        </div>
+      </div>
+      <p class="blurb">
+        Current discovery tools reveal little about the full range of social responses.
+        PostScholar poses a solution that helps researchers survey the broader
+        response to research reports when deciding what to explore more deeply.
+      </p>
+      <!-- table -->
+        <table class="table table-sm table-bordered table-hover">
+          <thead>
+            <tr>
+              <th class="text-center">Service</th>
+              <th class="text-center">Open Access</th>
+              <th class="text-center">Exposes Social Activity</th>
+              <th class="text-center">Social Discovery During Search</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Scopus</td>
+              <td class="text-center">No</td>
+              <td class="text-center">Yes</td>
+              <td class="text-center">No</td>
+            </tr>
+            <tr>
+              <td>Web of Science</td>
+              <td class="text-center">No</td>
+              <td class="text-center">No</td>
+              <td class="text-center">No</td>
+            </tr>
+            <tr>
+              <td>Google Scholar</td>
+              <td class="text-center">Yes</td>
+              <td class="text-center">No</td>
+              <td class="text-center">No</td>
+            </tr>
+            <tr>
+              <td>PostScholar</td>
+              <td class="text-center">Yes</td>
+              <td class="text-center">Yes</td>
+              <td class="text-center">Yes</td>
+            </tr>
+          </tbody>
+        </table>
+      <!-- table -->
+    </div><!-- col -->
   </div>
-</section>
-  <div class="row">
-    <div class="col">
-      <h3 class=text-center>Preference for Single Interface</h3>
-      <div class="row">
-        <div class="col">
-          <p class="blurb">
-            Researchers prefer using a single interface, even a single search box when conducting searches.  This preference has decreased the use of specific databases the rise of discovery systems, which present one interface for searching across collections and data types.  Principle: avoid solving the problem by adding a new interface.
-            <br>
-            The prevailing mental model for how search should work has been highly influenced by search engines, like Google’s.  This explains migration toward single search boxes and the prominence of Google Scholar.  Principle: embed solution within prevailing mental model (Google Scholar).
-          </p>
-        </div><!--col-->
-      </div><!--row-->
-    </div>
   </div>
-</div>
+
+  <section class="bg-abra-gray">
+    <h1 class="text-center pt-5">Background Research Plan</h1>
+
+    {{> backgroundResearchPlan}}
+
+    <!-- ////findings//// -->
+
+    <div class="container pt-5"><!-- ////////////// accordion section starts here ////////// -->
+      <h2 class="abra-section-title">
+        key findings
+      </h2>
+      <div class="abra-accordion">
+
+        <a href="#promptBurden" data-toggle="collapse">
+          <span class="abra-accordion-title abra-anchor-on-gray">
+            RQ1. What are the shortcomings of the competing services?
+          </span>
+        </a>
+        <div id="promptBurden" class="collapse">
+
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <p>
+                      <strong>Citation chains are a lagging indicator</strong>&mdash;
+                      The traditional dialog carried out through research publications
+                      is sluggish.  The process of publication alone can add a year
+                      or more between one article and a response in a subsequent article.
+                    </p>
+                    <p>
+                      <strong>Access is difficult</strong>&mdash;Researchers with no institutional
+                      affiliations, especially in developing nations, may have no
+                      lawful access to services.  Those who do must cope with authentication
+                      steps, remain on an institutional network, or use a proxy for access.
+                    </p>
+                    <p>
+                      <strong>Interface proliferation</strong>&mdash;Researchers had trouble
+                      using multiple interfaces to search multiple databases.  The mental model
+                      for how search should work has been highly influenced by the Google
+                      search engine.  This explains why discovery systems migrated toward
+                      single search boxes and why Google Scholar is a prominent tool in all
+                      reviewed search behaviors.
+                    </p>
+                  </div><!-- col-12 col-md-6 -->
+                </div><!-- row -->
+              </div><!-- container -->
+        </div><!-- #promptBurden -->
+      </div><!-- abra-accordion -->
+      <div class="abra-accordion">
+
+        <a href="#promptBurden1" data-toggle="collapse">
+          <!-- <h4 class="pt-2">Burden of responding to prompts was low</h4> -->
+          <span class="abra-accordion-title abra-anchor-on-gray">RQ2. Who would use this new service?</span>
+        </a>
+        <div id="promptBurden1" class="collapse">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-sm-6">
+                <p>
+                  This service is suitable for undergraduates and novices in new domains.
+                  These researchers are making sense of unfamiliar information, and they explore
+                  widely to gain perspective.  In contrast, faculty and experienced researchers search
+                  <em>exclusively</em>, because they know what they want and can work faster
+                  with a higher signal-to-noise ratio.  Perceiving the social activity of an article
+                  fits in well with the discovery approach that less experienced researchers engage in.
+                </p>
+              </div><!-- col-12 col-sm-612 col-md-6 -->
+              <div class="col-12 col-sm-6">
+              </div><!-- container -->
+              <div class="container">
+                <table class="table table-sm table-bordered table-hover">
+                  <thead>
+                    <tr>
+                      <th class="text-center">Search Phase</th>
+                      <th class="text-center">Directed</th>
+                      <th class="text-center">Discovery</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Information Orientation</td>
+                      <td class="text-center">Exclusive</td>
+                      <td class="text-center">Inclusive</td>
+                    </tr>
+                    <tr>
+                      <td>Objective</td>
+                      <td class="text-center">Peruse</td>
+                      <td class="text-center">Collect</td>
+                    </tr>
+                    <tr>
+                      <td>Progress</td>
+                      <td class="text-center">Linear</td>
+                      <td class="text-center">Non-linear</td>
+                    </tr>
+                    <tr>
+                      <td>Success Criteria</td>
+                      <td class="text-center">Efficiency</td>
+                      <td class="text-center">Serendipity</td>
+                    </tr>
+                    <tr>
+                      <td>Likely Population</td>
+                      <td class="text-center">Faculty &amp; Experienced Researchers</td>
+                      <td class="text-center">Undergraduates &amp; Domain Novices</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div><!-- col-12 col-md-6 -->
+            </div><!-- row -->
+          </div><!-- container -->
+        </div><!-- #promptBurden .collapse -->
+      </div><!-- abra-accordion -->
+      <div class="abra-accordion">
+
+        <a href="#promptBurden2" data-toggle="collapse">
+          <!-- <h4 class="pt-2">Burden of responding to prompts was low</h4> -->
+          <span class="abra-accordion-title abra-anchor-on-gray">
+            RQ3. The lock-screen platform had positive and negative effects on user behavior
+          </span>
+        </a>
+        <div id="promptBurden2" class="collapse">
+          <div class="row">
+            <div class="col-12 col-sm-8">
+              <p>
+                On average the users responded to the majority of question prompts,
+                in spite of the volume.  However, there were contexts in which the
+                users gave random answers.  If the question appeared while the user
+                was doing other tasks, for example, the quality of the response
+                was more likely to suffer.
+                <br>
+                <br>
+                'I was driving, and I was trying to change the song on my phone,
+                and then the question popped up, but then it was really awkward
+                trying not to get into an accident, but skip the question...' &mdash;P16
+              </p>
+
+              <p>
+                In terms of enabling fast responses, were we victims of our own success?
+                We speculate that the tendency users to spend the same average amount
+                of time on questions of different complexity can be attributed to
+                the speed afforded by the lock-screen system.  The mere ability
+                to respond very quickly may have created a norm of quick responses.
+              </p>
+            </div><!-- col-8 -->
+          </div><!-- row -->
+
+        </div><!-- #promptBurden -->
+      </div><!-- abra-accordion -->
+      <div class="abra-accordion">
+
+        <a href="#pamMsmBehavior" data-toggle="collapse">
+          <!-- <h4 class="pt-2">Burden of responding to prompts was low</h4> -->
+          <span class="abra-accordion-title abra-anchor-on-gray">
+            RQ4. PAM and MSM had generally bad effects on user behavior
+          </span>
+        </a>
+        <div id="pamMsmBehavior" class="collapse">
+          <div class="row">
+            <div class="col-12 col-sm-6">
+              <p>
+                The increased burden caused some users to adapt their behaviors in various
+                ways.  Others unwittingly gave inappropriate answers because of a mental
+                model mismatch.
+              </p>
+            </div><!-- col-12 col-md-6 -->
+            <div class="col-12 col-sm-6">
+              <div class="container">
+              <div class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+
+                  </div><!-- carousel item -->
+                  <div class="carousel-item">
+
+                    <div class="container">
+                      <h5 class="text-center">mapping problem</h5>
+                      <div class="row">
+                        <p class="blurb">
+                          “I never picked or very, very rarely picked the ones
+                          with actual faces. Like other people's faces, when
+                          I'm trying to give my own emotions, it was like these
+                          were the people's faces. I always like choose the,
+                          either the landscapes or the dog or something.”
+                        </p>
+                      </div><!-- row -->
+                    </div><!-- container -->
+
+                  </div><!-- carousel item -->
+                  <div class="carousel-item">
+
+                    <div class="container">
+                      <h5 class="text-center">reduced response set</h5>
+                      <div class="row">
+                        <p class="blurb">
+                          “After a couple of times, I just associated few of the pictures with few of my moods. If I was feeling this way I can
+                          just pick this picture. I really didn't bother about all of those pictures.”
+                        </p>
+                      </div><!-- row -->
+                    </div><!-- container -->
+
+                  </div><!-- carousel item -->
+                  <div class="carousel-item">
+
+                    <div class="container">
+                      <h5 class="text-center">simply repeating answers</h5>
+                      <div class="row">
+                        <p class="blurb">
+                          “After a couple of times, I just associated few of the pictures with few of my moods. If I was feeling this way I
+                          can just pick this picture. I really didn't bother about all of those pictures.”
+                        </p>
+                      </div><!-- row -->
+                    </div><!-- container -->
+
+                  </div><!-- carousel item -->
+                  <div class="carousel-item">
+
+                    <div class="container">
+                      <h5 class="text-center">circumstances instead of stress magnitude</h5>
+                      <div class="row">
+                        <p class="blurb">
+                          “It's usually what I was doing at the time, so if I was studying for finals then I would pick the one with the sack of papers
+                           and the pen, but if I were so stressed (I just want to take a nap when I'm tired) then I would put the dog going to sleep.”
+                        </p>
+                      </div><!-- row -->
+                    </div><!-- container -->
+
+                  </div><!-- carousel item -->
+                </div><!-- carousel inner -->
+              </div><!-- carousel slide -->
+            </div><!-- container -->
+          </div><!-- col-12 col-md-6 -->
+          </div><!-- row -->
+        </div><!-- #promptBurden -->
+      </div><!-- abra-accordion -->
+    </div><!-- container -->
+
+  </section><!-- bg-abra-gray /////////// accordion section ends here ////////////-->
+</template>
+
+<template name="backgroundResearchPlan">
+  <div class="container">
+    <hr>
+    <div class="row">
+      <div class="col-12 col-sm-6">
+        <p class="blurb">
+          <strong>Purpose:</strong>
+          Generative background research.  Describe the opportunity for a new information
+          search service.
+          <br>
+          <br>
+          <strong>Research team:</strong> Larry Chan, Shagun Jhaver, Sandeep Soni
+          <br>
+          <br>
+          <strong>
+          Research Questions:
+          </strong>
+        </p>
+        <ul>
+          <li>What are the shortcomings of the competing services?</li>
+          <li>Who would use this new service?</li>
+          <li>What are the key design principles?</li>
+        </ul>
+      </div><!--col-->
+      <div class="col">
+
+        <p class="blurb">
+          <strong>Methodology</strong>: literature review, prototype demo
+          <br>
+          <br>
+          <strong>Time required:</strong>
+          <br>
+          literature review: 5 hours
+          <br>
+          backend development: 10 hours
+          <br>
+          browser plugin development: 4 hours
+          <br>
+          demo at conference: 8 hours
+          <br>
+          <br>
+          <strong>My role:</strong> literature review;
+          browser plugin development (on a team of two);
+          manuscript preparation (one of three authors);
+          I was not involved with backend development.
+          <br>
+        </p>
+
+    </div><!-- col -->
+  </div><!-- row -->
+  </div><!-- container -->
+</template>
+
+<template name="findings">
+  <div class="container pt-5"><!-- ////////////// accordion section starts here ////////// -->
+    <h2 class="abra-section-title">
+      key findings
+    </h2>
+    <div class="abra-accordion">
+
+      <a href="#promptBurden" data-toggle="collapse">
+        <span class="abra-accordion-title abra-anchor-on-gray">
+          RQ1. The lock-screen platform did reduce the burden of responding to scheduled questions
+        </span>
+      </a>
+      <div id="promptBurden" class="collapse">
+
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-sm-6">
+                  <p>
+                    Response times were fast.  The average response time (from
+                    presentation of the question to completing an answer) was 5.68
+                    seconds.  In fact, this response time did not differ significantly
+                    from the average time it took users to unlock their phones.
+                  </p>
+                  <p>
+                    People responded to a high volume of questions, and no one
+                    in the focus groups suggested that the volume was too high.
+                    In fact, some suggested that it would be better to ask even
+                    more frequently:  "Yeah, the how do you feel right now and
+                    what are you doing right now, that could be asked a bit more
+                    frequently." &mdash;p18
+                  </p>
+                </div><!-- col-12 col-md-6 -->
+                <div class="col-12 col-sm-6">
+
+                    <img src="/RT_Unlock_BoxPlot.png" class="img-fluid">
+
+                </div><!-- col-12 col-md-6 -->
+              </div><!-- row -->
+            </div><!-- container -->
+      </div><!-- #promptBurden -->
+    </div><!-- abra-accordion -->
+    <div class="abra-accordion">
+
+      <a href="#promptBurden1" data-toggle="collapse">
+        <!-- <h4 class="pt-2">Burden of responding to prompts was low</h4> -->
+        <span class="abra-accordion-title abra-anchor-on-gray">RQ2. PAM and PSM did not reduce burden</span>
+      </a>
+      <div id="promptBurden1" class="collapse">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-6">
+              <p>
+                While some participants enjoyed these image-based questions and
+                used them successfully, others expressed <strong>problems mapping</strong> their
+                emotions onto the images.
+              </p>
+              <p>
+                Other people complained that there were too many images.  This
+                sentiment revealed problems with the <strong>mental
+                models</strong> of how the question works. (continuous vs discontinuous)
+              </p>
+              <p>
+                A 4 x 4 grid of discrete representations of valence and arousal
+                presents users with a 16-item search task, which carries a significant
+                <strong>cognitive load</strong>.  Randomization of these images
+                compromises the <strong>memorability</strong>
+                of the interface.
+              </p>
+            </div><!-- col-12 col-md-6 -->
+            <div class="col-12 col-sm-6">
+              <div class="container">
+              <div class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+
+                  </div><!-- carousel item -->
+                  <div class="carousel-item">
+                    archiving
+                    <br>
+                    <br>
+                    <p>deepfreeze</p>
+                    <br>
+                    <br>
+                    mnemosyne is a bot that automatically archives every post on KiA
+                    <br>
+                    <br>
+                    modlog.github.io an external feed of collected Reddit moderation action
+                  </div><!-- carousel item -->
+                  <div class="carousel-item">
+                    Thunderclap
+                    <br>
+                    <br>
+                  </div><!-- carousel item -->
+                  <div class="carousel-item">
+                    Blacklist of websites
+                    <br>
+                    <br>
+                    Intended to avoid contributing click revenue to opposition web sites.
+                    <br>
+                    <br>
+                    Can be bypassed by using archive
+                  </div><!-- carousel item -->
+                </div><!-- carousel inner -->
+              </div><!-- carousel slide -->
+            </div><!-- container -->
+            </div><!-- col-12 col-md-6 -->
+          </div><!-- row -->
+        </div><!-- container -->
+      </div><!-- #promptBurden .collapse -->
+    </div><!-- abra-accordion -->
+    <div class="abra-accordion">
+
+      <a href="#promptBurden2" data-toggle="collapse">
+        <!-- <h4 class="pt-2">Burden of responding to prompts was low</h4> -->
+        <span class="abra-accordion-title abra-anchor-on-gray">
+          RQ3. The lock-screen platform had positive and negative effects on user behavior
+        </span>
+      </a>
+      <div id="promptBurden2" class="collapse">
+        <div class="row">
+          <div class="col-12 col-sm-8">
+            <p>
+              On average the users responded to the majority of question prompts,
+              in spite of the volume.  However, there were contexts in which the
+              users gave random answers.  If the question appeared while the user
+              was doing other tasks, for example, the quality of the response
+              was more likely to suffer.
+              <br>
+              <br>
+              'I was driving, and I was trying to change the song on my phone,
+              and then the question popped up, but then it was really awkward
+              trying not to get into an accident, but skip the question...' &mdash;P16
+            </p>
+
+            <p>
+              In terms of enabling fast responses, were we victims of our own success?
+              We speculate that the tendency users to spend the same average amount
+              of time on questions of different complexity can be attributed to
+              the speed afforded by the lock-screen system.  The mere ability
+              to respond very quickly may have created a norm of quick responses.
+            </p>
+          </div><!-- col-8 -->
+        </div><!-- row -->
+
+      </div><!-- #promptBurden -->
+    </div><!-- abra-accordion -->
+    <div class="abra-accordion">
+
+      <a href="#pamMsmBehavior" data-toggle="collapse">
+        <!-- <h4 class="pt-2">Burden of responding to prompts was low</h4> -->
+        <span class="abra-accordion-title abra-anchor-on-gray">
+          RQ4. PAM and MSM had generally bad effects on user behavior
+        </span>
+      </a>
+      <div id="pamMsmBehavior" class="collapse">
+        <div class="row">
+          <div class="col-12 col-sm-6">
+            <p>
+              The increased burden caused some users to adapt their behaviors in various
+              ways.  Others unwittingly gave inappropriate answers because of a mental
+              model mismatch.
+            </p>
+          </div><!-- col-12 col-md-6 -->
+          <div class="col-12 col-sm-6">
+            <div class="container">
+            <div class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+
+                </div><!-- carousel item -->
+                <div class="carousel-item">
+
+                  <div class="container">
+                    <h5 class="text-center">mapping problem</h5>
+                    <div class="row">
+                      <p class="blurb">
+                        “I never picked or very, very rarely picked the ones
+                        with actual faces. Like other people's faces, when
+                        I'm trying to give my own emotions, it was like these
+                        were the people's faces. I always like choose the,
+                        either the landscapes or the dog or something.”
+                      </p>
+                    </div><!-- row -->
+                  </div><!-- container -->
+
+                </div><!-- carousel item -->
+                <div class="carousel-item">
+
+                  <div class="container">
+                    <h5 class="text-center">reduced response set</h5>
+                    <div class="row">
+                      <p class="blurb">
+                        “After a couple of times, I just associated few of the pictures with few of my moods. If I was feeling this way I can
+                        just pick this picture. I really didn't bother about all of those pictures.”
+                      </p>
+                    </div><!-- row -->
+                  </div><!-- container -->
+
+                </div><!-- carousel item -->
+                <div class="carousel-item">
+
+                  <div class="container">
+                    <h5 class="text-center">simply repeating answers</h5>
+                    <div class="row">
+                      <p class="blurb">
+                        “After a couple of times, I just associated few of the pictures with few of my moods. If I was feeling this way I
+                        can just pick this picture. I really didn't bother about all of those pictures.”
+                      </p>
+                    </div><!-- row -->
+                  </div><!-- container -->
+
+                </div><!-- carousel item -->
+                <div class="carousel-item">
+
+                  <div class="container">
+                    <h5 class="text-center">circumstances instead of stress magnitude</h5>
+                    <div class="row">
+                      <p class="blurb">
+                        “It's usually what I was doing at the time, so if I was studying for finals then I would pick the one with the sack of papers
+                         and the pen, but if I were so stressed (I just want to take a nap when I'm tired) then I would put the dog going to sleep.”
+                      </p>
+                    </div><!-- row -->
+                  </div><!-- container -->
+
+                </div><!-- carousel item -->
+              </div><!-- carousel inner -->
+            </div><!-- carousel slide -->
+          </div><!-- container -->
+        </div><!-- col-12 col-md-6 -->
+        </div><!-- row -->
+      </div><!-- #promptBurden -->
+    </div><!-- abra-accordion -->
+  </div><!-- container -->
 </template>

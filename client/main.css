@@ -1,7 +1,9 @@
 /* CSS declarations go here */
 
 .blurb {
-  padding: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
 }
 
 .bg-abra-gray {
@@ -84,7 +86,6 @@
         position: relative;*/
 
 }
-
 
 
 /*-----*/
