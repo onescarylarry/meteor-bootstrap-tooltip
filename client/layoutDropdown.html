@@ -1,0 +1,54 @@
+<template name='layoutDropdown'>
+  <!-- navbar -->
+
+  <!-- <nav class="navbar navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Project name</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> -->
+
+  <nav class="navbar fixed-top navbar-inverse" style="background-color: black">
+    <div class="container">
+      <div class="container d-flex justify-content-between" style="width: 100%">
+        <a class="nav-item nav-link larryLogo" href="/home">Larry Chan</a>
+        <div class="navbar-nav">
+            <div class="dropdown">
+              <a class="nav-item nav-link dropdown-toggle" href="#" data-toggle="dropdown">Projects</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/kia">kia</a>
+                <a class="dropdown-item" href="/postScholar">postScholar</a>
+                <a class="dropdown-item" href="/ema">EMA</a>
+                <a class="dropdown-item" href="/">home</a>
+              </div><!-- dropdown-menu -->
+            </div><!-- dropdown -->
+        </div><!-- navbar-nav -->
+      </div><!-- container -->
+    </div><!-- container -->
+
+  </nav>
+
+  {{> yield}}
+
+
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
+
+</template>

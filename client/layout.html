@@ -24,29 +24,30 @@
 
   <nav class="navbar fixed-top navbar-inverse navbar-toggleable-md" style="background-color: black">
 
-      <div class="navbar-nav">
-        <div class="container d-flex">
+      <div class="container navbar-nav">
+        <div class="d-flex">
 
+          <button class="navbar-toggler navbar-toggler-right" type="button"
+          data-toggle="collapse" data-target="#projectLinks">
+            <div class="container">
+              <span class="navbar-toggler-icon"></span>
+            </div><!-- container -->
+          </button>
 
-        <button class="navbar-toggler navbar-toggler-right" type="button"
-        data-toggle="collapse" data-target="#projectLinks">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-      <div class="container">
+          <div class="container">
+            <a class="nav-item nav-link larryLogo" href="/home">Larry Chan</a>
+          </div><!-- container -->
 
-        <a class="nav-item nav-link larryLogo" href="/home">Larry Chan</a>
-      </div><!-- container -->
+          <div class="collapse navbar-collapse justify-content-end" id="projectLinks">
+            <div class="d-flex justify-content-end">
+              <a class="nav-item nav-link" href="/kia">kia</a>
+              <a class="nav-item nav-link" href="/postScholar">postScholar</a>
+              <a class="nav-item nav-link" href="/ema">EMA</a>
+              <a class="nav-item nav-link" href="/">home</a>
+            </div><!-- flex -->
+          </div><!-- collapse navbar-collapse -->
 
-        <div class="collapse navbar-collapse justify-content-end" id="projectLinks">
-          <div class="d-flex justify-content-end">
-            <a class="nav-item nav-link" href="/kia">kia</a>
-            <a class="nav-item nav-link" href="/postScholar">postScholar</a>
-            <a class="nav-item nav-link" href="/ema">EMA</a>
-            <a class="nav-item nav-link" href="/">home</a>
-          </div><!-- flex -->
-        </div><!-- collapse navbar-collapse -->
-
-        </div><!-- container -->
+        </div><!-- d-flex -->
       </div><!-- navbar-nav -->
 
   </nav>
