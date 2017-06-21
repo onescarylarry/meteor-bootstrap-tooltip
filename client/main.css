@@ -1,4 +1,44 @@
 /* CSS declarations go here */
+body {
+  /*font-family: 'Source Code Pro', monospace;
+  font-family: 'Fira Mono', monospace;
+  font-family: 'Bungee Hairline', cursive;*/
+  font-family: 'Work Sans', sans-serif;
+}
+
+.carousel-item {
+  height: 30rem;
+}
+
+.navbar-nav .container {
+  width: 100%;
+}
+
+.fullScreen {
+  height: 100%;
+}
+
+/*.display {
+  font-family: 'Source Code Pro', monospace;
+}*/
+
+.nav-item {
+  font-family: 'Source Code Pro', monospace;
+}
+
+.sourceCodePro {
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 500;
+}
+
+.larryLogo {
+  font-family: 'Fira Mono', monospace;
+  font-size: 1rem;
+  font-weight: bolder;
+  color: white;
+  border-top: 4px;
+  border-bottom: 4px;
+}
 
 .blurb {
   padding-left: 1rem;
@@ -15,7 +55,7 @@
   /*color: #fffbe9;*/
 }
 
-.abra-section-title, .bb-subsection-title {
+.abra-section-title, .abra-subsection-title {
     /*border-color: #F9F9F6;*/
     border-style: solid;
     border-top-style: solid;

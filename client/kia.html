@@ -1,6 +1,6 @@
 <template name="kia">
   <div class="container">
-  <div class='display-2 text-center pb-5'>Kotaku in Action</div>
+  <div class='sourceCodePro display-2 text-center py-5'>Kotaku in Action</div>
 
   <div class="row">
     <div class="col-sm-6">
@@ -71,11 +71,18 @@
   </section>
 
   <section class="bg-info pt-5">
+    <div class="container">
+
     {{> responsesToDesign}}
+
+    </div>
   </section>
 
   <section class="bg-faded pt-5">
+    <div class="container">
+
     {{> goals}}
+    </div>
   </section>
 
 </template>
@@ -457,7 +464,7 @@
         </div><!--col-->
         <div class="col-md-6">
           <div class="container">
-          <div class="carousel slide" data-ride="carousel">
+          <div class="carousel slide" id="goals" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 Homophily without banishment
@@ -477,7 +484,12 @@
                 Documentation for good
               </div><!-- carousel item -->
             </div><!-- carousel inner -->
+            <a class="carousel-control-prev" href="#goals" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"><span class="sr-only">Previous</span></span>
+            </a>
+
           </div><!-- carousel slide -->
+
         </div><!-- container -->
         </div><!--col-->
       </div><!--row-->
@@ -502,46 +514,50 @@
             Archive?
           </p>
         </div><!--col-->
-        <div class="col-md-6">
-          <div class="container">
-          <div class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-
-              </div><!-- carousel item -->
-              <div class="carousel-item">
-                archiving
-                <br>
-                <br>
-                <p>deepfreeze</p>
-                <br>
-                <br>
-                mnemosyne is a bot that automatically archives every post on KiA
-                <br>
-                <br>
-                modlog.github.io an external feed of collected Reddit moderation action
-              </div><!-- carousel item -->
-              <div class="carousel-item">
-                Thunderclap
-                <br>
-                <br>
-              </div><!-- carousel item -->
-              <div class="carousel-item">
-                Blacklist of websites
-                <br>
-                <br>
-                Intended to avoid contributing click revenue to opposition web sites.
-                <br>
-                <br>
-                Can be bypassed by using archive
-              </div><!-- carousel item -->
-            </div><!-- carousel inner -->
-          </div><!-- carousel slide -->
-        </div><!-- container -->
-        </div><!--col-->
       </div><!--row-->
-    </div>
-  </div>
+    </div><!-- col-sm-6 -->
+    <div class="col-sm-6">
+        <div class="carousel slide" id="responsesToDesign" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+
+            </div><!-- carousel item -->
+            <div class="carousel-item">
+              archiving
+              <br>
+              <br>
+              <p>deepfreeze</p>
+              <br>
+              <br>
+              mnemosyne is a bot that automatically archives every post on KiA
+              <br>
+              <br>
+              modlog.github.io an external feed of collected Reddit moderation action
+            </div><!-- carousel item -->
+            <div class="carousel-item">
+              Thunderclap
+              <br>
+              <br>
+            </div><!-- carousel item -->
+            <div class="carousel-item">
+              Blacklist of websites
+              <br>
+              <br>
+              Intended to avoid contributing click revenue to opposition web sites.
+              <br>
+              <br>
+              Can be bypassed by using archive
+            </div><!-- carousel item -->
+          </div><!-- carousel inner -->
+          <a class="carousel-control-prev" href="#responsesToDesign" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"><span class="sr-only">Previous</span></span>
+          </a>
+          <a class="carousel-control-next" href="#responsesToDesign" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"><span class="sr-only">Previous</span></span>
+          </a>
+        </div><!-- carousel slide -->
+    </div><!-- col-sm-6 -->
+  </div><!-- row -->
 </template>
 
 <template name="updates">

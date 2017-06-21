@@ -1,9 +1,10 @@
 <template name="ema">
 
     <section class="bg-abra-gray">
-      <div class='display-2 text-center pb-5'>Ambulatory Assessment of College Student Emotional Well-being</div>
-
       <div class="container">
+
+      <div class='display-4 text-center py-5 sourceCodePro'>EMA for Emotional Well-being</div>
+
 
 
       </div><!-- container -->
@@ -47,9 +48,10 @@
     <hr>
     <div class="row">
       <div class="col-md-6">
-        <h5>Wait&mdash;why ask that many times?</h5>
+        <h5 class="sourceCodePro">Wait&mdash;why ask that many times?</h5>
         <p>
-          Even though emotion researchers are starting to use facial expressions, heart rate,
+          Asking is important.  Even though emotion researchers are starting to use facial
+          expressions, heart rate,
           and typing velocity to measure emotion, there's no better way to get the subjective
           quality of someone's emotion than asking them.  There's a good reason to ask
           very frequently too.  Time patterns in emotion are a key indicator of instability
@@ -60,9 +62,9 @@
           risk for emotional problems</span>, we focused on measuring the time course
           of their emotions.  Doing this well is crucial from a clinical and public health
           pespective.
-        <p>
-        <h5>The EMA burden</h5>
         </p>
+        <h5 class="sourceCodePro">The EMA burden</h5>
+        <p>
           Ecological Momentary Assessment (EMA) is one name for the technique of answering
           a question repeatedly over time.  It's easy to see how that experience
           can become a burden.  For this project, we broke burden down into three components:
@@ -77,6 +79,7 @@
         </p>
       </div><!--col-->
       <div class="col-md-6">
+        <img src="/asd1.png" class="img-fluid" alt="should see asd1">
 
         <!-- put images here -->
 
@@ -90,14 +93,14 @@
   <div class="container-fluid">
 
   <div class="container">
-    <h1 class="text-center">The Design Task</h1>
+    <h1 class="text-center sourceCodePro py-4">The Design Task</h1>
     <hr>
-    <div class="row">
+    <div class="row pt-4">
       <div class="col-md-6">
         <h3>Design an EMA study system of student
           emotion that reduces the burden of interruption, effort, and time.</h3>
         <hr>
-        <h5>Conventional notification-based EMA vs. Lock-screen</h5>
+        <h5 class="sourceCodePro">Conventional notification-based EMA vs. Lock-screen</h5>
         <p>
           How do you know when it's time to answer a question?  Conventional
           notification-based EMA systems message you on channels like email or SMS, telling
@@ -136,8 +139,12 @@
           taxonomy
           </strong>.</span>
         </p>
-        <hr>
-        <h5>Image-based questions to assess mood and stress</h5>
+
+      </div><!--col-->
+
+      <div class="col-md-6">
+
+        <h5 class="sourceCodePro">Image-based questions to assess mood and stress</h5>
         <p>
           Traditional mood and stress questions have been well established in experimental
           and clinical literature.  The Positive and Negative Affect Schedule (PANAS)
@@ -165,7 +172,7 @@
           </ol>
         </p>
         <hr>
-        <h5>Adapting image-based questions for lock-screen system</h5>
+        <h5 class="sourceCodePro">Adapting image-based questions for lock-screen system</h5>
         <p>
           Putting interfaces on a lock-screen increases the risk of error through
           inadvertent action.  If the emotion question becomes active on the display
@@ -185,23 +192,6 @@
           a glance to locate the image a second time.  Dragging the target image
           obviates the final glance.
         </p>
-        <p>
-          There were many emotion question alternatives to choose from.  I recommended
-          that we use PAM and MSM for three reasons.
-          <ol>
-            <li>They are brief</li>
-            <li>They have not yet been fully assessed qualitatively in a pilot study</li>
-            <li>
-              We would be matching the data collection of three other sites in a
-              <span data-toggle="tooltip" data-placement="bottom" title="We did this pilot
-              as part of a multi-site consortium of universities, including CMU, Cornell,
-              and Dartmouth.  Each of these three used PAM."><strong>consortium
-              </strong></span>
-            </li>
-          </ol>
-        </p>
-      </div><!--col-->
-      <div class="col-md-6">
       </div><!--col-->
     </div><!--row-->
   </div><!-- container -->
@@ -210,12 +200,12 @@
 
 <template name="researchPlan">
   <div class="container">
-    <h1 class=text-center>Assessing the EMA system</h1>
+    <h1 class="text-center sourceCodePro">Assessing the EMA system</h1>
     <hr>
     <div class="row">
       <div class="col-md-6">
 
-      <h3 class=text-center>Study Context</h3>
+      <h3 class="text-center sourceCodePro">Study Context</h3>
       <p class="blurb">
         We had an opportunity to assess the EMA system in the context of a larger
         mobile-sensing study.  In addition to EMA data collection, the larger study used the sensors
@@ -223,7 +213,7 @@
         and other variables related to well-being.  (A detailed description of
         the larger study is here.)
       </p>
-      <h3 class=text-center>Participants</h3>
+      <h3 class="text-center sourceCodePro">Participants</h3>
       <p class="blurb">
         To evaluate the design of an EMA system for student emotions, we wanted
         to sample participants at the graduate and undergraduate level.  We only
@@ -236,7 +226,7 @@
 
     </div><!--col-->
       <div class="col-md-6">
-      <h3 class=text-center>Research Plan</h3>
+      <h3 class=text-center sourceCodePro>Research Plan</h3>
       <p class="blurb">
         Purpose: To assess the lock-screen EMA system from the perspective of
         participants.
@@ -292,7 +282,7 @@
   <div class="container-fluid pt-5">
     <div class="container">
 
-    <h1 class="text-center">Assessment Findings</h1>
+    <h1 class="text-center sourceCodePro">Assessment Findings</h1>
     <div class="row">
       <div class="col-md-6">
         <p class="blurb">
@@ -331,7 +321,7 @@
 
                 <div class="container">
                   <div class="row">
-                    <div class="col-md-6-6">
+                    <div class="col-md-6">
                       <p>
                         Response times were fast.  The average response time (from
                         presentation of the question to completing an answer) was 5.68
