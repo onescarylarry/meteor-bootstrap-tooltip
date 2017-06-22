@@ -15,9 +15,11 @@
 
       </section> -->
 
-      <section class="bg-abra-gray">
-        <div class='display-1 text-center py-5'><strong>PostScholar</strong></div>
-      </section>
+  <section class="bg-abra-gray">
+    <div class="container">
+      <div class='display-1 abra-page-top text-center pb-5'><strong>PostScholar</strong></div>
+    </div><!-- container -->
+  </section>
 
 
   <div class="container">
@@ -113,7 +115,7 @@
   </div>
 
   <section class="bg-abra-gray">
-    <h1 class="text-center pt-5">Background Research Plan</h1>
+    <h1 class="text-center pt-4 sourceCodePro">Background Research Plan</h1>
 
     {{> backgroundResearchPlan}}
 
@@ -346,8 +348,17 @@
         </div><!-- #promptBurden -->
       </div><!-- abra-accordion -->
     </div><!-- container -->
+    <!-- bg-abra-gray /////////// accordion section ends here ////////////-->
+  </section>
+  <section class="bg-faded">
+    <div class="container">
+      <h1 class="text-center pt-4 sourceCodePro">The Prototype</h1>
+    </div>
 
-  </section><!-- bg-abra-gray /////////// accordion section ends here ////////////-->
+    {{> postScholarPrototype}}
+
+  </section>
+
 </template>
 
 <template name="backgroundResearchPlan">
@@ -635,5 +646,59 @@
         </div><!-- row -->
       </div><!-- #promptBurden -->
     </div><!-- abra-accordion -->
+  </div><!-- container -->
+</template>
+
+<template name="postScholarPrototype">
+  <div class="container">
+    <hr>
+    <div class="row">
+      <div class="col-12 col-sm-6">
+        <p class="blurb">
+          <strong>Principle 1: add as few interfaces as possible.</strong>
+          <br>
+          <br>
+          Using a browser plugin, we modified an existing interface.  Additional views are hidden until the user takes action to explore.
+          <br>
+          <br>
+          <strong>
+          Principle 2: Embed solution within a prevailing mental model.
+          </strong>
+          <br>
+          <br>
+          Google and Google Scholar embody the preeminent mental models for search.  In the convention of Google Scholar, anchor tags appear at the bottom of each record.
+          <br>
+          <br>
+          <strong>
+          Principle 3: Show social signal at the search results level.
+          </strong>
+          <br>
+          <br>
+          Because the social signal is exposed for all records in a search result, the social information can be used as part of the exploration process.
+        </p>
+      </div><!--col-->
+      <div class="col">
+        <div class="carousel slide" id="prototypeViews" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active prototypeView_1">
+              <!-- <img src="/figures/facebookHover.png" class="img-fluid" alt="facebook hover"> -->
+            </div><!-- carousel item -->
+            <div class="carousel-item prototypeView_2">
+              <!-- <img src="/figures/FbHover.png" class="img-fluid" alt="facebook hover"> -->
+            </div><!-- carousel item -->
+            <div class="carousel-item prototypeView_3">
+              <!-- <img src="/figures/comments_details.png" class="img-fluid" alt="facebook hover"> -->
+            </div><!-- carousel item -->
+          </div><!-- carousel inner -->
+          <a class="carousel-control-prev" href="#prototypeViews" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"><span class="sr-only">Previous</span></span>
+          </a>
+          <a class="carousel-control-next" href="#prototypeViews" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"><span class="sr-only">Previous</span></span>
+          </a>
+        </div><!-- carousel slide -->
+
+      </div><!-- col -->
+    </div><!-- row -->
   </div><!-- container -->
 </template>
