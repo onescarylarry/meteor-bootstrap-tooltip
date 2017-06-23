@@ -10,6 +10,15 @@ h1 {
   font-family: 'Source Code Pro', sans-serif;
 }
 
+#poisonBottle {
+  margin-right: 0;
+}
+
+/*.postScholarPageTop {
+  background: url(/figures/scopus.png) center no-repeat;
+  background-size: cover;
+}*/
+
 .prototypeView_1 {
   background: url(/figures/facebookHover.png) center no-repeat;
   background-size: contain;
@@ -23,6 +32,18 @@ h1 {
 .prototypeView_3 {
   background: url(/figures/comments_details.png) center no-repeat;
     background-size: contain;
+}
+
+.abra-inset-section {
+  border-radius: 5px 0 0 5px;
+}
+
+.abra-table th, abra-table td {
+  boder: 0px !important;
+}
+
+.abra-no-decoration {
+  text-decoration: none;
 }
 
 .abra-page-top {
@@ -72,11 +93,11 @@ h1 {
 
 .bg-abra-gray {
   background: #72747d;
-  color: #F9F9F6
+  color: #F9F9F6;
 }
 
 .abra-anchor-on-gray {
-  /*color: #fffbe9;*/
+  color: #fffbe9;
 }
 
 .abra-section-title, .abra-subsection-title {

@@ -1,21 +1,5 @@
-<template name="postScholar">
-
-      <!-- <div class="row"
-           style="background:transparent url('/spinach-leaves.jpg') no-repeat center center /cover">
-        <div class="col-lg-12">
-          <div class="intro-text">
-
-          </div>
-        </div>
-      </div> -->
-
-      <!-- <section
-           style="background:transparent url('/spinach-leaves.jpg') no-repeat center center /cover">
-           <div class='display-1 text-center py-5'><strong>PostScholar</strong></div>
-
-      </section> -->
-
-  <section class="bg-abra-gray">
+<template name="kree">
+  <section class="bg-abra-gray postScholarPageTop">
     <div class="container">
       <div class='display-1 abra-page-top text-center pb-5'><strong>PostScholar</strong></div>
     </div><!-- container -->
@@ -23,33 +7,41 @@
 
 
   <div class="container">
-    <h1 class="py-4">When searching for academic articles, how can you tell which ones caused a stir
-    beyond the research community?</h1>
+    <h1 class="blurb">Social Perspective in Scholarly Search</h1>
     <div class="row pb-4"><!-- intro -->
     <div class="col-12 col-sm-6">
 
 
 
       <p class="blurb">
-        Problem: Sometimes an academic article can lead an exciting public life, but it might be hard
-        to tell when it shows up in your search results.
+        <strong>Problem</strong>
+        <br>
+        When searching for academic articles, how do you know which ones made a splash
+        outside of the research community?  An academic article can lead an exciting public life,
+        but it might be hard to tell by looking at your search results.
+      </p>
+      <p class="text-center">
+        <img src="/figures/scopus.png" alt="scopus" style="width: 100%">
       </p>
       <p class="blurb">
-        To illustrate the problem, let's take a scandal about <strong>whether spinach really is an
-        outstanding source of iron</strong>. TJ Hamblin debunked this myth by reporting this
-        realization, made by German chemists in the 1930s: a misplaced decimal had caused a "tenfold
-        overestimate" of iron levels in spinach!
-      <p class="blurb">
-        Hablin's warning about the lasting public damage done by this kind of carelessness was
-        cited for decades until Hamblin's account was itself <strong>debunked</strong>.  There
-        was no misplaced decimal, only a chain of scandalously poor citation checking.
+        For example, <a href="http://www.pnas.org/content/111/24/8788">this article</a>
+        reports how Facebook manipulated the emotions of its users.  According to Altmetric,
+        this article was mentioned by nearly
+        4000 twitter users.  It was cited in 413 stories from 229 news outlets, such as Forbes.
       </p>
-
-      </p>
+      <blockquote class="blockquote" cite="https://www.forbes.com/sites/dandiamond/2014/06/29/if-facebooks-secret-study-bothered-you-then-its-time-to-quit-facebook/#25b1fe42e4a2">
+        <p class="mb-0">If Facebook's Secret Study Bothered You, Then It's Time To Quit Facebook</p>
+        <footer class="blockquote-footer">Dan Diamond in <cite title="Forbes">Forbes</cite></footer>
+      </blockquote>
 
 
     </div><!--col-->
     <div class="col-12 col-sm-6">
+      <p class="blurb">
+        But the record in Scopus search results doesn't show that, and
+        neither does Google Scholar or Web of Science.  Here's a view of
+        how the full social impact is obscured by one statistic: citation count.
+      </p>
       <p class="blurb">
         <a class="link" data-toggle="collapse"
         href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
@@ -68,10 +60,14 @@
         </div>
       </div>
       <p class="blurb">
-        Current discovery tools reveal little about the full range of social responses.
-        PostScholar poses a solution that helps researchers survey the broader
-        response to research reports when deciding what to explore more deeply.
+        <strong>Solution</strong>
+        <br>
+        I used secondary research to chart the common ways people search for articles
+        and to see if a solution to this problem would be useful to anyone.  After targeting
+        a segment of the research population, I worked on a team to design and build a prototype.
+        Here is a summary of our process and findings.
       </p>
+      <p class="blurb">
       <!-- table -->
         <table class="table table-sm table-bordered table-hover">
           <thead>
@@ -110,6 +106,7 @@
           </tbody>
         </table>
       <!-- table -->
+    </p>
     </div><!-- col -->
   </div>
   </div>
@@ -117,11 +114,11 @@
   <section class="bg-abra-gray">
     <h1 class="text-center pt-4 sourceCodePro">Background Research Plan</h1>
 
-    {{> backgroundResearchPlan}}
+    {{> backgroundResearchPlan2}}
 
     <!-- ////findings//// -->
 
-    <div class="container pt-5"><!-- ////////////// accordion section starts here ////////// -->
+    <div class="container py-5"><!-- ////////////// accordion section starts here ////////// -->
       <h2 class="abra-section-title">
         key findings
       </h2>
@@ -165,13 +162,12 @@
       <div class="abra-accordion">
 
         <a href="#promptBurden1" data-toggle="collapse">
-          <!-- <h4 class="pt-2">Burden of responding to prompts was low</h4> -->
           <span class="abra-accordion-title abra-anchor-on-gray">RQ2. Who would use this new service?</span>
         </a>
         <div id="promptBurden1" class="collapse">
           <div class="container">
             <div class="row">
-              <div class="col-12 col-sm-6">
+              <div class="col-12 col-sm-8">
                 <p>
                   This service is suitable for undergraduates and novices in new domains.
                   These researchers are making sense of unfamiliar information, and they explore
@@ -226,124 +222,35 @@
         </div><!-- #promptBurden .collapse -->
       </div><!-- abra-accordion -->
       <div class="abra-accordion">
-
         <a href="#promptBurden2" data-toggle="collapse">
           <!-- <h4 class="pt-2">Burden of responding to prompts was low</h4> -->
-          <span class="abra-accordion-title abra-anchor-on-gray">
-            RQ3. The lock-screen platform had positive and negative effects on user behavior
+          <span class="abra-accordion-title abra-anchor-on-gray abra-no-decoration">
+            RQ3. What are the key design principles?
           </span>
         </a>
         <div id="promptBurden2" class="collapse">
           <div class="row">
             <div class="col-12 col-sm-8">
-              <p>
-                On average the users responded to the majority of question prompts,
-                in spite of the volume.  However, there were contexts in which the
-                users gave random answers.  If the question appeared while the user
-                was doing other tasks, for example, the quality of the response
-                was more likely to suffer.
+              <p class="blurb">
+                <strong>Principle 1: Add as few interfaces as possible.</strong>
+                <br>
+                Using a browser plugin, we modified an existing interface.  Additional views are hidden until the user takes action to explore.
                 <br>
                 <br>
-                'I was driving, and I was trying to change the song on my phone,
-                and then the question popped up, but then it was really awkward
-                trying not to get into an accident, but skip the question...' &mdash;P16
-              </p>
-
-              <p>
-                In terms of enabling fast responses, were we victims of our own success?
-                We speculate that the tendency users to spend the same average amount
-                of time on questions of different complexity can be attributed to
-                the speed afforded by the lock-screen system.  The mere ability
-                to respond very quickly may have created a norm of quick responses.
+                <strong>
+                Principle 2: Embed solution within a prevailing mental model.
+                </strong>
+                <br>
+                Google and Google Scholar embody the preeminent mental models for search.  In the convention of Google Scholar, anchor tags appear at the bottom of each record.
+                <br>
+                <br>
+                <strong>
+                Principle 3: Show social signal at the search results level.
+                </strong>
+                <br>
+                Because the social signal is exposed for all records in a search result, the social information can be used as part of the exploration process.
               </p>
             </div><!-- col-8 -->
-          </div><!-- row -->
-
-        </div><!-- #promptBurden -->
-      </div><!-- abra-accordion -->
-      <div class="abra-accordion">
-
-        <a href="#pamMsmBehavior" data-toggle="collapse">
-          <!-- <h4 class="pt-2">Burden of responding to prompts was low</h4> -->
-          <span class="abra-accordion-title abra-anchor-on-gray">
-            RQ4. PAM and MSM had generally bad effects on user behavior
-          </span>
-        </a>
-        <div id="pamMsmBehavior" class="collapse">
-          <div class="row">
-            <div class="col-12 col-sm-6">
-              <p>
-                The increased burden caused some users to adapt their behaviors in various
-                ways.  Others unwittingly gave inappropriate answers because of a mental
-                model mismatch.
-              </p>
-            </div><!-- col-12 col-md-6 -->
-            <div class="col-12 col-sm-6">
-              <div class="container">
-              <div class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-
-                  </div><!-- carousel item -->
-                  <div class="carousel-item">
-
-                    <div class="container">
-                      <h5 class="text-center">mapping problem</h5>
-                      <div class="row">
-                        <p class="blurb">
-                          “I never picked or very, very rarely picked the ones
-                          with actual faces. Like other people's faces, when
-                          I'm trying to give my own emotions, it was like these
-                          were the people's faces. I always like choose the,
-                          either the landscapes or the dog or something.”
-                        </p>
-                      </div><!-- row -->
-                    </div><!-- container -->
-
-                  </div><!-- carousel item -->
-                  <div class="carousel-item">
-
-                    <div class="container">
-                      <h5 class="text-center">reduced response set</h5>
-                      <div class="row">
-                        <p class="blurb">
-                          “After a couple of times, I just associated few of the pictures with few of my moods. If I was feeling this way I can
-                          just pick this picture. I really didn't bother about all of those pictures.”
-                        </p>
-                      </div><!-- row -->
-                    </div><!-- container -->
-
-                  </div><!-- carousel item -->
-                  <div class="carousel-item">
-
-                    <div class="container">
-                      <h5 class="text-center">simply repeating answers</h5>
-                      <div class="row">
-                        <p class="blurb">
-                          “After a couple of times, I just associated few of the pictures with few of my moods. If I was feeling this way I
-                          can just pick this picture. I really didn't bother about all of those pictures.”
-                        </p>
-                      </div><!-- row -->
-                    </div><!-- container -->
-
-                  </div><!-- carousel item -->
-                  <div class="carousel-item">
-
-                    <div class="container">
-                      <h5 class="text-center">circumstances instead of stress magnitude</h5>
-                      <div class="row">
-                        <p class="blurb">
-                          “It's usually what I was doing at the time, so if I was studying for finals then I would pick the one with the sack of papers
-                           and the pen, but if I were so stressed (I just want to take a nap when I'm tired) then I would put the dog going to sleep.”
-                        </p>
-                      </div><!-- row -->
-                    </div><!-- container -->
-
-                  </div><!-- carousel item -->
-                </div><!-- carousel inner -->
-              </div><!-- carousel slide -->
-            </div><!-- container -->
-          </div><!-- col-12 col-md-6 -->
           </div><!-- row -->
         </div><!-- #promptBurden -->
       </div><!-- abra-accordion -->
@@ -355,21 +262,20 @@
       <h1 class="text-center pt-4 sourceCodePro">The Prototype</h1>
     </div>
 
-    {{> postScholarPrototype}}
+    {{> postScholarPrototype2}}
 
   </section>
-
 </template>
 
-<template name="backgroundResearchPlan">
+<template name="backgroundResearchPlan2">
   <div class="container">
     <hr>
     <div class="row">
       <div class="col-12 col-sm-6">
         <p class="blurb">
           <strong>Purpose:</strong>
-          Generative background research.  Describe the opportunity for a new information
-          search service.
+          Generative background research.  Describe and demonstrate the opportunity
+          for a new information search service.
           <br>
           <br>
           <strong>Research team:</strong> Larry Chan, Shagun Jhaver, Sandeep Soni
@@ -414,7 +320,7 @@
   </div><!-- container -->
 </template>
 
-<template name="findings">
+<template name="findings2">
   <div class="container pt-5"><!-- ////////////// accordion section starts here ////////// -->
     <h2 class="abra-section-title">
       key findings
@@ -560,145 +466,31 @@
 
       </div><!-- #promptBurden -->
     </div><!-- abra-accordion -->
-    <div class="abra-accordion">
 
-      <a href="#pamMsmBehavior" data-toggle="collapse">
-        <!-- <h4 class="pt-2">Burden of responding to prompts was low</h4> -->
-        <span class="abra-accordion-title abra-anchor-on-gray">
-          RQ4. PAM and MSM had generally bad effects on user behavior
-        </span>
-      </a>
-      <div id="pamMsmBehavior" class="collapse">
-        <div class="row">
-          <div class="col-12 col-sm-6">
-            <p>
-              The increased burden caused some users to adapt their behaviors in various
-              ways.  Others unwittingly gave inappropriate answers because of a mental
-              model mismatch.
-            </p>
-          </div><!-- col-12 col-md-6 -->
-          <div class="col-12 col-sm-6">
-            <div class="container">
-            <div class="carousel slide" data-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-
-                </div><!-- carousel item -->
-                <div class="carousel-item">
-
-                  <div class="container">
-                    <h5 class="text-center">mapping problem</h5>
-                    <div class="row">
-                      <p class="blurb">
-                        “I never picked or very, very rarely picked the ones
-                        with actual faces. Like other people's faces, when
-                        I'm trying to give my own emotions, it was like these
-                        were the people's faces. I always like choose the,
-                        either the landscapes or the dog or something.”
-                      </p>
-                    </div><!-- row -->
-                  </div><!-- container -->
-
-                </div><!-- carousel item -->
-                <div class="carousel-item">
-
-                  <div class="container">
-                    <h5 class="text-center">reduced response set</h5>
-                    <div class="row">
-                      <p class="blurb">
-                        “After a couple of times, I just associated few of the pictures with few of my moods. If I was feeling this way I can
-                        just pick this picture. I really didn't bother about all of those pictures.”
-                      </p>
-                    </div><!-- row -->
-                  </div><!-- container -->
-
-                </div><!-- carousel item -->
-                <div class="carousel-item">
-
-                  <div class="container">
-                    <h5 class="text-center">simply repeating answers</h5>
-                    <div class="row">
-                      <p class="blurb">
-                        “After a couple of times, I just associated few of the pictures with few of my moods. If I was feeling this way I
-                        can just pick this picture. I really didn't bother about all of those pictures.”
-                      </p>
-                    </div><!-- row -->
-                  </div><!-- container -->
-
-                </div><!-- carousel item -->
-                <div class="carousel-item">
-
-                  <div class="container">
-                    <h5 class="text-center">circumstances instead of stress magnitude</h5>
-                    <div class="row">
-                      <p class="blurb">
-                        “It's usually what I was doing at the time, so if I was studying for finals then I would pick the one with the sack of papers
-                         and the pen, but if I were so stressed (I just want to take a nap when I'm tired) then I would put the dog going to sleep.”
-                      </p>
-                    </div><!-- row -->
-                  </div><!-- container -->
-
-                </div><!-- carousel item -->
-              </div><!-- carousel inner -->
-            </div><!-- carousel slide -->
-          </div><!-- container -->
-        </div><!-- col-12 col-md-6 -->
-        </div><!-- row -->
-      </div><!-- #promptBurden -->
-    </div><!-- abra-accordion -->
   </div><!-- container -->
 </template>
 
-<template name="postScholarPrototype">
+<template name="postScholarPrototype2">
   <div class="container">
     <hr>
-    <div class="row">
-      <div class="col-12 col-sm-6">
-        <p class="blurb">
-          <strong>Principle 1: add as few interfaces as possible.</strong>
-          <br>
-          <br>
-          Using a browser plugin, we modified an existing interface.  Additional views are hidden until the user takes action to explore.
-          <br>
-          <br>
-          <strong>
-          Principle 2: Embed solution within a prevailing mental model.
-          </strong>
-          <br>
-          <br>
-          Google and Google Scholar embody the preeminent mental models for search.  In the convention of Google Scholar, anchor tags appear at the bottom of each record.
-          <br>
-          <br>
-          <strong>
-          Principle 3: Show social signal at the search results level.
-          </strong>
-          <br>
-          <br>
-          Because the social signal is exposed for all records in a search result, the social information can be used as part of the exploration process.
-        </p>
-      </div><!--col-->
-      <div class="col">
-        <div class="carousel slide" id="prototypeViews" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active prototypeView_1">
-              <!-- <img src="/figures/facebookHover.png" class="img-fluid" alt="facebook hover"> -->
-            </div><!-- carousel item -->
-            <div class="carousel-item prototypeView_2">
-              <!-- <img src="/figures/FbHover.png" class="img-fluid" alt="facebook hover"> -->
-            </div><!-- carousel item -->
-            <div class="carousel-item prototypeView_3">
-              <!-- <img src="/figures/comments_details.png" class="img-fluid" alt="facebook hover"> -->
-            </div><!-- carousel item -->
-          </div><!-- carousel inner -->
-          <a class="carousel-control-prev" href="#prototypeViews" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"><span class="sr-only">Previous</span></span>
-          </a>
-          <a class="carousel-control-next" href="#prototypeViews" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"><span class="sr-only">Previous</span></span>
-          </a>
-        </div><!-- carousel slide -->
-
-      </div><!-- col -->
-    </div><!-- row -->
+      <div class="carousel slide" id="prototypeViews" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active prototypeView_1">
+            <!-- <img src="/figures/facebookHover.png" class="img-fluid" alt="facebook hover"> -->
+          </div><!-- carousel item -->
+          <div class="carousel-item prototypeView_2">
+            <!-- <img src="/figures/FbHover.png" class="img-fluid" alt="facebook hover"> -->
+          </div><!-- carousel item -->
+          <div class="carousel-item prototypeView_3">
+            <!-- <img src="/figures/comments_details.png" class="img-fluid" alt="facebook hover"> -->
+          </div><!-- carousel item -->
+        </div><!-- carousel inner -->
+        <a class="carousel-control-prev" href="#prototypeViews" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"><span class="sr-only">Previous</span></span>
+        </a>
+        <a class="carousel-control-next" href="#prototypeViews" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"><span class="sr-only">Previous</span></span>
+        </a>
+      </div><!-- carousel slide -->
   </div><!-- container -->
 </template>
