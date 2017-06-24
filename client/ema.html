@@ -1,26 +1,38 @@
 <template name="ema">
 
     <section class="bg-abra-gray">
+      <div class='display-2 text-center pb-5'>Ambulatory Assessment of College Student Emotional Well-being</div>
+
       <div class="container">
-        <div class='display-4 text-center pb-5 abra-page-top sourceCodePro'>EMA for Emotional Well-being</div>
+
+
       </div><!-- container -->
-    </section>
 
+    </section>
     <section>
-      {{> backgroundInfo}}
-    </section>
 
+      {{> backgroundInfo}}
+
+    </section>
     <section class="bg-abra-gray pb-5">
+
         {{> designTask}}
+
     </section>
 
     <section class="bg-faded">
+
       {{> researchPlan}}
+      {{> assessment}}
+
     </section>
 
-    <section class="bg-abra-gray pb-5">
-      {{> assessment}}
+    <section>
+
+
     </section>
+
+
 
 </template>
 
@@ -34,11 +46,10 @@
     </h1>
     <hr>
     <div class="row">
-      <div class="col-md-6">
-        <h5 class="sourceCodePro">Wait&mdash;why ask that many times?</h5>
+      <div class="col">
+        <h5>Wait&mdash;why ask that many times?</h5>
         <p>
-          Asking is important.  Even though emotion researchers are starting to use facial
-          expressions, heart rate,
+          Even though researchers are starting to use facial expressions, heart rate,
           and typing velocity to measure emotion, there's no better way to get the subjective
           quality of someone's emotion than asking them.  There's a good reason to ask
           very frequently too.  Time patterns in emotion are a key indicator of instability
@@ -49,9 +60,9 @@
           risk for emotional problems</span>, we focused on measuring the time course
           of their emotions.  Doing this well is crucial from a clinical and public health
           pespective.
-        </p>
-        <h5 class="sourceCodePro">The EMA burden</h5>
         <p>
+        <h5>The EMA burden</h5>
+        </p>
           Ecological Momentary Assessment (EMA) is one name for the technique of answering
           a question repeatedly over time.  It's easy to see how that experience
           can become a burden.  For this project, we broke burden down into three components:
@@ -65,10 +76,7 @@
           imroved burden.  This is exactly how our task was defined.
         </p>
       </div><!--col-->
-      <div class="col-md-6">
-        <img src="/asd1.png" class="img-fluid" alt="should see asd1">
-
-        <!-- put images here -->
+      <div class="col">
 
       </div><!--col-->
     </div><!--row-->
@@ -80,14 +88,14 @@
   <div class="container-fluid">
 
   <div class="container">
-    <h1 class="text-center sourceCodePro py-4">The Design Task</h1>
+    <h1 class="text-center">The Design Task</h1>
     <hr>
-    <div class="row pt-4">
-      <div class="col-md-6">
+    <div class="row">
+      <div class="col">
         <h3>Design an EMA study system of student
           emotion that reduces the burden of interruption, effort, and time.</h3>
         <hr>
-        <h5 class="sourceCodePro">Conventional notification-based EMA vs. Lock-screen</h5>
+        <h5>Conventional notification-based EMA vs. Lock-screen</h5>
         <p>
           How do you know when it's time to answer a question?  Conventional
           notification-based EMA systems message you on channels like email or SMS, telling
@@ -126,12 +134,8 @@
           taxonomy
           </strong>.</span>
         </p>
-
-      </div><!--col-->
-
-      <div class="col-md-6">
-
-        <h5 class="sourceCodePro">Image-based questions to assess mood and stress</h5>
+        <hr>
+        <h5>Image-based questions to assess mood and stress</h5>
         <p>
           Traditional mood and stress questions have been well established in experimental
           and clinical literature.  The Positive and Negative Affect Schedule (PANAS)
@@ -159,7 +163,7 @@
           </ol>
         </p>
         <hr>
-        <h5 class="sourceCodePro">Adapting image-based questions for lock-screen system</h5>
+        <h5>Adapting image-based questions for lock-screen system</h5>
         <p>
           Putting interfaces on a lock-screen increases the risk of error through
           inadvertent action.  If the emotion question becomes active on the display
@@ -179,6 +183,23 @@
           a glance to locate the image a second time.  Dragging the target image
           obviates the final glance.
         </p>
+        <p>
+          There were many emotion question alternatives to choose from.  I recommended
+          that we use PAM and MSM for three reasons.
+          <ol>
+            <li>They are brief</li>
+            <li>They have not yet been fully assessed qualitatively in a pilot study</li>
+            <li>
+              We would be matching the data collection of three other sites in a
+              <span data-toggle="tooltip" data-placement="bottom" title="We did this pilot
+              as part of a multi-site consortium of universities, including CMU, Cornell,
+              and Dartmouth.  Each of these three used PAM."><strong>consortium
+              </strong></span>
+            </li>
+          </ol>
+        </p>
+      </div><!--col-->
+      <div class="col">
       </div><!--col-->
     </div><!--row-->
   </div><!-- container -->
@@ -187,12 +208,12 @@
 
 <template name="researchPlan">
   <div class="container">
-    <h1 class="text-center sourceCodePro">Assessing the EMA system</h1>
+    <h1 class=text-center>Assessing the EMA system</h1>
     <hr>
     <div class="row">
-      <div class="col-md-6">
+      <div class="col">
 
-      <h3 class="text-center sourceCodePro">Study Context</h3>
+      <h3 class=text-center>Study Context</h3>
       <p class="blurb">
         We had an opportunity to assess the EMA system in the context of a larger
         mobile-sensing study.  In addition to EMA data collection, the larger study used the sensors
@@ -200,7 +221,7 @@
         and other variables related to well-being.  (A detailed description of
         the larger study is here.)
       </p>
-      <h3 class="text-center sourceCodePro">Participants</h3>
+      <h3 class=text-center>Participants</h3>
       <p class="blurb">
         To evaluate the design of an EMA system for student emotions, we wanted
         to sample participants at the graduate and undergraduate level.  We only
@@ -212,8 +233,8 @@
       </p>
 
     </div><!--col-->
-      <div class="col-md-6">
-      <h3 class=text-center sourceCodePro>Research Plan</h3>
+      <div class="col">
+      <h3 class=text-center>Research Plan</h3>
       <p class="blurb">
         Purpose: To assess the lock-screen EMA system from the perspective of
         participants.
@@ -260,7 +281,7 @@
         <br>
       </p>
 
-    </div><!-- col-md-6 -->
+    </div><!-- col -->
   </div><!-- row -->
   </div><!-- container -->
 </template>
@@ -269,11 +290,32 @@
   <div class="container-fluid pt-5">
     <div class="container">
 
-    <!-- <h1 class="text-center sourceCodePro">Assessment Findings</h1> -->
+    <h1 class="text-center">Assessment Findings</h1>
+    <div class="row">
+      <div class="col">
+        <p class="blurb">
+          We recruited through private message on Reddit. Our presence was met
+          with suspicion. Our principal investigator responded by offering to do
+          an “AMA” (“Ask Me Anything”) session. After this, we drew our
+          participants from those who volunteered.
+        </p>
+      </div><!--col-->
+      <div class="col">
+        <p class="blurb">
+          Target characteristics:
+          we wanted to include both members, moderators, and multiple genders.
+          We expected members and moderators to have distinct views on how the
+          community should operate.  Because core questions about the community
+          are related to gender, we wanted to include more than one gender.
+          Some participants did not wish to report age or other demographic data,
+          so some information is missing from the table.
+        </p>
+      </div><!--col-->
+    </div><!--row-->
     <div class="row">
       <div class="container">
         <h2 class="abra-section-title">
-          Key Assessment Findings
+          key findings
         </h2>
         <div class="abra-accordion">
 
@@ -287,7 +329,7 @@
 
                 <div class="container">
                   <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-6">
                       <p>
                         Response times were fast.  The average response time (from
                         presentation of the question to completing an answer) was 5.68
@@ -303,7 +345,7 @@
                         frequently." &mdash;p18
                       </p>
                     </div><!-- col-6 -->
-                    <div class="col-md-6">
+                    <div class="col-6">
 
                         <img src="/RT_Unlock_BoxPlot.png" class="img-fluid">
 
@@ -321,7 +363,7 @@
           <div id="promptBurden1" class="collapse">
             <div class="container">
               <div class="row">
-                <div class="col-md-6">
+                <div class="col-6">
                   <p>
                     While some participants enjoyed these image-based questions and
                     used them successfully, others expressed <strong>problems mapping</strong> their
@@ -339,8 +381,8 @@
                     compromises the <strong>memorability</strong>
                     of the interface.
                   </p>
-                </div><!-- col-md-6 -->
-                <div class="col-md-6">
+                </div><!-- col-6 -->
+                <div class="col-6">
                   <div class="container">
                   <div class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
@@ -391,7 +433,7 @@
           </a>
           <div id="promptBurden2" class="collapse">
             <div class="row">
-              <div class="col-md-8">
+              <div class="col-8">
                 <p>
                   On average the users responded to the majority of question prompts,
                   in spite of the volume.  However, there were contexts in which the
@@ -404,6 +446,7 @@
                   and then the question popped up, but then it was really awkward
                   trying not to get into an accident, but skip the question...' &mdash;P16
                 </p>
+
                 <p>
                   In terms of enabling fast responses, were we victims of our own success?
                   We speculate that the tendency users to spend the same average amount
@@ -411,7 +454,7 @@
                   the speed afforded by the lock-screen system.  The mere ability
                   to respond very quickly may have created a norm of quick responses.
                 </p>
-              </div><!-- col-md-8 -->
+              </div><!-- col-8 -->
             </div><!-- row -->
 
           </div><!-- #promptBurden -->
@@ -426,14 +469,14 @@
           </a>
           <div id="pamMsmBehavior" class="collapse">
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-6">
                 <p>
                   The increased burden caused some users to adapt their behaviors in various
                   ways.  Others unwittingly gave inappropriate answers because of a mental
                   model mismatch.
                 </p>
-              </div><!-- col-md-6 -->
-              <div class="col-md-6">
+              </div><!-- col-6 -->
+              <div class="col-6">
                 <div class="container">
                 <div class="carousel slide" data-ride="carousel">
                   <div class="carousel-inner">
@@ -445,17 +488,13 @@
                       <div class="container">
                         <h5 class="text-center">mapping problem</h5>
                         <div class="row">
-                          <blockquote>
-
                           <p class="blurb">
-                            I never picked or very, very rarely picked the ones
+                            “I never picked or very, very rarely picked the ones
                             with actual faces. Like other people's faces, when
                             I'm trying to give my own emotions, it was like these
                             were the people's faces. I always like choose the,
-                            either the landscapes or the dog or something.
-                            <cite title="Source Title">Source Title</cite>
+                            either the landscapes or the dog or something.”
                           </p>
-                        </blockquote>
                         </div><!-- row -->
                       </div><!-- container -->
 
@@ -502,7 +541,7 @@
                   </div><!-- carousel inner -->
                 </div><!-- carousel slide -->
               </div><!-- container -->
-            </div><!-- col-md-6 -->
+            </div><!-- col-6 -->
             </div><!-- row -->
           </div><!-- #promptBurden -->
         </div><!-- abra-accordion -->
