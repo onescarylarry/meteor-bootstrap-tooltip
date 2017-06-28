@@ -10,6 +10,12 @@ h1 {
   /*font-family: 'Source Code Pro', sans-serif;*/
 }
 
+#ikeaStoryBoard {
+  height: 100%;
+  width: 100%;
+  align-self: center;
+}
+
 #poisonBottle {
   margin-right: 0;
 }
@@ -18,6 +24,21 @@ h1 {
   background: url(/figures/scopus.png) center no-repeat;
   background-size: cover;
 }*/
+
+.pamGridOnly{
+  background: url(/ema/gridOnly.png) center no-repeat;
+  background-size: contain;
+}
+
+.pamArousal {
+  background: url(/ema/arousal.png) center no-repeat;
+  background-size: contain;
+}
+
+.pamValence {
+  background: url(/ema/valence.png) center no-repeat;
+  background-size: contain;
+}
 
 .prototypeView_1 {
   background: url(/figures/facebookHover.png) center no-repeat;

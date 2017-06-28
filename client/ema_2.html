@@ -16,13 +16,13 @@
     </section>
     <section class="bg-abra-gray pb-5">
 
-
+      {{> designTask_2}}
 
     </section>
 
     <section class="bg-faded">
 
-
+      {{> researchPlan_2}}
 
     </section>
 
@@ -36,13 +36,19 @@
 </template>
 
 <template name="backgroundInfo_2">
-  <div class="container-fluid pt-5">
+  <div class="container-fluid pt-4">
     <div class="container">
 
-    <h1>
+    <h3>
       How to Get Very Frequent Emotion Reporting
-    </h1>
+    </h3>
+    <h3>
+      Field Test of a New Design
+    </h3>
     <hr class="pt-5">
+    <h1 class="text-center pb-5">
+      Background
+    </h1>
     <div class="row">
       <div class="col">
         <h3>Frequency is Precious</h3>
@@ -73,25 +79,562 @@
           personality disorder).  These <strong>insights from emotion dynamics</strong> require that
           a person report frequently enough to capture the patterns accurately.
         </p>
+      </div><!--col-->
+      <div class="col">
+          <img class="img-fluid" id="ikeaStoryBoard" src="/storyBoard1.jpg" alt="ikeaStoryBoard">
+      </div><!--col-->
+    </div><!--row-->
+    <div class="row">
+      <div class="col">
+        <img src="/asd1.png" class="img-fluid" alt="should see asd1" style="align-self: center">
+      </div><!--col-->
+      <div class="col">
         <h3>Frequency is Elusive</h3>
         <p>
           Ecological Momentary Assessment (EMA) is one name for the technique of answering
           a question repeatedly over time.  It's easy to see how that experience
-          can become a burden.  For this project, we broke burden down into three components:
+          can <strong>become a burden</strong>.
+        </p>
+        <p>
+          For this project, we broke burden down into three components:
           <ul>
             <li>interruption: is focus being disrupted?</li>
             <li>effort: how many steps required to respond? how much cognitive work is needed?</li>
             <li>time: how long does it take to complete a response and resume original activity?</li>
           </ul>
-          These components form the key design principles for our approach to relieving burden.
+        </p>
+        <p>
+          The components above form <strong>the key design principles</strong> for our approach to relieving burden.
           We hypothesized that a study design that reduced each component would result in
           imroved burden.  This is exactly how our task was defined.
         </p>
       </div><!--col-->
-      <div class="col">
-
-      </div><!--col-->
     </div><!--row-->
   </div><!-- container -->
   </div><!-- container-fluid -->
+</template>
+
+<template name="researchPlan_2">
+  <div class="container">
+    <h1 class="text-center sourceCodePro">Research Plan</h1>
+    <hr>
+    <div class="row">
+      <div class="col-md-6">
+        <h3 class=text-center sourceCodePro>Field Test of an EMA system</h3>
+        <p>
+          <strong>Purpose</strong>: To assess the lock-screen EMA system from the perspective of
+          participants.
+        </p>
+        <p>
+          <strong>
+            Research Questions:
+          </strong>
+          <ul>
+            <li>Does the lock-screen EMA reduce burden?</li>
+            <li>Do PAM and MSM reduce burden?</li>
+            <li>What influence did lock-screen EMA have on the behavior of users?</li>
+            <li>What influence did PAM and MSM have on the behavior of users?</li>
+          </ul>
+          <strong>Methodology</strong> was mixed: quantitative analysis of response data (such as response
+          variety and response time), qualitative assessment through focus groups.
+          <br>
+          <br>
+        </p>
+      <!-- <h3 class="text-center sourceCodePro">Study Context</h3>
+      <p class="blurb">
+        We had an opportunity to assess the EMA system in the context of a larger
+        mobile-sensing study.  In addition to EMA data collection, the larger study used the sensors
+        on board each participants phone to monitor app use, sleep, physical activity,
+        and other variables related to well-being.  (A detailed description of
+        the larger study is here.)
+      </p>
+      <h3 class="text-center sourceCodePro">Participants</h3>
+      <p class="blurb">
+        To evaluate the design of an EMA system for student emotions, we wanted
+        to sample participants at the graduate and undergraduate level.  We only
+        recruited those with phones running the Android platform because these allowed
+        developers to build interactions that appear after the activation of the
+        phone and before the lock-screen appears. Of those who participated in
+        the larger study, 32 graduate and
+        undergraduate students (44% Female) participated in the focus groups.
+      </p> -->
+    </div><!--col-->
+      <div class="col-md-6">
+      <p>
+        <strong>Research Team</strong>: Larry Chan, Christina Kelly, Vedant Swain, Gregory Abowd
+        (Principal Investigator), and Lauren Wilcox (Principal Investigator)
+        <br>
+        <br>
+        <strong>My role:</strong> design image-based interface;
+        select all items in questionnaire battery;
+        adapt language on all items;
+        define schedule for EMA questions;
+        design focus-group protocol;
+        recruit for, schedule, and conduct focus groups;
+        lead analysis of focus-group data;
+        first author on manuscript (in submission).
+        <br>
+      </p>
+
+      <p>
+        <strong>Time required</strong>
+        <br>
+        focus groups recruiting and scheduling: 3 hours
+        <br>
+        protocol development and running 8 one-hour focus groups: 12 hours
+        <br>
+        analysis of focus group data: 10 hours
+        <br>
+        analysis of response data (using R): 8 hours
+      </p>
+
+    </div><!-- col-md-6 -->
+  </div><!-- row -->
+
+    <div class="row bg-abra-gray">
+      {{> emaFindings}}
+    </div><!-- row -->
+
+  </div><!-- container -->
+</template>
+
+<template name="designTask_2">
+  <div class="container-fluid">
+
+  <div class="container">
+    <h1 class="text-center sourceCodePro py-4">The Design Task</h1>
+    <hr>
+    <div class="row pt-4">
+      <div class="col-md-6">
+        <h3>Design an EMA study system of student
+          emotion that reduces the burden of interruption, effort, and time.</h3>
+        <hr>
+
+        <h3>Two Key Features</h3>
+        <ul>
+          <li>
+            To generally reduce interruption, effort, and time, we implemented a
+            <strong>lock-screen design</strong>.
+          </li>
+          <li>
+            To specifically reduce the effort and time required for reporting mood and stress,
+            we implemented an <strong>image-based question design</strong>.
+          </li>
+        </ul>
+        <h5 class="sourceCodePro">Lock-screen Design vs. Conventional EMA</h5>
+        <p>
+          The lock-screen design diplays a question when users activate their phones (when
+          lock-screens are normally displayed).  In contrast, typical EMA systems use
+          notifications to signal users that it is time to respond to a scheduled
+          questionnaire.
+        </p>
+        <p>
+          Notifications are interruptive.  They can occure while a user action is already
+          in progress.  The lock-screen design avoids this by engaging users only when
+          they are in transition (between actions).
+        </p>
+        <!-- <p>
+          A notification like this could come at a bad time.  You could be absorbed
+          in a time-sensitive puzzle or a critical conversation, in which case the
+          messages could become a nuisance.  Instead, a question could wait on the
+          lock-screen of your phone, only getting noticed when you activate it.
+          This is how lock-screen systems can<span data-toggle="tooltip"
+          data-placement="bottom" title="our context-and-signal contingent design
+          also avoided interrupting participants at a specific level of activity,
+          an accomplishment that is best described in terms of activity theory.
+          While participants were interrupted at the 'action' level
+          (checking the weather on the phone or looking up the definition of a
+          word), we avoided interrupting them at the 'operations' level
+          (well-defined, routine actions like tapping \enquote{send} on an email).
+          We attribute their tolerance for frequent prompts to brevity of
+          interactions and uninterrupted operations.">
+          <strong>avoid interrupting</strong>.</span>  Because the
+          interface for the question acts as the notification, there is no need to
+          navigate to a questionnaire interface.  This is how a lock-screen system can
+          <strong>reduce effort</strong>.  Responding in this system requires only
+          enough <strong>time</strong> to answer a single question.
+          <br>
+          <br>
+          I recommended that we take the lock-screen approach, and we worked with
+          a commercial company called Quedget to implement the EMA
+          system described above.  Our system is difficult to categorize using the
+          most popular taxonomy of EMA systems.
+          Here is my suggestion on an
+          <span data-toggle="tooltip" data-placement="bottom" title="Signal-contingent,
+          interval-contingent, and event-contingent are not orthogonal."><strong>alternative
+          taxonomy
+          </strong>.</span>
+        </p> -->
+      </div><!--col-->
+
+      <div class="col-md-6">
+
+        <h5 class="sourceCodePro">Image-based questions for quick emotion reports</h5>
+        <p>
+          Established mood and stress questionnaires aren't well suited for EMA.
+          They're <strong>too long</strong>.  The Positive and Negative Affect Schedule (PANAS)
+          measures both emotional valence (feeling good vs feeling bad) and arousal
+          (high vs low energy), but it asks 20 questions to do so.
+        </p>
+        <p>
+          We adapted a paradigm that uses a grid of photographs to capture valence
+          and arousal.  It has been validated to correlate with PANAS, but it you only need
+          to <strong>select one picture instead of answering 20 questions</strong>.
+        </p>
+        <div class="row justify-content-center">
+          <img class="img-fluid" src="/ema/PamPhoneCropped.png" alt="PamPhoneCropped.png">
+
+        </div>
+      </div><!--col-->
+    </div><!--row-->
+    <div class="row pt-4">
+      {{> lockScreenDetail}}
+      {{> imageQuestionDetail}}
+    </div>
+  </div><!-- container -->
+</div>
+</template>
+
+<template name="emaFindings">
+  <div class="row">
+    <div class="container">
+      <h2 class="abra-section-title">
+        Key Assessment Findings
+      </h2>
+      <div class="abra-accordion">
+
+        <a href="#promptBurden" data-toggle="collapse">
+          <!-- <h4 class="pt-2">Burden of responding to prompts was low</h4> -->
+          <span class="abra-accordion-title abra-anchor-on-gray">
+            RQ1. The lock-screen platform did reduce the burden of responding to scheduled questions
+          </span>
+        </a>
+        <div id="promptBurden" class="collapse">
+
+              <div class="container">
+                <div class="row pb-5">
+                  <div class="col-md-6">
+
+                    <p>
+                      People responded to a <strong>high volume</strong> of questions, and no one
+                      in the focus groups suggested that the volume was too high.
+                      In fact, some suggested that it would be better to ask even
+                      more frequently:  "Yeah, the how do you feel right now and
+                      what are you doing right now, that <strong>could be asked a bit more
+                      frequently</strong>." &mdash;p18
+                    </p>
+                    <p>
+                      Burden typically increases over time, but we found evidence that it was
+                      decreasing for some of our users.  We asked what it was like when responding became
+                      routine and got positive sentiments like this:
+                    </p>
+                    <blockquote class="blockquote">
+                      <p>&hellip;I stopped thinking about it being a pain.  It just became part of my phone usage.</p>
+                      <footer class="blockquote-footer" style="color: inherit">Participant 12</footer>
+                    </blockquote>
+                  </div><!-- col-6 -->
+                  <div class="col-md-6">
+                    <p>
+                      Response times were <strong>fast</strong>.  The average response time (from
+                      presentation of the question to completing an answer) was 5.68
+                      seconds.  In fact, this response time did not differ significantly
+                      from the average time it took users to <strong>unlock their phones</strong>.
+                    </p>
+                    <img src="/RT_Unlock_BoxPlot.png" class="img-fluid">
+
+                  </div><!-- col-6 -->
+                </div><!-- row -->
+              </div><!-- container -->
+        </div><!-- #promptBurden -->
+      </div><!-- abra-accordion -->
+      <div class="abra-accordion">
+
+        <a href="#promptBurden1" data-toggle="collapse">
+          <!-- <h4 class="pt-2">Burden of responding to prompts was low</h4> -->
+          <span class="abra-accordion-title abra-anchor-on-gray">RQ2. PAM and PSM did not reduce burden</span>
+        </a>
+        <div id="promptBurden1" class="collapse">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <p>
+                  While some participants enjoyed these image-based questions and
+                  used them successfully, others expressed <strong>problems mapping</strong> their
+                  emotions onto the images.
+                </p>
+                <p>
+                  Other people complained that there were too many images.  This
+                  sentiment revealed problems with the <strong>mental
+                  models</strong> of how the question works. (continuous vs discontinuous)
+                </p>
+                <p>
+                  A 4 x 4 grid of discrete representations of valence and arousal
+                  presents users with a 16-item search task, which carries a significant
+                  <strong>cognitive load</strong>.  Randomization of these images
+                  compromises the <strong>memorability</strong>
+                  of the interface.
+                </p>
+              </div><!-- col-md-6 -->
+              <div class="col-md-6">
+                <div class="container">
+                <div class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+
+                    </div><!-- carousel item -->
+                    <div class="carousel-item">
+                      archiving
+                      <br>
+                      <br>
+                      <p>deepfreeze</p>
+                      <br>
+                      <br>
+                      mnemosyne is a bot that automatically archives every post on KiA
+                      <br>
+                      <br>
+                      modlog.github.io an external feed of collected Reddit moderation action
+                    </div><!-- carousel item -->
+                    <div class="carousel-item">
+                      Thunderclap
+                      <br>
+                      <br>
+                    </div><!-- carousel item -->
+                    <div class="carousel-item">
+                      Blacklist of websites
+                      <br>
+                      <br>
+                      Intended to avoid contributing click revenue to opposition web sites.
+                      <br>
+                      <br>
+                      Can be bypassed by using archive
+                    </div><!-- carousel item -->
+                  </div><!-- carousel inner -->
+                </div><!-- carousel slide -->
+              </div><!-- container -->
+              </div><!-- col-6 -->
+            </div><!-- row -->
+          </div><!-- container -->
+        </div><!-- #promptBurden .collapse -->
+      </div><!-- abra-accordion -->
+      <div class="abra-accordion">
+
+        <a href="#promptBurden2" data-toggle="collapse">
+          <!-- <h4 class="pt-2">Burden of responding to prompts was low</h4> -->
+          <span class="abra-accordion-title abra-anchor-on-gray">
+            RQ3. The lock-screen platform had positive and negative effects on user behavior
+          </span>
+        </a>
+        <div id="promptBurden2" class="collapse">
+          <div class="row">
+            <div class="col-md-8">
+              <p>
+                On average the users responded to the majority of question prompts,
+                in spite of the volume.  However, there were contexts in which the
+                users gave random answers.  If the question appeared while the user
+                was doing other tasks, for example, the quality of the response
+                was more likely to suffer.
+                <br>
+                <br>
+                'I was driving, and I was trying to change the song on my phone,
+                and then the question popped up, but then it was really awkward
+                trying not to get into an accident, but skip the question...' &mdash;P16
+              </p>
+              <p>
+                In terms of enabling fast responses, were we victims of our own success?
+                We speculate that the tendency users to spend the same average amount
+                of time on questions of different complexity can be attributed to
+                the speed afforded by the lock-screen system.  The mere ability
+                to respond very quickly may have created a norm of quick responses.
+              </p>
+            </div><!-- col-md-8 -->
+          </div><!-- row -->
+
+        </div><!-- #promptBurden -->
+      </div><!-- abra-accordion -->
+      <div class="abra-accordion">
+
+        <a href="#pamMsmBehavior" data-toggle="collapse">
+          <!-- <h4 class="pt-2">Burden of responding to prompts was low</h4> -->
+          <span class="abra-accordion-title abra-anchor-on-gray">
+            RQ4. PAM and MSM had generally bad effects on user behavior
+          </span>
+        </a>
+        <div id="pamMsmBehavior" class="collapse">
+          <div class="row">
+            <div class="col-md-6">
+              <p>
+                The increased burden caused some users to adapt their behaviors in various
+                ways.  Others unwittingly gave inappropriate answers because of a mental
+                model mismatch.
+              </p>
+            </div><!-- col-md-6 -->
+            <div class="col-md-6">
+              <div class="container">
+              <div class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+
+                  </div><!-- carousel item -->
+                  <div class="carousel-item">
+
+                    <div class="container">
+                      <h5 class="text-center">mapping problem</h5>
+                      <div class="row">
+                        <blockquote>
+
+                        <p class="blurb">
+                          I never picked or very, very rarely picked the ones
+                          with actual faces. Like other people's faces, when
+                          I'm trying to give my own emotions, it was like these
+                          were the people's faces. I always like choose the,
+                          either the landscapes or the dog or something.
+                          <cite title="Source Title">Source Title</cite>
+                        </p>
+                      </blockquote>
+                      </div><!-- row -->
+                    </div><!-- container -->
+
+                  </div><!-- carousel item -->
+                  <div class="carousel-item">
+
+                    <div class="container">
+                      <h5 class="text-center">reduced response set</h5>
+                      <div class="row">
+                        <p class="blurb">
+                          “After a couple of times, I just associated few of the pictures with few of my moods. If I was feeling this way I can
+                          just pick this picture. I really didn't bother about all of those pictures.”
+                        </p>
+                      </div><!-- row -->
+                    </div><!-- container -->
+
+                  </div><!-- carousel item -->
+                  <div class="carousel-item">
+
+                    <div class="container">
+                      <h5 class="text-center">simply repeating answers</h5>
+                      <div class="row">
+                        <p class="blurb">
+                          “After a couple of times, I just associated few of the pictures with few of my moods. If I was feeling this way I
+                          can just pick this picture. I really didn't bother about all of those pictures.”
+                        </p>
+                      </div><!-- row -->
+                    </div><!-- container -->
+
+                  </div><!-- carousel item -->
+                  <div class="carousel-item">
+
+                    <div class="container">
+                      <h5 class="text-center">circumstances instead of stress magnitude</h5>
+                      <div class="row">
+                        <p class="blurb">
+                          “It's usually what I was doing at the time, so if I was studying for finals then I would pick the one with the sack of papers
+                           and the pen, but if I were so stressed (I just want to take a nap when I'm tired) then I would put the dog going to sleep.”
+                        </p>
+                      </div><!-- row -->
+                    </div><!-- container -->
+
+                  </div><!-- carousel item -->
+                </div><!-- carousel inner -->
+              </div><!-- carousel slide -->
+            </div><!-- container -->
+          </div><!-- col-md-6 -->
+          </div><!-- row -->
+        </div><!-- #promptBurden -->
+      </div><!-- abra-accordion -->
+    </div><!-- container -->
+  </div><!-- row -->
+</template>
+
+<template name="lockScreenDetail">
+  <div class="container">
+    <div class="abra-accordion">
+
+    <a href="#lockScreenDetailCollapse" data-toggle="collapse">
+      <!-- <h4 class="pt-2">Burden of responding to prompts was low</h4> -->
+      <span class="abra-accordion-title abra-anchor-on-gray">
+        Lock-screen design details
+      </span>
+    </a>
+    <div id="lockScreenDetailCollapse" class="collapse">
+
+          <div class="container">
+            <div class="row">
+              <img src="/ema/sicario.png" alt="/ema/sicario.png">
+              <div class="col-md-6">
+                <!-- ///////////////////////// -->
+              </div><!-- col-6 -->
+              <div class="col-md-6">
+                <!-- ///////////////////////// -->
+              </div><!-- col-6 -->
+            </div><!-- row -->
+          </div><!-- container -->
+    </div><!-- #promptBurden -->
+  </div><!-- abra-accordion -->
+  </div>
+</template>
+
+<template name="imageQuestionDetail">
+  <div class="container">
+    <div class="abra-accordion">
+
+    <a href="#imageQuestionDetailCollapse" data-toggle="collapse">
+      <!-- <h4 class="pt-2">Burden of responding to prompts was low</h4> -->
+      <span class="abra-accordion-title abra-anchor-on-gray">
+        Image-based emotion question details
+      </span>
+    </a>
+    <div id="imageQuestionDetailCollapse" class="collapse">
+
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <p>
+                  Response times were fast.  The average response time (from
+                  presentation of the question to completing an answer) was 5.68
+                  seconds.  In fact, this response time did not differ significantly
+                  from the average time it took users to unlock their phones.
+                </p>
+
+              </div><!-- col-6 -->
+              <div class="col-md-6">
+
+                <p>
+                  People responded to a high volume of questions, and no one
+                  in the focus groups suggested that the volume was too high.
+                  In fact, some suggested that it would be better to ask even
+                  more frequently:  "Yeah, the how do you feel right now and
+                  what are you doing right now, that could be asked a bit more
+                  frequently." &mdash;p18
+                </p>
+
+              </div><!-- col-6 -->
+            </div><!-- row -->
+            <div class="row">
+              <div class="container">
+                <hr>
+                  <div class="carousel slide" id="gridParadigmViews" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active pamGridOnly">
+                        <!-- <img src="/figures/facebookHover.png" class="img-fluid" alt="facebook hover"> -->
+                      </div><!-- carousel item -->
+                      <div class="carousel-item pamArousal">
+                        <!-- <img src="/figures/FbHover.png" class="img-fluid" alt="facebook hover"> -->
+                      </div><!-- carousel item -->
+                      <div class="carousel-item pamValence">
+                        <!-- <img src="/figures/comments_details.png" class="img-fluid" alt="facebook hover"> -->
+                      </div><!-- carousel item -->
+                    </div><!-- carousel inner -->
+                    <a class="carousel-control-prev" href="#gridParadigmViews" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"><span class="sr-only">Previous</span></span>
+                    </a>
+                    <a class="carousel-control-next" href="#gridParadigmViews" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"><span class="sr-only">Previous</span></span>
+                    </a>
+                  </div><!-- carousel slide -->
+              </div><!-- container -->
+            </div><!-- row -->
+          </div><!-- container -->
+    </div><!-- #promptBurden -->
+  </div><!-- abra-accordion -->
+  </div>
 </template>
