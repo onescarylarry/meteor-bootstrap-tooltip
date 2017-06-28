@@ -1,3 +1,6 @@
+
+
+
 /* CSS declarations go here */
 body {
   /*font-family: 'Source Code Pro', monospace;
@@ -20,10 +23,58 @@ h1 {
   margin-right: 0;
 }
 
-/*.postScholarPageTop {
-  background: url(/figures/scopus.png) center no-repeat;
-  background-size: cover;
-}*/
+#emaFindingsRow {
+  padding-bottom: 10rem;
+}
+
+#pamBurdenRow1 {
+  height: 32rem;
+  padding-top: 3;
+  padding-bottom: 3;
+}
+
+#pamBurdenRow2 {
+  height: 24rem;
+  padding-top: 3;
+  padding-bottom: 3;
+}
+
+#pamBurdenRow3 {
+  padding-top: 3;
+  padding-bottom: 3;
+}
+
+#pamBurdenRow4 {
+  height: 24rem;
+  padding-top: 3;
+  padding-bottom: 3;
+}
+
+.convenienceStrategy1 {
+  background: url(/ema/convenienceStrategy1.png) center no-repeat;
+  background-size: contain;
+}
+
+.inappropriateAnswer1 {
+  background: url(/ema/inappropriateAnswer1.png) center no-repeat;
+  background-size: contain;
+}
+
+.problemsMatching1 {
+  background: url(/ema/matchingProblem1.png) center no-repeat;
+  /*background: url(/ema/arousal.png) center no-repeat;*/
+  background-size: contain;
+}
+
+.problemsMatching2 {
+  background: url(/ema/matchingProblem2.png) center no-repeat;
+  background-size: contain;
+}
+
+.tooManyImages {
+  background: url(/ema/tooManyImages.png) center no-repeat;
+  background-size: contain;
+}
 
 .pamGridOnly{
   background: url(/ema/gridOnly.png) center no-repeat;

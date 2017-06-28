@@ -1,9 +1,9 @@
 <template name="ema_2">
 
     <section class="bg-abra-gray">
-      <div class='display-2 text-center abra-page-top b-5'>EMA of Student Emotion</div>
-
       <div class="container">
+        <div class='display-2 text-center abra-page-top pb-5'>EMA of Student Emotion</div>
+
 
 
       </div><!-- container -->
@@ -26,8 +26,8 @@
 
     </section>
 
-    <section>
-
+    <section class="bg-abra-gray">
+      {{> emaFindings}}
 
     </section>
 
@@ -42,13 +42,13 @@
     <h3>
       How to Get Very Frequent Emotion Reporting
     </h3>
-    <h3>
+    <!-- <h3>
       Field Test of a New Design
-    </h3>
-    <hr class="pt-5">
-    <h1 class="text-center pb-5">
+    </h3> -->
+    <h1 class="text-center pt-5">
       Background
     </h1>
+    <hr class="pb-5">
     <div class="row">
       <div class="col">
         <h3>Frequency is Precious</h3>
@@ -115,7 +115,7 @@
 </template>
 
 <template name="researchPlan_2">
-  <div class="container">
+  <div class="container pt-5" id="findingsContainer">
     <h1 class="text-center sourceCodePro">Research Plan</h1>
     <hr>
     <div class="row">
@@ -191,18 +191,15 @@
     </div><!-- col-md-6 -->
   </div><!-- row -->
 
-    <div class="row bg-abra-gray">
-      {{> emaFindings}}
-    </div><!-- row -->
-
   </div><!-- container -->
+
 </template>
 
 <template name="designTask_2">
   <div class="container-fluid">
 
-  <div class="container">
-    <h1 class="text-center sourceCodePro py-4">The Design Task</h1>
+  <div class="container pt-5">
+    <h1 class="text-center sourceCodePro">The Design Task</h1>
     <hr>
     <div class="row pt-4">
       <div class="col-md-6">
@@ -296,8 +293,8 @@
 </template>
 
 <template name="emaFindings">
-  <div class="row">
-    <div class="container">
+  <div class="row" id="emaFindingsRow">
+    <div class="container pt-5">
       <h2 class="abra-section-title">
         Key Assessment Findings
       </h2>
@@ -312,8 +309,8 @@
         <div id="promptBurden" class="collapse">
 
               <div class="container">
-                <div class="row pb-5">
-                  <div class="col-md-6">
+                <div class="row pb-5" id="pamBurdenRow1">
+                  <div class="col-md-6 align-self-center">
 
                     <p>
                       People responded to a <strong>high volume</strong> of questions, and no one
@@ -333,7 +330,7 @@
                       <footer class="blockquote-footer" style="color: inherit">Participant 12</footer>
                     </blockquote>
                   </div><!-- col-6 -->
-                  <div class="col-md-6">
+                  <div class="col-md-6 align-self-center">
                     <p>
                       Response times were <strong>fast</strong>.  The average response time (from
                       presentation of the question to completing an answer) was 5.68
@@ -355,62 +352,49 @@
         </a>
         <div id="promptBurden1" class="collapse">
           <div class="container">
-            <div class="row">
-              <div class="col-md-6">
+            <div class="row" id="pamBurdenRow2">
+              <div class="col-md-6 align-self-center">
                 <p>
-                  While some participants enjoyed these image-based questions and
-                  used them successfully, others expressed <strong>problems mapping</strong> their
-                  emotions onto the images.
+                  While some users enjoyed these image-based questions and
+                  answered them successfully, others expressed <strong>trouble matching</strong> their
+                  emotions onto the images.  This is crucial.  Ease of matching is the foundation
+                  of this design.
                 </p>
                 <p>
-                  Other people complained that there were too many images.  This
-                  sentiment revealed problems with the <strong>mental
-                  models</strong> of how the question works. (continuous vs discontinuous)
+                  Other users complained that the grid showed <strong>too many images</strong>.  This
+                  sentiment showed that users had faulty mental
+                  models of how the mood question works.  These users experienced an
+                  overwhelming visual search task instead of a pleasurable
+                  matching activity.
                 </p>
-                <p>
+                <!-- <p>
                   A 4 x 4 grid of discrete representations of valence and arousal
                   presents users with a 16-item search task, which carries a significant
                   <strong>cognitive load</strong>.  Randomization of these images
                   compromises the <strong>memorability</strong>
                   of the interface.
-                </p>
+                </p> -->
               </div><!-- col-md-6 -->
-              <div class="col-md-6">
-                <div class="container">
-                <div class="carousel slide" data-ride="carousel">
+              <div class="col-md-6 align-self-center">
+                <div class="carousel slide" id="pamBurden" data-ride="carousel">
                   <div class="carousel-inner">
-                    <div class="carousel-item active">
-
+                    <div class="carousel-item active problemsMatching1">
+                      <!--  -->
                     </div><!-- carousel item -->
-                    <div class="carousel-item">
-                      archiving
-                      <br>
-                      <br>
-                      <p>deepfreeze</p>
-                      <br>
-                      <br>
-                      mnemosyne is a bot that automatically archives every post on KiA
-                      <br>
-                      <br>
-                      modlog.github.io an external feed of collected Reddit moderation action
+                    <div class="carousel-item problemsMatching2">
+                      <!--  -->
                     </div><!-- carousel item -->
-                    <div class="carousel-item">
-                      Thunderclap
-                      <br>
-                      <br>
-                    </div><!-- carousel item -->
-                    <div class="carousel-item">
-                      Blacklist of websites
-                      <br>
-                      <br>
-                      Intended to avoid contributing click revenue to opposition web sites.
-                      <br>
-                      <br>
-                      Can be bypassed by using archive
+                    <div class="carousel-item tooManyImages">
+                      <!--  -->
                     </div><!-- carousel item -->
                   </div><!-- carousel inner -->
+                  <a class="carousel-control-prev" href="#pamBurden" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"><span class="sr-only">Previous</span></span>
+                  </a>
+                  <a class="carousel-control-next" href="#pamBurden" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"><span class="sr-only">Previous</span></span>
+                  </a>
                 </div><!-- carousel slide -->
-              </div><!-- container -->
               </div><!-- col-6 -->
             </div><!-- row -->
           </div><!-- container -->
@@ -425,31 +409,35 @@
           </span>
         </a>
         <div id="promptBurden2" class="collapse">
-          <div class="row">
-            <div class="col-md-8">
-              <p>
-                On average the users responded to the majority of question prompts,
-                in spite of the volume.  However, there were contexts in which the
-                users gave random answers.  If the question appeared while the user
-                was doing other tasks, for example, the quality of the response
-                was more likely to suffer.
-                <br>
-                <br>
-                'I was driving, and I was trying to change the song on my phone,
-                and then the question popped up, but then it was really awkward
-                trying not to get into an accident, but skip the question...' &mdash;P16
-              </p>
-              <p>
-                In terms of enabling fast responses, were we victims of our own success?
-                We speculate that the tendency users to spend the same average amount
-                of time on questions of different complexity can be attributed to
-                the speed afforded by the lock-screen system.  The mere ability
-                to respond very quickly may have created a norm of quick responses.
-              </p>
-            </div><!-- col-md-8 -->
-          </div><!-- row -->
+          <div class="container">
+            <div class="row py-3" id="pamBurdenRow3">
+              <div class="col-md-8">
+                <p>
+                  On average the users responded to the majority of question prompts,
+                  in spite of the volume.  However, there were contexts in which the
+                  users gave random answers.  If the question appeared while the user
+                  was doing other tasks, for example, the quality of the response
+                  was more likely to suffer.
+                </p>
+                <blockquote class="blockquote">
 
-        </div><!-- #promptBurden -->
+                  I was driving, and I was trying to change the song on my phone,
+                  and then the question popped up. But then it was really awkward
+                  trying not to get into an accident&mdash;but skip the question&hellip;
+                  <footer class="blockquote-footer" style="color: inherit">Participant 16</footer>
+
+                </blockquote>
+                <p>
+                  In terms of enabling fast responses, were we victims of our own success?
+                  We speculate that the tendency users to spend the same average amount
+                  of time on questions of different complexity can be attributed to
+                  the speed afforded by the lock-screen system.  The mere ability
+                  to respond very quickly may have created a norm of quick responses.
+                </p>
+            </div><!-- col-md-8 -->
+            </div><!-- row -->
+          </div>
+        </div><!-- #promptBurden2 class="collapse" -->
       </div><!-- abra-accordion -->
       <div class="abra-accordion">
 
@@ -460,85 +448,80 @@
           </span>
         </a>
         <div id="pamMsmBehavior" class="collapse">
-          <div class="row">
-            <div class="col-md-6">
-              <p>
-                The increased burden caused some users to adapt their behaviors in various
-                ways.  Others unwittingly gave inappropriate answers because of a mental
-                model mismatch.
-              </p>
-            </div><!-- col-md-6 -->
-            <div class="col-md-6">
-              <div class="container">
-              <div class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
+          <div class="container">
+            <div class="row py-3" id="pamBurdenRow4">
 
-                  </div><!-- carousel item -->
-                  <div class="carousel-item">
+              <div class="col-md-6 align-self-center">
+                <p>
+                  The increased burden caused some users to <strong>adopt convenience strategies</strong>.
+                  Others unwittingly gave <strong>inappropriate answers</strong> because of a mental
+                  model mismatch.
+                </p>
+              </div><!-- col-md-6 -->
+              <div class="col-md-6 align-self-center">
+                <div class="carousel slide" id="pamBehavior" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active convenienceStrategy1">
+                      <!--  -->
+                    </div><!-- carousel item -->
+                    <div class="carousel-item inappropriateAnswer1">
+                      <!--  -->
+                    </div><!-- carousel item -->
+                    <div class="carousel-item">
+                      <div class="row justify-content-center">
+                        <div class="col align-self-center">
+                          <h1>ADD MORE SLIDES</h1>
+                          <p class="blurb">
+                            I never picked or very, very rarely picked the ones
+                            with actual faces. Like other people's faces, when
+                            I'm trying to give my own emotions, it was like these
+                            were the people's faces. I always like choose the,
+                            either the landscapes or the dog or something.
+                            <cite title="Source Title">Source Title</cite>
+                          </p>
+                        </div>
+                      </div>
+                    </div><!-- carousel item -->
+                    <div class="carousel-item">
+                      <div class="row justify-content-center">
+                        <div class="col align-self-center">
+                          <div class="container">
 
-                    <div class="container">
-                      <h5 class="text-center">mapping problem</h5>
-                      <div class="row">
-                        <blockquote>
-
-                        <p class="blurb">
-                          I never picked or very, very rarely picked the ones
-                          with actual faces. Like other people's faces, when
-                          I'm trying to give my own emotions, it was like these
-                          were the people's faces. I always like choose the,
-                          either the landscapes or the dog or something.
-                          <cite title="Source Title">Source Title</cite>
-                        </p>
-                      </blockquote>
-                      </div><!-- row -->
-                    </div><!-- container -->
-
-                  </div><!-- carousel item -->
-                  <div class="carousel-item">
-
-                    <div class="container">
-                      <h5 class="text-center">reduced response set</h5>
-                      <div class="row">
-                        <p class="blurb">
-                          “After a couple of times, I just associated few of the pictures with few of my moods. If I was feeling this way I can
-                          just pick this picture. I really didn't bother about all of those pictures.”
-                        </p>
-                      </div><!-- row -->
-                    </div><!-- container -->
-
-                  </div><!-- carousel item -->
-                  <div class="carousel-item">
-
-                    <div class="container">
-                      <h5 class="text-center">simply repeating answers</h5>
-                      <div class="row">
-                        <p class="blurb">
-                          “After a couple of times, I just associated few of the pictures with few of my moods. If I was feeling this way I
-                          can just pick this picture. I really didn't bother about all of those pictures.”
-                        </p>
-                      </div><!-- row -->
-                    </div><!-- container -->
-
-                  </div><!-- carousel item -->
-                  <div class="carousel-item">
-
-                    <div class="container">
-                      <h5 class="text-center">circumstances instead of stress magnitude</h5>
-                      <div class="row">
-                        <p class="blurb">
-                          “It's usually what I was doing at the time, so if I was studying for finals then I would pick the one with the sack of papers
-                           and the pen, but if I were so stressed (I just want to take a nap when I'm tired) then I would put the dog going to sleep.”
-                        </p>
-                      </div><!-- row -->
-                    </div><!-- container -->
-
-                  </div><!-- carousel item -->
-                </div><!-- carousel inner -->
-              </div><!-- carousel slide -->
-            </div><!-- container -->
-          </div><!-- col-md-6 -->
-          </div><!-- row -->
+                          <h1>ADD MORE SLIDES</h1>
+                          <p class="blurb">
+                            “After a couple of times, I just associated few of the pictures with few of my moods. If I was feeling this way I can
+                            just pick this picture. I really didn't bother about all of those pictures.”
+                          </p>
+                          <p class="blurb">
+                            “It's usually what I was doing at the time, so if I was studying for finals then I would pick the one with the sack of papers
+                            and the pen, but if I were so stressed (I just want to take a nap when I'm tired) then I would put the dog going to sleep.”
+                          </p>
+                        </div><!-- container -->
+                        </div>
+                      </div>
+                    </div><!-- carousel item -->
+                    <div class="carousel-item">
+                      <div class="row justify-content-center">
+                        <div class="col align-self-center">
+                          <h1>ADD MORE SLIDES</h1>
+                          <p class="blurb">
+                            “It's usually what I was doing at the time, so if I was studying for finals then I would pick the one with the sack of papers
+                            and the pen, but if I were so stressed (I just want to take a nap when I'm tired) then I would put the dog going to sleep.”
+                          </p>
+                        </div>
+                      </div>
+                    </div><!-- carousel item -->
+                  </div><!-- carousel inner -->
+                  <a class="carousel-control-prev" href="#pamBehavior" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"><span class="sr-only">Previous</span></span>
+                  </a>
+                  <a class="carousel-control-next" href="#pamBehavior" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"><span class="sr-only">Previous</span></span>
+                  </a>
+                </div><!-- carousel slide -->
+              </div><!-- col-6 -->
+            </div><!-- row -->
+          </div><!-- container -->
         </div><!-- #promptBurden -->
       </div><!-- abra-accordion -->
     </div><!-- container -->
