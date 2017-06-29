@@ -51,9 +51,11 @@
     <hr class="pb-5">
     <div class="row">
       <div class="col-md-6">
-        <h3>Frequency is Precious</h3>
+        <div class="blurb">
 
-        <!-- <p>
+          <h3>Frequency is Precious</h3>
+
+          <!-- <p>
           Even though researchers are starting to use facial expressions, heart rate,
           and typing velocity to measure emotion, there's no better way to get the "hedonic"
           quality of someone's emotion than asking them.  There's a good reason to ask
@@ -70,15 +72,16 @@
         <p>
           Emotions occur in a variety of environments and circumstances.
           To understand the effect of these changes, we need to <strong>measure emotion
-          in different contexts</strong>.  If contexts change frequently, emotion must
-          be reported frequently.
-        </p>
-        <p>
-          It's normal for emotions to fluctuate.  However, very rapid and extreme fluctuations
-          can signal problems with regulating emotions (such as bipolar disorder or borderline
-          personality disorder).  These <strong>insights from emotion dynamics</strong> require that
-          a person report frequently enough to capture the patterns accurately.
-        </p>
+            in different contexts</strong>.  If contexts change frequently, emotion must
+            be reported frequently.
+          </p>
+          <p>
+            It's normal for emotions to fluctuate.  However, very rapid and extreme fluctuations
+            can signal problems with regulating emotions (such as bipolar disorder or borderline
+            personality disorder).  These <strong>insights from emotion dynamics</strong> require that
+            a person report frequently enough to capture the patterns accurately.
+          </p>
+        </div><!-- blurb -->
       </div><!--col-->
       <div class="col">
           <img class="img-fluid" id="ikeaStoryBoard" src="/storyBoard1.jpg" alt="ikeaStoryBoard">
@@ -86,28 +89,33 @@
     </div><!--row-->
     <div class="row">
       <div class="col-md-6">
-        <img src="/asd1.png" class="img-fluid" alt="should see asd1" style="align-self: center">
+        <!-- <img src="/asd1.png" class="img-fluid" alt="should see asd1" style="align-self: center"> -->
+        {{> emaGraph}}
       </div><!--col-->
       <div class="col">
-        <h3>Frequency is Elusive</h3>
-        <p>
-          Ecological Momentary Assessment (EMA) is one name for the technique of answering
-          a question repeatedly over time.  It's easy to see how that experience
-          can <strong>become a burden</strong>.
-        </p>
-        <p>
-          For this project, we broke burden down into three components:
-          <ul>
-            <li>interruption: is focus being disrupted?</li>
-            <li>effort: how many steps required to respond? how much cognitive work is needed?</li>
-            <li>time: how long does it take to complete a response and resume original activity?</li>
-          </ul>
-        </p>
-        <p>
-          The components above form <strong>the key design principles</strong> for our approach to relieving burden.
-          We hypothesized that a study design that reduced each component would result in
-          imroved burden.  This is exactly how our task was defined.
-        </p>
+        <div class="blurb pb-5">
+
+          <h3>Frequency is Elusive</h3>
+          <p>
+            Ecological Momentary Assessment (EMA) is one name for the technique of answering
+            a question repeatedly over time.  It's easy to see how that experience
+            can <strong>become a burden</strong>.
+          </p>
+          <p>
+            For this project, we broke burden down into three components:
+            <ul>
+              <li>interruption: is focus being disrupted?</li>
+              <li>effort: how many steps required to respond? how much cognitive work is needed?</li>
+              <li>time: how long does it take to complete a response and resume original activity?</li>
+            </ul>
+          </p>
+          <p>
+            The components above form <strong>the key design principles</strong> for our approach to relieving burden.
+            We hypothesized that a study design that reduced each component would result in
+            imroved burden.  This is exactly how our task was defined.
+          </p>
+
+        </div>
       </div><!--col-->
     </div><!--row-->
   </div><!-- container -->
@@ -196,92 +204,100 @@
 </template>
 
 <template name="designTask_2">
-  <div class="container-fluid">
+  <!-- <div class="container-fluid"> -->
 
-  <div class="container pt-5">
+    <div class="container pt-5">
     <h1 class="text-center sourceCodePro">The Design Task</h1>
     <hr>
     <div class="row pt-4">
       <div class="col-md-6">
-        <h3>Design an EMA study system of student
-          emotion that reduces the burden of interruption, effort, and time.</h3>
-        <hr>
+        <div class="blurb">
 
-        <h3>Two Key Features</h3>
-        <ul>
-          <li>
-            To generally reduce interruption, effort, and time, we implemented a
-            <strong>lock-screen design</strong>.
-          </li>
-          <li>
-            To specifically reduce the effort and time required for reporting mood and stress,
-            we implemented an <strong>image-based question design</strong>.
-          </li>
-        </ul>
-        <h5 class="sourceCodePro">Lock-screen Design vs. Conventional EMA</h5>
-        <p>
-          The lock-screen design diplays a question when users activate their phones (when
-          lock-screens are normally displayed).  In contrast, typical EMA systems use
-          notifications to signal users that it is time to respond to a scheduled
-          questionnaire.
-        </p>
-        <p>
-          Notifications are interruptive.  They can occure while a user action is already
-          in progress.  The lock-screen design avoids this by engaging users only when
-          they are in transition (between actions).
-        </p>
-        <!-- <p>
-          A notification like this could come at a bad time.  You could be absorbed
-          in a time-sensitive puzzle or a critical conversation, in which case the
-          messages could become a nuisance.  Instead, a question could wait on the
-          lock-screen of your phone, only getting noticed when you activate it.
-          This is how lock-screen systems can<span data-toggle="tooltip"
-          data-placement="bottom" title="our context-and-signal contingent design
-          also avoided interrupting participants at a specific level of activity,
-          an accomplishment that is best described in terms of activity theory.
-          While participants were interrupted at the 'action' level
-          (checking the weather on the phone or looking up the definition of a
-          word), we avoided interrupting them at the 'operations' level
-          (well-defined, routine actions like tapping \enquote{send} on an email).
-          We attribute their tolerance for frequent prompts to brevity of
-          interactions and uninterrupted operations.">
-          <strong>avoid interrupting</strong>.</span>  Because the
-          interface for the question acts as the notification, there is no need to
-          navigate to a questionnaire interface.  This is how a lock-screen system can
-          <strong>reduce effort</strong>.  Responding in this system requires only
-          enough <strong>time</strong> to answer a single question.
-          <br>
-          <br>
-          I recommended that we take the lock-screen approach, and we worked with
-          a commercial company called Quedget to implement the EMA
-          system described above.  Our system is difficult to categorize using the
-          most popular taxonomy of EMA systems.
-          Here is my suggestion on an
-          <span data-toggle="tooltip" data-placement="bottom" title="Signal-contingent,
-          interval-contingent, and event-contingent are not orthogonal."><strong>alternative
-          taxonomy
-          </strong>.</span>
-        </p> -->
+          <h3>Design an EMA study system of student
+            emotion that reduces the burden of interruption, effort, and time.</h3>
+            <hr>
+            <h3>Two Key Features</h3>
+            <ul>
+              <li>
+                To generally reduce interruption, effort, and time, we implemented a
+                <strong>lock-screen design</strong>.
+              </li>
+              <li>
+                To specifically reduce the effort and time required for reporting mood and stress,
+                we implemented an <strong>image-based question design</strong>.
+              </li>
+            </ul>
+
+        </div>
+        <div class="blurb">
+
+          <h5 class="sourceCodePro">Lock-screen Design vs. Conventional EMA</h5>
+          <p>
+            The lock-screen design diplays a question when users activate their phones (when
+            lock-screens are normally displayed).  In contrast, typical EMA systems use
+            notifications to signal users that it is time to respond to a scheduled
+            questionnaire.
+          </p>
+          <p>
+            Notifications are interruptive.  They can occure while a user action is already
+            in progress.  The lock-screen design avoids this by engaging users only when
+            they are in transition (between actions).
+          </p>
+            <!-- <p>
+            A notification like this could come at a bad time.  You could be absorbed
+            in a time-sensitive puzzle or a critical conversation, in which case the
+            messages could become a nuisance.  Instead, a question could wait on the
+            lock-screen of your phone, only getting noticed when you activate it.
+            This is how lock-screen systems can<span data-toggle="tooltip"
+            data-placement="bottom" title="our context-and-signal contingent design
+            also avoided interrupting participants at a specific level of activity,
+            an accomplishment that is best described in terms of activity theory.
+            While participants were interrupted at the 'action' level
+            (checking the weather on the phone or looking up the definition of a
+            word), we avoided interrupting them at the 'operations' level
+            (well-defined, routine actions like tapping \enquote{send} on an email).
+            We attribute their tolerance for frequent prompts to brevity of
+            interactions and uninterrupted operations.">
+            <strong>avoid interrupting</strong>.</span>  Because the
+            interface for the question acts as the notification, there is no need to
+            navigate to a questionnaire interface.  This is how a lock-screen system can
+            <strong>reduce effort</strong>.  Responding in this system requires only
+            enough <strong>time</strong> to answer a single question.
+            <br>
+            <br>
+            I recommended that we take the lock-screen approach, and we worked with
+            a commercial company called Quedget to implement the EMA
+            system described above.  Our system is difficult to categorize using the
+            most popular taxonomy of EMA systems.
+            Here is my suggestion on an
+            <span data-toggle="tooltip" data-placement="bottom" title="Signal-contingent,
+            interval-contingent, and event-contingent are not orthogonal."><strong>alternative
+            taxonomy
+            </strong>.</span>
+            </p> -->
+        </div><!-- blurb -->
       </div><!--col-->
 
       <div class="col-md-6">
+        <div class="blurb">
 
-        <h5 class="sourceCodePro">Image-based questions for quick emotion reports</h5>
-        <p>
-          Established mood and stress questionnaires aren't well suited for EMA.
-          They're <strong>too long</strong>.  The Positive and Negative Affect Schedule (PANAS)
-          measures both emotional valence (feeling good vs feeling bad) and arousal
-          (high vs low energy), but it asks 20 questions to do so.
-        </p>
-        <p>
-          We adapted a paradigm that uses a grid of photographs to capture valence
-          and arousal.  It has been validated to correlate with PANAS, but it you only need
-          to <strong>select one picture instead of answering 20 questions</strong>.
-        </p>
-        <div class="row justify-content-center">
-          <img class="img-fluid" src="/ema/PamPhoneCropped.png" alt="PamPhoneCropped.png">
+          <h5 class="sourceCodePro">Image-based questions for quick emotion reports</h5>
+          <p>
+            Established mood and stress questionnaires aren't well suited for EMA.
+            They're <strong>too long</strong>.  The Positive and Negative Affect Schedule (PANAS)
+            measures both emotional valence (feeling good vs feeling bad) and arousal
+            (high vs low energy), but it asks 20 questions to do so.
+          </p>
+          <p>
+            We adapted a paradigm that uses a grid of photographs to capture valence
+            and arousal.  It has been validated to correlate with PANAS, but it you only need
+            to <strong>select one picture instead of answering 20 questions</strong>.
+          </p>
+          <div class="row justify-content-center">
+            <img class="img-fluid" src="/ema/PamPhoneCropped.png" alt="PamPhoneCropped.png">  
+          </div>
 
-        </div>
+        </div><!-- blurb -->
       </div><!--col-->
     </div><!--row-->
     <div class="row pt-4">
@@ -289,7 +305,7 @@
       {{> imageQuestionDetail}}
     </div>
   </div><!-- container -->
-</div>
+  <!-- </div> -->
 </template>
 
 <template name="emaFindings">
@@ -312,7 +328,7 @@
                 <div class="row pb-5" id="pamBurdenRow1">
                   <div class="col-md-6 align-self-center">
 
-                    <p>
+                    <p class="blurb">
                       People responded to a <strong>high volume</strong> of questions, and no one
                       in the focus groups suggested that the volume was too high.
                       In fact, some suggested that it would be better to ask even
@@ -320,6 +336,8 @@
                       what are you doing right now, that <strong>could be asked a bit more
                       frequently</strong>." &mdash;p18
                     </p>
+                    <div class="blurb">
+
                     <p>
                       Burden typically increases over time, but we found evidence that it was
                       decreasing for some of our users.  We asked what it was like when responding became
@@ -329,6 +347,7 @@
                       <p>&hellip;I stopped thinking about it being a pain.  It just became part of my phone usage.</p>
                       <footer class="blockquote-footer" style="color: inherit">Participant 12</footer>
                     </blockquote>
+                  </div>
                   </div><!-- col-6 -->
                   <div class="col-md-6 align-self-center">
                     <p>
@@ -455,7 +474,7 @@
             <div class="row py-3" id="pamBurdenRow4">
 
               <div class="col-md-6 align-self-center">
-                <p>
+                <p class="blurb">
                   The increased burden caused some users to <strong>adopt convenience strategies</strong>.
                   Others unwittingly gave <strong>inappropriate answers</strong> because of a mental
                   model mismatch.
@@ -534,28 +553,35 @@
 <template name="lockScreenDetail">
   <div class="container">
     <div class="abra-accordion">
+      <a href="#lockScreenDetailCollapse" data-toggle="collapse">
+        <!-- <h4 class="pt-2">Burden of responding to prompts was low</h4> -->
+        <span class="abra-accordion-title abra-anchor-on-gray">
+          Lock-screen design details
+        </span>
+      </a>
+      <div id="lockScreenDetailCollapse" class="collapse">
+            <div class="container">
+              <div class="row">
+                <div class="col">
 
-    <a href="#lockScreenDetailCollapse" data-toggle="collapse">
-      <!-- <h4 class="pt-2">Burden of responding to prompts was low</h4> -->
-      <span class="abra-accordion-title abra-anchor-on-gray">
-        Lock-screen design details
-      </span>
-    </a>
-    <div id="lockScreenDetailCollapse" class="collapse">
+                  <img class="img-fluid" src="/ema/sicario.png" alt="/ema/sicario.png">
+                </div>
 
-          <div class="container">
-            <div class="row">
-              <img src="/ema/sicario.png" alt="/ema/sicario.png">
-              <div class="col-md-6">
-                <!-- ///////////////////////// -->
-              </div><!-- col-6 -->
-              <div class="col-md-6">
-                <!-- ///////////////////////// -->
-              </div><!-- col-6 -->
-            </div><!-- row -->
-          </div><!-- container -->
-    </div><!-- #promptBurden -->
-  </div><!-- abra-accordion -->
+              </div>
+              <div class="row">
+                <div class="col">
+
+                </div>
+                <div class="col-md-6">
+                  <!-- ///////////////////////// -->
+                </div><!-- col-6 -->
+                <div class="col-md-6">
+                  <!-- ///////////////////////// -->
+                </div><!-- col-6 -->
+              </div><!-- row -->
+            </div><!-- container -->
+      </div><!-- #promptBurden -->
+    </div><!-- abra-accordion -->
   </div>
 </template>
 
@@ -623,4 +649,72 @@
     </div><!-- #promptBurden -->
   </div><!-- abra-accordion -->
   </div>
+</template>
+
+<template name="emaGraph">
+  <style>
+  .line {
+  fill: none;
+  stroke: #000;
+  stroke-width: 1.5px;
+  }
+  </style>
+  <svg viewbox="0 0 960 500"></svg>
+  <script src="//d3js.org/d3.v4.min.js"></script>
+    <script>
+    var n = 40,
+      random = d3.randomNormal(0, .2),
+      data = d3.range(n).map(random);
+    var svg = d3.select("svg"),
+      margin = {top: 20, right: 20, bottom: 20, left: 40},
+      width = +svg.attr("width") - margin.left - margin.right,
+      height = +svg.attr("height") - margin.top - margin.bottom,
+      g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+    var x = d3.scaleLinear()
+      .domain([0, n - 1])
+      .range([0, width]);
+    var y = d3.scaleLinear()
+      .domain([-1, 1])
+      .range([height, 0]);
+    var line = d3.line()
+      .x(function(d, i) { return x(i); })
+      .y(function(d, i) { return y(d); });
+    g.append("defs").append("clipPath")
+      .attr("id", "clip")
+    .append("rect")
+      .attr("width", width)
+      .attr("height", height);
+    g.append("g")
+      .attr("class", "axis axis--x")
+      .attr("transform", "translate(0," + y(0) + ")")
+      .call(d3.axisBottom(x));
+    g.append("g")
+      .attr("class", "axis axis--y")
+      .call(d3.axisLeft(y));
+    g.append("g")
+      .attr("clip-path", "url(#clip)")
+    .append("path")
+      .datum(data)
+      .attr("class", "line")
+    .transition()
+      .duration(500)
+      .ease(d3.easeLinear)
+      .on("start", tick);
+    function tick() {
+    // Push a new data point onto the back.
+    data.push(random());
+    // Redraw the line.
+    d3.select(this)
+        .attr("d", line)
+        .attr("transform", null);
+    // Slide it to the left.
+    d3.active(this)
+        .attr("transform", "translate(" + x(-1) + ",0)")
+      .transition()
+        .on("start", tick);
+    // Pop the old data point off the front.
+    data.shift();
+    }
+  </script>
+
 </template>

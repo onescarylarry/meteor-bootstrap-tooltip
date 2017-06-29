@@ -13,6 +13,24 @@ h1 {
   /*font-family: 'Source Code Pro', sans-serif;*/
 }
 
+
+/*_____________this is for the d3 graph___________*/
+.svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    vertical-align: top;
+    overflow: hidden;
+}
+.svg-content {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/*_____________this is for the d3 graph___________*/
+
 #ikeaStoryBoard {
   height: 100%;
   width: 100%;
@@ -28,13 +46,13 @@ h1 {
 }
 
 #pamBurdenRow1 {
-  height: 32rem;
+  /*height: 32rem;*/
   padding-top: 3;
   padding-bottom: 3;
 }
 
 #pamBurdenRow2 {
-  height: 24rem;
+  /*height: 24rem;*/
   padding-top: 3;
   padding-bottom: 3;
 }
@@ -45,10 +63,11 @@ h1 {
 }
 
 #pamBurdenRow4 {
-  height: 24rem;
+  /*height: 24rem;*/
   padding-top: 3;
   padding-bottom: 3;
 }
+
 
 .convenienceStrategy1 {
   background: url(/ema/convenienceStrategy1.png) center no-repeat;
@@ -131,6 +150,8 @@ h1 {
   width: 100%;
 }
 
+
+/*what's this for, larry?  might be clutter?*/
 .fullScreen {
   height: 100%;
 }
@@ -158,9 +179,9 @@ h1 {
 }
 
 .blurb {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1.5rem;
 }
 
 .bg-abra-gray {
@@ -211,7 +232,7 @@ h1 {
     margin-bottom: 0px; /*---changed this from original---*/
     position: relative;
 
-    /*border: 1px solid #F9F9F6;
+    border: 1px solid #F9F9F6;
         border-top-color: rgb(249, 249, 246);
         border-top-style: solid;
         border-top-width: 1px;
@@ -240,7 +261,7 @@ h1 {
         border-left-width: 0px;
         display: block;
         margin-bottom: 0px;
-        position: relative;*/
+        position: relative;
 
 }
 
