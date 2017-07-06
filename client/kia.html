@@ -47,19 +47,25 @@
           private information broadcast publicly (a practice known as Doxxing).  Kotaku In Action calls itself
           the official subreddit of GamerGate, and its members are therefore suspected of very nasty behavior.
         </p>
-        <blockquote class="blockquote" cite="https://venturebeat.com/2014/10/10/game-developer-brianna-wu-leaves-home-after-receiving-death-threats-for-speaking-out-in-support-of-women/">
+
+
+      </div><!-- col -->
+    </div><!-- row -->
+    <div class="row py-5">
+      <div class="col">
+
+        <blockquote class="blockquote blurb py-3" cite="https://venturebeat.com/2014/10/10/game-developer-brianna-wu-leaves-home-after-receiving-death-threats-for-speaking-out-in-support-of-women/">
           <p>@spacekatgal Your mutilated corpse will be on the front page of Jezebel tomorrow and there isn't jack sh*t you can do about it.</p>
           <footer class="blockquote-footer">@chatterwhiteman on <cite title="Forbes">Twitter</cite></footer>
         </blockquote>
-
-      </div><!-- col -->
+      </div>
     </div><!-- row -->
   </div><!-- container -->
 
   <section class="bg-abra-gray py-5">
     <div class="container">
 
-        <h2 class="text-center">Research Plan</h2>
+        <h1 class="text-center">Research Plan</h1>
 
       <div class="row">
         <div class="col-sm-6">
@@ -95,27 +101,37 @@
               <strong>Recruitment:</strong> We recruited through private message on Reddit. Our presence was <span
               data-toggle="tooltip" data-placement="right" title="Beware for u/Gatech2.
               It's a trap. They're against everything this sub stands for!">met
-              with suspicion</span>. Our principal investigator responded by offering to do
+              with suspicion (see quote below)</span>. Our principal investigator responded by offering to do
               an “AMA” (“Ask Me Anything”) session.  After this, we drew our
               participants from those who volunteered.
             </p>
           </p>
-        </div>
-      </div>
+        </div><!-- col -->
+      </div><!-- row -->
+      <div class="row py-5">
+        <div class="col">
+
+          <blockquote class="blockquote blurb" cite="https://venturebeat.com/2014/10/10/game-developer-brianna-wu-leaves-home-after-receiving-death-threats-for-speaking-out-in-support-of-women/">
+            <p>Beware for u/Gatech2. It's a trap. They're against everything this sub stands for!</p>
+            <footer class="blockquote-footer" style="color: #000000">KiA member warns the community after being contacted by our research team</footer>
+          </blockquote>
+        </div><!-- col -->
+
+      </div><!-- row -->
 
 
     </div>
-  </section>
-
-  <section id="research" class="bg-info pt-5">
-    {{> participants}}
   </section>
 
   <section class="bg-faded py-5">
     {{> memberInterest}}
   </section>
 
-  <section>
+  <section id="research" class="bg-info py-5">
+    {{> participants}}
+  </section>
+
+  <section class="bg-abra-gray py-5">
     <div class="container pb-5">
       {{> kia_findings}}
     </div>
@@ -165,7 +181,7 @@
       </div><!--col-->
     </div><!--row-->
   </div><!-- container -->
-    <div class="container hidden-md-down">
+    <div class="container hidden-md-down  pt-3">
       <table class="table table-sm table-bordered table-hover">
       <thead>
         <tr>
@@ -311,15 +327,30 @@
           <td>No</td>
         </tr>
       </tbody>
-      <caption style="inherit">
+      <!-- <caption style="color: #ffffff">
         *Some participants did not wish to report age or other demographic data,
         so some information is missing from the table.
-      </caption>
+      </caption> -->
     </table>
     </div><!--container hidden-md-down-->
+    <div class="container py-5">
+      <blockquote class="blockquote blurb">
+        <p>
+          So there's a promise I need from you and a question I
+          need answered. Firstly, I need you to promise that you will not try to twist
+          anything into a specific narrative, and that you are approaching this
+          interview with as unbiased eye as one can expect from a researcher.
+        </p>
+        <footer class="blockquote-footer">KiA member expressing concerns to us in an interview</footer>
+      </blockquote>
+    </div><!-- container -->
+
 </template>
 
 <template name="kia_findings">
+  <div class="container">
+    <h1 class="text-center">Major Findings</h1>
+  </div>
     <div class="abra-accordion">
       <a href="#harrassmentFinding" data-toggle="collapse">
         <span class="abra-accordion-title abra-anchor-on-gray">
@@ -455,7 +486,7 @@
           <div class="container">
           <div class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item active">
+              <div class="carousel-item againstDoxxing active">
                 <p>
                   There was a doxxing patrol.
                   <br>
@@ -463,13 +494,13 @@
                   Members were doxxed and threatened themselves.
                 </p>
               </div><!-- carousel item -->
-              <div class="carousel-item">
+              <div class="carousel-item kiaHarassed">
                 <p>
                   Doxxing and dogpiling are expressly forbidden (see rules in the
                   next section).
                 </p>
               </div><!-- carousel item -->
-              <div class="carousel-item">
+              <div class="carousel-item defineHarassment">
                 <p>
                   Definition of harassment is casual.
                   <br>
@@ -480,7 +511,7 @@
                   Repetition and threats may be required elements.  (we have a quote here)
                 </p>
               </div><!-- carousel item -->
-              <div class="carousel-item">
+              <div class="carousel-item kiaDoesHarass">
                 <p>
                   Some of our informants reported speaking with members who espoused
                   harassing: (we have a quote here)
@@ -565,22 +596,25 @@
           <div class="container">
           <div class="carousel slide" id="goals" data-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item active">
+              <div class="carousel-item controversialTalk active">
                 Homophily without banishment
               </div><!-- carousel item -->
-              <div class="carousel-item">
-                Contrast with harassers and trolls
+              <div class="carousel-item controversialTalk">
+                <!-- Contrast with harassers and trolls
                 <br>
                 <br>
-                Distinction between harassers and other activists within KiA.  A few KiA users called for separation from #GamerGAte and rebranding under a new tag to distance the movement from its association with harassment in the popular zeitgeist.  Such calls were rejected on the grounds that rebranding would divide the community and trolls would simplyu follow the movement and smear it under the new tag.
+                Distinction between harassers and other activists within KiA.  A few KiA users called for separation from #GamerGAte and rebranding under a new tag to distance the movement from its association with harassment in the popular zeitgeist.  Such calls were rejected on the grounds that rebranding would divide the community and trolls would simply follow the movement and smear it under the new tag. -->
+              </div><!-- carousel item -->
+              <div class="carousel-item prejudicedPerception">
+                <!-- Diversity of thought
+                <br>
+                <br> -->
               </div><!-- carousel item -->
               <div class="carousel-item">
-                Diversity of thought
-                <br>
-                <br>
+                <!-- Documentation for good -->
               </div><!-- carousel item -->
               <div class="carousel-item">
-                Documentation for good
+                <!-- Combat incursion by "Social Justice Warriors" -->
               </div><!-- carousel item -->
             </div><!-- carousel inner -->
             <a class="carousel-control-prev" href="#goals" role="button" data-slide="prev">
@@ -591,8 +625,8 @@
 
         </div><!-- container -->
 
-    </div>
-  </div>
+    </div><!-- col -->
+  </div><!-- row -->
 </template>
 
 <template name="responsesToDesign">
@@ -615,7 +649,19 @@
     <div class="col-sm-6">
         <div class="carousel slide" id="responsesToDesign" data-ride="carousel">
           <div class="carousel-inner">
-            <div class="carousel-item active">
+            <div class="carousel-item deepFreeze active">
+              <!-- <p>
+                archiving
+                <br>
+                deepfreeze
+                <br>
+                mnemosyne is a bot that automatically archives every post on KiA
+                <br>
+                modlog.github.io an external feed of collected Reddit moderation action
+              </p> -->
+
+            </div><!-- carousel item -->
+            <div class="carousel-item archiveIs">
               archiving
               <br>
               <br>
@@ -627,24 +673,12 @@
               <br>
               modlog.github.io an external feed of collected Reddit moderation action
             </div><!-- carousel item -->
-            <div class="carousel-item">
-              archiving
-              <br>
-              <br>
-              <p>deepfreeze</p>
-              <br>
-              <br>
-              mnemosyne is a bot that automatically archives every post on KiA
-              <br>
-              <br>
-              modlog.github.io an external feed of collected Reddit moderation action
-            </div><!-- carousel item -->
-            <div class="carousel-item">
+            <div class="carousel-item autoArchive">
               Thunderclap
               <br>
               <br>
             </div><!-- carousel item -->
-            <div class="carousel-item">
+            <div class="carousel-item twitterHampered">
               Blacklist of websites
               <br>
               <br>

@@ -89,10 +89,10 @@
     </div><!--row-->
     <div class="row">
       <div class="col-md-6">
-        <div class="blurb">
+
           {{> emaGraph}}
-          <!-- <img src="/asd1.png" class="img-fluid" alt="should see asd1" style="align-self: center"> -->
-        </div><!-- blurb -->
+
+
       </div><!--col-->
       <div class="col">
         <div class="blurb pb-5">
@@ -396,25 +396,25 @@
                   emotions onto the images.  This is crucial.  Ease of matching is the foundation
                   of this design.
                 </p>
-                <p>
-                  Other users complained that the grid showed <strong>too many images</strong>.  This
-                  sentiment showed that users had faulty mental
-                  models of how the mood question works.  These users experienced an
-                  overwhelming visual search task instead of a pleasurable
-                  matching activity.
-                </p>
-                <!-- <p>
-                  A 4 x 4 grid of discrete representations of valence and arousal
-                  presents users with a 16-item search task, which carries a significant
-                  <strong>cognitive load</strong>.  Randomization of these images
-                  compromises the <strong>memorability</strong>
-                  of the interface.
-                </p> -->
+
               </div><!-- col-md-6 -->
               <div class="col-md-6 align-self-center">
-                <div class="container">
 
-                  <div class="carousel slide pb-5" id="pamBurden" data-ride="carousel">
+
+                  <p>
+                    Other users complained that the grid showed <strong>too many images</strong>.  This
+                    sentiment showed that users had faulty mental
+                    models of how the mood question works.  These users experienced an
+                    overwhelming visual search task instead of a pleasurable
+                    matching activity.
+                  </p>
+
+              </div><!-- col-6 -->
+            </div><!-- row -->
+            <div class="row">
+              <div class="col">
+
+                <div class="carousel slide pb-5" id="pamBurden" data-ride="carousel">
                   <div class="carousel-inner">
                     <div class="carousel-item active problemsMatching1">
                       <!--  -->
@@ -432,9 +432,9 @@
                   <a class="carousel-control-next" href="#pamBurden" role="button" data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"><span class="sr-only">Previous</span></span>
                   </a>
-                </div><!-- carousel slide -->
-                </div>
-              </div><!-- col-6 -->
+              </div><!-- carousel slide -->
+
+              </div><!-- col -->
             </div><!-- row -->
           </div><!-- container -->
         </div><!-- #promptBurden .collapse -->
@@ -669,69 +669,18 @@
 </template>
 
 <template name="emaGraph">
-  <style>
-  .line {
-  fill: none;
-  stroke: #000;
-  stroke-width: 1.5px;
-  }
-  </style>
-  <svg viewbox="0 0 492 256"></svg>
-  <!-- <script src="//d3js.org/d3.v4.min.js"></script> -->
-    <script>
-    var n = 40,
-      random = d3.randomNormal(0, .2),
-      data = d3.range(n).map(random);
-    var svg = d3.select("svg"),
-      margin = {top: 20, right: 20, bottom: 20, left: 40},
-      width = +svg.attr("width") - margin.left - margin.right,
-      height = +svg.attr("height") - margin.top - margin.bottom,
-      g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-    var x = d3.scaleLinear()
-      .domain([0, n - 1])
-      .range([0, width]);
-    var y = d3.scaleLinear()
-      .domain([-1, 1])
-      .range([height, 0]);
-    var line = d3.line()
-      .x(function(d, i) { return x(i); })
-      .y(function(d, i) { return y(d); });
-    g.append("defs").append("clipPath")
-      .attr("id", "clip")
-    .append("rect")
-      .attr("width", width)
-      .attr("height", height);
-    g.append("g")
-      .attr("class", "axis axis--x")
-      .attr("transform", "translate(0," + y(0) + ")")
-      .call(d3.axisBottom(x));
-    g.append("g")
-      .attr("class", "axis axis--y")
-      .call(d3.axisLeft(y));
-    g.append("g")
-      .attr("clip-path", "url(#clip)")
-    .append("path")
-      .datum(data)
-      .attr("class", "line")
-    .transition()
-      .duration(500)
-      .ease(d3.easeLinear)
-      .on("start", tick);
-    function tick() {
-    // Push a new data point onto the back.
-    data.push(random());
-    // Redraw the line.
-    d3.select(this)
-        .attr("d", line)
-        .attr("transform", null);
-    // Slide it to the left.
-    d3.active(this)
-        .attr("transform", "translate(" + x(-1) + ",0)")
-      .transition()
-        .on("start", tick);
-    // Pop the old data point off the front.
-    data.shift();
-    }
-  </script>
+  <div class="row">
 
+    <div class="col">
+      <img class="img-fluid" src="/ema/graphComposite2.png" alt="graphComposite.svg">
+    </div><!-- col -->
+
+  </div><!-- row -->
+  <div class="row">
+
+    <div class="col">
+      <!-- <img class="img-fluid" src="/ema/4xEmaGraph.svg" alt="1xEmaGraph.svg"> -->
+    </div><!-- col -->
+
+  </div><!-- row -->
 </template>

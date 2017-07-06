@@ -1,73 +1,53 @@
-
-
-
 /* CSS declarations go here */
-body {
-  /*font-family: 'Source Code Pro', monospace;
-  font-family: 'Fira Mono', monospace;
-  font-family: 'Bungee Hairline', cursive;*/
-  font-family: 'Work Sans', sans-serif;
+
+.controversialTalk {
+  background: url(/kia/controversialTalk.png) center no-repeat;
+  background-size: contain;
 }
 
-h1 {
-  /*font-family: 'Source Code Pro', sans-serif;*/
+.prejudicedPerception {
+  background: url(/kia/prejudicedPerception.png) center no-repeat;
+  background-size: contain;
+}
+
+.deepFreeze {
+  background: url(/kia/deepFreeze.png) center no-repeat;
+  background-size: contain;
+}
+
+.archiveIs {
+  background: url(/kia/archiveIs.png) center no-repeat;
+  background-size: contain;
+}
+
+.autoArchive {
+  background: url(/kia/autoArchive.png) center no-repeat;
+  background-size: contain;
+}
+
+.againstDoxxing {
+  background: url(/kia/againstDoxxing.png) center no-repeat;
+  background-size: contain;
+}
+
+.defineHarassment {
+  background: url(/kia/defineHarassment.png) center no-repeat;
+  background-size: contain;
+}
+
+.kiaHarassed {
+  background: url(/kia/kiaHarassed.png) center no-repeat;
+  background-size: contain;
+}
+
+.kiaDoesHarass {
+  background: url(/kia/kiaDoesHarass.png) center no-repeat;
+  background-size: contain;
 }
 
 
-/*_____________this is for the d3 graph___________*/
-.svg-container {
-    display: inline-block;
-    position: relative;
-    width: 100%;
-    padding-bottom: 100%;
-    vertical-align: top;
-    overflow: hidden;
-}
-.svg-content {
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-/*_____________this is for the d3 graph___________*/
 
-#ikeaStoryBoard {
-  height: 100%;
-  width: 100%;
-  align-self: center;
-}
-
-#poisonBottle {
-  margin-right: 0;
-}
-
-#emaFindingsRow {
-  padding-bottom: 10rem;
-}
-
-#pamBurdenRow1 {
-  /*height: 32rem;*/
-  padding-top: 3;
-  padding-bottom: 3;
-}
-
-#pamBurdenRow2 {
-  /*height: 24rem;*/
-  padding-top: 3;
-  padding-bottom: 3;
-}
-
-#pamBurdenRow3 {
-  padding-top: 3;
-  padding-bottom: 3;
-}
-
-#pamBurdenRow4 {
-  /*height: 24rem;*/
-  padding-top: 3;
-  padding-bottom: 3;
-}
-
+/*---------------------- ema -----------------------*/
 
 .convenienceStrategy1 {
   background: url(/ema/convenienceStrategy1.png) center no-repeat;
