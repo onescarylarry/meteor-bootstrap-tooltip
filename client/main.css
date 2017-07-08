@@ -6,7 +6,7 @@
 }
 
 .prejudicedPerception {
-  background: url(/kia/prejudicedPerception.png) center no-repeat;
+  background: url(/kia/prejudicedPerception.jpg) center no-repeat;
   background-size: contain;
 }
 
@@ -48,6 +48,15 @@
 
 
 /*---------------------- ema -----------------------*/
+.eccentricProcess {
+  background: url(/ema/eccentricProcess.png) center no-repeat;
+  background-size: contain;
+}
+
+.convenienceStrategy2 {
+  background: url(/ema/convenienceStrategy2.png) center no-repeat;
+  background-size: contain;
+}
 
 .convenienceStrategy1 {
   background: url(/ema/convenienceStrategy1.png) center no-repeat;
@@ -162,6 +171,10 @@
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   padding-top: 1.5rem;
+}
+
+.abra-gray {
+  color: #72747;
 }
 
 .bg-abra-gray {

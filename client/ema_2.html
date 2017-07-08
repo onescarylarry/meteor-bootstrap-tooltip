@@ -2,7 +2,7 @@
 
     <section class="bg-abra-gray">
       <div class="container">
-        <div class='display-2 text-center abra-page-top pb-5'>EMA of Student Emotion</div>
+        <div class='display-2 text-center abra-page-top pb-5'>Acquiring Frequent Emotion Reporting From Students</div>
 
 
 
@@ -39,9 +39,6 @@
   <div class="container-fluid pt-4">
     <div class="container">
 
-    <h3>
-      How to Get Very Frequent Emotion Reporting
-    </h3>
     <!-- <h3>
       Field Test of a New Design
     </h3> -->
@@ -89,8 +86,11 @@
     </div><!--row-->
     <div class="row">
       <div class="col-md-6">
+        <div class="pt-5">
 
           {{> emaGraph}}
+        </div>
+
 
 
       </div><!--col-->
@@ -113,8 +113,8 @@
           </p>
           <p>
             The components above form <strong>the key design principles</strong> for our approach to relieving burden.
-            We hypothesized that a study design that reduced each component would result in
-            imroved burden.  This is exactly how our task was defined.
+            We hypothesized that a study design that reduced each component would effectively decrease burden.
+            This is exactly how our task was defined.
           </p>
 
         </div>
@@ -131,7 +131,7 @@
     <div class="row">
       <div class="col-md-6">
         <div class="blurb">
-          <h3 class=text-center sourceCodePro>Field Test of an EMA system</h3>
+          <h3 class=text-center sourceCodePro>Field Test of a novel EMA design</h3>
         </div><!-- blurb -->
         <div class="blurb">
           <p>
@@ -228,7 +228,7 @@
         <div class="blurb">
 
           <h3>Design an EMA study system of student
-            emotion that reduces the burden of interruption, effort, and time.</h3>
+            emotion that reduces the burdens of interruption, effort, and time.</h3>
             <hr>
             <h3>Two Key Features</h3>
             <ul>
@@ -307,7 +307,7 @@
           </p>
           <p>
             We adapted a paradigm that uses a grid of photographs to capture valence
-            and arousal.  It has been validated to correlate with PANAS, but it you only need
+            and arousal.  It has been validated to correlate with PANAS, but you only need
             to <strong>select one picture instead of answering 20 questions</strong>.
           </p>
           <div class="row justify-content-center">
@@ -490,14 +490,19 @@
           <div class="container">
             <div class="row py-3" id="pamBurdenRow4">
 
-              <div class="col-md-6 align-self-center">
+              <div class="col-md-8 align-self-center">
                 <p class="blurb">
                   The increased burden caused some users to <strong>adopt convenience strategies</strong>.
-                  Others unwittingly gave <strong>inappropriate answers</strong> because of a mental
+                  Others adopted <strong>eccentric processes</strong> or unwittingly gave <strong>inappropriate answers</strong> because of a mental
                   model mismatch.
                 </p>
               </div><!-- col-md-6 -->
-              <div class="col-md-6 align-self-center">
+
+
+            </div><!-- row -->
+            <div class="row">
+              <div class="col">
+
                 <div class="carousel slide" id="pamBehavior" data-ride="carousel">
                   <div class="carousel-inner">
                     <div class="carousel-item active convenienceStrategy1">
@@ -506,49 +511,11 @@
                     <div class="carousel-item inappropriateAnswer1">
                       <!--  -->
                     </div><!-- carousel item -->
-                    <div class="carousel-item">
-                      <div class="row justify-content-center">
-                        <div class="col align-self-center">
-                          <h1>ADD MORE SLIDES</h1>
-                          <p class="blurb">
-                            I never picked or very, very rarely picked the ones
-                            with actual faces. Like other people's faces, when
-                            I'm trying to give my own emotions, it was like these
-                            were the people's faces. I always like choose the,
-                            either the landscapes or the dog or something.
-                            <cite title="Source Title">Source Title</cite>
-                          </p>
-                        </div>
-                      </div>
+                    <div class="carousel-item eccentricProcess">
+                      <!--  -->
                     </div><!-- carousel item -->
-                    <div class="carousel-item">
-                      <div class="row justify-content-center">
-                        <div class="col align-self-center">
-                          <div class="container">
-
-                          <h1>ADD MORE SLIDES</h1>
-                          <p class="blurb">
-                            “After a couple of times, I just associated few of the pictures with few of my moods. If I was feeling this way I can
-                            just pick this picture. I really didn't bother about all of those pictures.”
-                          </p>
-                          <p class="blurb">
-                            “It's usually what I was doing at the time, so if I was studying for finals then I would pick the one with the sack of papers
-                            and the pen, but if I were so stressed (I just want to take a nap when I'm tired) then I would put the dog going to sleep.”
-                          </p>
-                        </div><!-- container -->
-                        </div>
-                      </div>
-                    </div><!-- carousel item -->
-                    <div class="carousel-item">
-                      <div class="row justify-content-center">
-                        <div class="col align-self-center">
-                          <h1>ADD MORE SLIDES</h1>
-                          <p class="blurb">
-                            “It's usually what I was doing at the time, so if I was studying for finals then I would pick the one with the sack of papers
-                            and the pen, but if I were so stressed (I just want to take a nap when I'm tired) then I would put the dog going to sleep.”
-                          </p>
-                        </div>
-                      </div>
+                    <div class="carousel-item convenienceStrategy2">
+                      <!--  -->
                     </div><!-- carousel item -->
                   </div><!-- carousel inner -->
                   <a class="carousel-control-prev" href="#pamBehavior" role="button" data-slide="prev">
@@ -558,8 +525,9 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"><span class="sr-only">Previous</span></span>
                   </a>
                 </div><!-- carousel slide -->
-              </div><!-- col-6 -->
-            </div><!-- row -->
+              </div>
+
+            </div>
           </div><!-- container -->
         </div><!-- #promptBurden -->
       </div><!-- abra-accordion -->
@@ -641,7 +609,7 @@
             <div class="row">
               <div class="container">
                 <hr>
-                  <div class="carousel slide" id="gridParadigmViews" data-ride="carousel">
+                  <div class="carousel" id="gridParadigmViews" data-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active pamGridOnly">
                         <!-- <img src="/figures/facebookHover.png" class="img-fluid" alt="facebook hover"> -->
@@ -672,8 +640,32 @@
   <div class="row">
 
     <div class="col">
-      <img class="img-fluid" src="/ema/graphComposite2.png" alt="graphComposite.svg">
+      <a href="#graphComposite" data-toggle="modal">
+        <img src="/ema/graphComposite3.png" alt="scopus" style="width: 100%">
+      </a>
+      <div class="modal fade" id="graphComposite">
+        <div class="modal-dialog-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="container-fluid d-flex justify-content-between">
+                <div class="container">
+                  <h4 class="modal-title">Infrequent reporting can hide mood dynamics that reveal patterns of instability</h4>
+                </div><!-- container -->
+                <div class="ml-auto">
+                  <button type="close" data-dismiss="modal" aria-label="close"><span class="text-right" aria-hidden="true"></span>close</button>
+                </div><!-- container -->
+              </div><!-- d-flex -->
+            </div><!-- modal-header -->
+            <div class="modal-body">
+
+              <img src="/ema/graphComposite3.png" alt="graphComposite" style="width: 100%">
+
+            </div><!-- modal-body -->
+          </div><!-- modal-content -->
+        </div><!-- modal-dialog -->
+      </div><!-- modal -->
     </div><!-- col -->
+
 
   </div><!-- row -->
   <div class="row">

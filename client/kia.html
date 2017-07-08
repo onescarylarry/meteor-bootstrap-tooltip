@@ -137,6 +137,10 @@
     </div>
   </section>
 
+  <section>
+    {{> takeaways}}
+  </section>
+
 </template>
 
 <template name="participants">
@@ -470,7 +474,7 @@
   <div class="container">
       <h3 class="text-center">Is Harassment a Common Goal?</h3>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-8">
           <p class="blurb">
             Prevalence of harassers in the community cannot be quantified.  A
             common problem identifying hate groups is the presence
@@ -479,49 +483,45 @@
             <br>
             It seems likely that perpetrators are present, but harassment doesn't
             appear to be a community goal.  Our conclusion:
-            KiA is not a viper’s nest, though there are probably vipers in the nest.
+            KiA is <strong>not</strong> a viper’s nest, though there <strong>are probably vipers in the nest</strong>.
           </p>
         </div><!--col-->
-        <div class="col-md-6">
-          <div class="container">
-          <div class="carousel slide" data-ride="carousel">
+      </div><!--row-->
+      <div class="row">
+        <div class="col">
+          <div class="container pt-3 pb-5">
+          <div class="carousel slide" id="harassment" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item againstDoxxing active">
-                <p>
-                  There was a doxxing patrol.
-                  <br>
-                  <br>
-                  Members were doxxed and threatened themselves.
-                </p>
               </div><!-- carousel item -->
               <div class="carousel-item kiaHarassed">
-                <p>
+                <!-- <p>
                   Doxxing and dogpiling are expressly forbidden (see rules in the
                   next section).
-                </p>
+                </p> -->
               </div><!-- carousel item -->
               <div class="carousel-item defineHarassment">
-                <p>
+                <!-- <p>
                   Definition of harassment is casual.
-                  <br>
-                  <br>
+
                   There was a higher threshold for qualifying.
-                  <br>
-                  <br>
+
                   Repetition and threats may be required elements.  (we have a quote here)
-                </p>
+                </p> -->
               </div><!-- carousel item -->
               <div class="carousel-item kiaDoesHarass">
-                <p>
-                  Some of our informants reported speaking with members who espoused
-                  harassing: (we have a quote here)
-                </p>
               </div><!-- carousel item -->
             </div><!-- carousel inner -->
           </div><!-- carousel slide -->
+          <a class="carousel-control-prev" href="#harassment" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"><span class="sr-only">Previous</span></span>
+          </a>
+          <a class="carousel-control-next" href="#harassment" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"><span class="sr-only">Previous</span></span>
+          </a>
         </div><!-- container -->
         </div><!--col-->
-      </div><!--row-->
+      </div><!-- row -->
 
 </div><!-- container -->
 </template>
@@ -578,9 +578,9 @@
 
 <template name="goals">
 
-      <h3 class="text-center">Goals of the Community</h3>
+      <h3 class="text-center">Prominent Community Goals and Values</h3>
       <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-8">
           <p class="blurb">
             <br>
             Laissez-fair moderation: no limits on expression (no off-limits terminology or ideas)
@@ -592,61 +592,76 @@
             Archive?
           </p>
         </div><!--col-->
-        <div class="col-md-6">
-          <div class="container">
-          <div class="carousel slide" id="goals" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item controversialTalk active">
-                Homophily without banishment
-              </div><!-- carousel item -->
-              <div class="carousel-item controversialTalk">
-                <!-- Contrast with harassers and trolls
-                <br>
-                <br>
-                Distinction between harassers and other activists within KiA.  A few KiA users called for separation from #GamerGAte and rebranding under a new tag to distance the movement from its association with harassment in the popular zeitgeist.  Such calls were rejected on the grounds that rebranding would divide the community and trolls would simply follow the movement and smear it under the new tag. -->
-              </div><!-- carousel item -->
-              <div class="carousel-item prejudicedPerception">
-                <!-- Diversity of thought
-                <br>
-                <br> -->
-              </div><!-- carousel item -->
-              <div class="carousel-item">
-                <!-- Documentation for good -->
-              </div><!-- carousel item -->
-              <div class="carousel-item">
-                <!-- Combat incursion by "Social Justice Warriors" -->
-              </div><!-- carousel item -->
-            </div><!-- carousel inner -->
-            <a class="carousel-control-prev" href="#goals" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"><span class="sr-only">Previous</span></span>
-            </a>
+      </div><!-- row -->
+      <div class="row">
+          <div class="col">
+            <div class="container pt-2 pb-5">
+            <div class="carousel slide" id="goals" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item controversialTalk active">
+                  <!-- Homophily without banishment -->
+                </div><!-- carousel item -->
+                <div class="carousel-item controversialTalk">
+                  <!-- Contrast with harassers and trolls
+                  <br>
+                  <br>
+                  Distinction between harassers and other activists within KiA.  A few KiA users called for separation from #GamerGAte and rebranding under a new tag to distance the movement from its association with harassment in the popular zeitgeist.  Such calls were rejected on the grounds that rebranding would divide the community and trolls would simply follow the movement and smear it under the new tag. -->
+                </div><!-- carousel item -->
+                <div class="carousel-item">
+                  <div class="container">
+                    <h1 class="text-center">
+                      Monitor Games and Media
+                    </h1>
+                  </div><!-- container -->
+                </div><!-- carousel item -->
+                <div class="carousel-item">
+                  <div class="container">
+                    <h1 class="text-center">
+                      Bolster arguments with documentation
+                    </h1>
+                  </div>
+                </div><!-- carousel item -->
+                <div class="carousel-item prejudicedPerception">
+                  <!--  -->
+                </div><!-- carousel item -->
+              </div><!-- carousel inner -->
+              <a class="carousel-control-prev" href="#goals" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"><span class="sr-only">Previous</span></span>
+              </a>
+              <a class="carousel-control-next" href="#goals" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"><span class="sr-only">Next</span></span>
+              </a>
+              </div><!-- carousel slide -->
+            </div><!-- container -->
+        </div><!-- col -->
+      </div><!-- row -->
 
-          </div><!-- carousel slide -->
-
-        </div><!-- container -->
-
-    </div><!-- col -->
-  </div><!-- row -->
 </template>
 
 <template name="responsesToDesign">
-  <div class="row">
-    <div class="col-sm-6">
-      <h3 class="text-center">Tools Adopted by KiA</h3>
+  <div class="container">
 
-          <p class="blurb">
-            <br>
-            Laissez-fair moderation: no limits on expression (no off-limits terminology or ideas)
-            <br>
-            Don't be a dickwolf: you can still run afoul of conversational and interpersonal ideals
-            <br>
-            No doxxing
-            <br>
-            Archive?
-          </p>
+    <h3 class="text-center">Tools Adopted by KiA</h3>
+    <div class="row">
+      <div class="col-sm-8">
 
-    </div><!-- col-sm-6 -->
-    <div class="col-sm-6">
+        <p class="blurb">
+          <br>
+          Laissez-fair moderation: no limits on expression (no off-limits terminology or ideas)
+          <br>
+          Don't be a dickwolf: you can still run afoul of conversational and interpersonal ideals
+          <br>
+          No doxxing
+          <br>
+          Archive?
+        </p>
+
+      </div><!-- col-sm-8 -->
+    </div><!-- row -->
+    <div class="row">
+    </div><!-- row -->
+    <div class="col">
+      <div class="pt-3 pb-5">
         <div class="carousel slide" id="responsesToDesign" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item deepFreeze active">
@@ -695,8 +710,21 @@
             <span class="carousel-control-next-icon" aria-hidden="true"><span class="sr-only">Previous</span></span>
           </a>
         </div><!-- carousel slide -->
-    </div><!-- col-sm-6 -->
-  </div><!-- row -->
+      </div>
+    </div><!-- col -->
+  </div><!-- container -->
+</template>
+
+<template name="takeaways">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <img class="img-fluid" src="/kia/scales.png" alt="scales">
+        <img class="img-fluid" src="/kia/3bottles.png" alt="3bottles">
+      </div>
+
+    </div>
+  </div><!-- container -->
 </template>
 
 <template name="updates">
