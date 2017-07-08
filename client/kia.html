@@ -127,7 +127,7 @@
     {{> memberInterest}}
   </section>
 
-  <section id="research" class="bg-info py-5">
+  <section class="bg-info py-5">
     {{> participants}}
   </section>
 
@@ -137,8 +137,16 @@
     </div>
   </section>
 
+  <section class="bg-info">
+    {{> twoDesignOpportunities}}
+  </section>
+
   <section>
     {{> takeaways}}
+  </section>
+
+  <section class="bg-abra-gray">
+    {{> nextStepsKiA}}
   </section>
 
 </template>
@@ -399,7 +407,7 @@
           game culture, free speech, ethics in journalism, and the overreach of
           PC culture.
         </p>
-        <h5>Behavioral Evidence</h5>
+        <h5>Quantitative Evidence</h5>
         <div>
           Using the Reddit API, we sampled 1000 comments and then looked at what
           other subreddits those commenters posted on.  The table on the right
@@ -715,15 +723,116 @@
   </div><!-- container -->
 </template>
 
+<template name="twoDesignOpportunities">
+  <div class="container" id="twoDesignOpportunitiesBanner">
+    <div class="row py-5">
+    <div class="col">
+      <h1 class="text-center pb-4">Two Goals, Two Opportunities</h1>
+      <p style="font-size: 1.5rem">
+        KiA can’t meet all of their goals with the tools they’re using today.
+        Here are two important goals that define a design opportunity:
+        <ol class="text-center" style="font-size: 1.5rem">
+          <li>Overcome public perception as a coordinated harassment club</li>
+          <li>Organize collected evidence to persuade others</li>
+        </ol>
+      </p>
+    </div><!-- col -->
+  </div><!-- row -->
+  </div><!-- container -->
+</template>
+
 <template name="takeaways">
   <div class="container">
     <div class="row">
       <div class="col">
-        <img class="img-fluid" src="/kia/scales.png" alt="scales">
-        <img class="img-fluid" src="/kia/3bottles.png" alt="3bottles">
-      </div>
+        <h3 class="text-center pt-5">1. Refine Identity</h3>
+        <hr>
+      </div><!-- col -->
+    </div><!-- row -->
 
-    </div>
+    <div class="row">
+      <div class="col">
+        <p>
+          Moderate members complain that the “harasser” label takes away their voices,
+          even though they stand against harassment.  They need a way to differentiate
+          from aggressive members.  Designs that let them express their position will
+          help distinguish them from bad actors.
+        </p>
+      </div><!-- col -->
+    </div><!-- row -->
+    <div class="row">
+      <div class="col-sm-6">
+        <p>
+
+        </p>
+      </div><!-- col -->
+      <div class="col-sm-6">
+        <p>
+
+        </p>
+      </div><!-- col -->
+    </div><!-- row -->
+    <div class="row">
+      <img class="img-fluid mx-auto" src="/kia/3bottles.png" alt="3bottles">
+    </div><!-- row -->
+    <div class="row">
+      <div class="col">
+        <h3 class="text-center pt-5">2. Organize Evidence</h3>
+        <hr>
+      </div><!-- col -->
+    </div><!-- row -->
+    <div class="row">
+      <div class="col-sm-6">
+        <p>
+          KiA members try to persuade others by gathering evidence to support claims.
+          As a large and active membership, they post a lot of evidence.  But it is
+          scattered in broad categories like “Censorship,”  unrelated to the specific
+          claims it supports.
+        </p>
+      </div><!-- col -->
+      <div class="col-sm-6">
+        <p>A design that allows users to reference common claims would help them organize
+          evidence to debate those claims.  Instead of merely collecting evidence, they
+          could use it to construct and bolster specific arguments.
+        </p>
+      </div><!-- col -->
+    </div><!-- row -->
+    <div class="row">
+      <img class="img-fluid" src="/kia/scales.png" alt="scales">
+    </div><!-- row -->
+
+  </div><!-- container -->
+</template>
+
+<template name="nextStepsKiA">
+  <div class="container py-5">
+
+      <div class="row">
+        <div class="col">
+          <h3 class="text-center pt-5">Next Steps</h3>
+          <hr>
+        </div><!-- col -->
+      </div><!-- row -->
+
+    <div class="row pb-5">
+      <div class="col-sm-6">
+        <p>
+          KiA members need to clarify their attitudes about harassment
+          and organize information for persuasion.
+          These needs point to a general opportunity to design environments that
+          help people debate contructively with those who have a different perspective.
+          We have interesting examples to draw from.
+        </p>
+      </div><!-- col -->
+      <div class="col-sm-6">
+        <p>
+          In another round of interviews, designers can present low fidelity mock-ups of
+          exploratory designs that clarify harassment attitudes and organize evidence.  After refinement,
+          access to an interactive prototype could be posted to the subreddit itself,
+          giving the whole community a chance to give informal feedback.
+        </p>
+      </div><!-- col -->
+    </div><!-- row -->
   </div><!-- container -->
 </template>
 
