@@ -31,7 +31,21 @@
 
     </section>
 
+    <section class="bg-faded">
+      {{> introEmaTension}}
+    </section>
 
+    <section class="bg-abra-gray">
+      {{> speed}}
+    </section>
+
+    <section class="bg-faded">
+      {{> agency}}
+    </section>
+
+    <section class="bg-abra-gray">
+      {{> continuity}}
+    </section>
 
 </template>
 
@@ -675,4 +689,118 @@
     </div><!-- col -->
 
   </div><!-- row -->
+</template>
+
+<template name="introEmaTension">
+  <div class="container py-5">
+    <h1 class="text-center">Design Implications</h1>
+    <p class="text-center" style="font-size: 2rem">
+      The design successfully reduced burden.  However, we found unexpected tensions
+      between our design objectives.  Each of these tensions reveal adjustments that
+      can be made to the design.  Here are the three most important.</p>
+  </div>
+</template>
+
+<template name="speed">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col">
+        <h1>Design Tension 1:  While optimizing for speed, we compromised response quality</h1>
+      </div><!-- col -->
+      </div><!-- row -->
+      <div class="row pt-4">
+        <div class="col-sm-6">
+          <p>
+            Mindfully reporting your emotions can take time and reflection.
+          </p>
+          <p>
+            In our study, we intentionally refrained from giving the users any feedback
+            or showing them their data.  This made our results cleaner, but it also made
+            it hard to feel invested in the data quality.
+          </p>
+          <h3 class="text-center">Solution</h3>
+          <hr>
+          <p>
+            Presenting their data back to them in meaningful ways would help them care
+            about quality.  Students expressed interest in seeing how they compare to
+            their peers emotionally.
+          </p>
+        </div><!-- col -->
+        <div class="col bg-faded">
+          <img class="img-fluid" src="/ema/meaningfulData.png" alt="meaningful data">
+        </div><!-- col -->
+    </div><!-- row -->
+    <div class="row">
+    </div><!-- row -->
+  </div>
+</template>
+
+<template name="agency">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col">
+        <h1>Design Tension 2: Minimizing obtrusiveness, we compromised user agency</h1>
+      </div><!-- col -->
+      </div><!-- row -->
+      <div class="row pt-4">
+        <div class="col-sm-6">
+          <p>
+            Mindfully reporting your emotions can take time and reflection.
+          </p>
+          <p>
+            In our study, we intentionally refrained from giving the users any feedback
+            or showing them their data.  This made our results cleaner, but it also made
+            it hard to feel invested in the data quality.
+          </p>
+          <h3 class="text-center">Solution</h3>
+          <hr>
+          <p>
+            Presenting their data back to them in meaningful ways would help them care
+            about quality.  Students expressed interest in seeing how they compare to
+            their peers emotionally.
+          </p>
+        </div><!-- col -->
+        <div class="col">
+          <div class="bg-abra-gray">
+            <img class="img-fluid" src="/ema/report menu_1.png" alt="meaningful data">
+          </div><!-- container -->
+        </div><!-- col -->
+    </div><!-- row -->
+    <div class="row">
+    </div><!-- row -->
+  </div>
+</template>
+
+<template name="continuity">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col">
+        <h1>Design Tension 3:  While minimizing instructions, we compromised mental models</h1>
+      </div><!-- col -->
+      </div><!-- row -->
+      <div class="row pt-4">
+        <div class="col-sm-6">
+          <p>
+            Mindfully reporting your emotions can take time and reflection.
+          </p>
+          <p>
+            In our study, we intentionally refrained from giving the users any feedback
+            or showing them their data.  This made our results cleaner, but it also made
+            it hard to feel invested in the data quality.
+          </p>
+          <h3 class="text-center">Solution</h3>
+          <hr>
+          <p>
+            Presenting their data back to them in meaningful ways would help them care
+            about quality.  Students expressed interest in seeing how they compare to
+            their peers emotionally.
+          </p>
+        </div><!-- col -->
+        <div class="col bg-faded">
+          <img class="img-fluid" src="/ema/dimensionalityPam.png" alt="meaningful data">
+        </div><!-- col -->
+    </div><!-- row -->
+    <div class="row">
+    </div><!-- row -->
+  </div>
 </template>
